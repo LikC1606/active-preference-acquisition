@@ -1,0 +1,12 @@
+{
+  "additional_training": "not_applicable",
+  "reason": "One acquisition optimization point only; five paired Baseline/Reference runs are the rollback comparison",
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "new_training_runs": 0
+}

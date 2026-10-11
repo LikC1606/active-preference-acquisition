@@ -1,0 +1,89 @@
+{
+  "reviewed_at": "2026-10-10T16:22:37.186990+00:00",
+  "scope": "user-requested static resource review with separately scoped historical receipts",
+  "status": "static_pass",
+  "task_version": "1.2.0",
+  "requirements": {
+    "source": "Auto ReSearch 总结.zip",
+    "sha256": "18fa18f670bc1eef400cd840ad9e46a3a3e4281c676c7cd04cee2e4f55ee5e5a",
+    "markdown_lines": [
+      605,
+      628,
+      632,
+      634,
+      689,
+      691,
+      922
+    ],
+    "generic_cpu_cap": 64,
+    "generic_gpu_cap": 8,
+    "example_16cpu_64gb_1gpu_is_mandatory": false
+  },
+  "resources": {
+    "public_dev": {
+      "cpu_cores": 8,
+      "memory_gib": 36,
+      "gpu_count": 0,
+      "network": "none",
+      "swap_enabled": false
+    },
+    "private_verifier": {
+      "cpu_cores": 8,
+      "memory_gib": 36,
+      "gpu_count": 0,
+      "network": "none",
+      "swap_enabled": false
+    }
+  },
+  "timeouts_seconds": {
+    "one_score": 7200,
+    "selector": 60,
+    "build": 1800,
+    "outer_agent": 21600,
+    "verifier": 7500
+  },
+  "enforcement_review": {
+    "docker": "Explicit Compose cpu/memory/swap limits; task Compose follows Harbor resource defaults.",
+    "worker": "service.worker_setup: affinity of six CPUs and RLIMIT_AS of 32 GiB.",
+    "selector": "selector_sandbox: affinity of two CPUs, RLIMIT_AS of 4 GiB, RLIMIT_CPU of 60 seconds.",
+    "deadline": "request_at checks expiry; evaluate/run_seed share one deadline across five serial seeds; main handles requests serially.",
+    "scope": "Limits are per scoring environment. No measurements of live cgroups or peak usage were made in this review."
+  },
+  "source_sha256": {
+    "workspace/harbor_task/task.toml": "ea4b62815ad7c0f8be8879b756046dc24d12d398c4e9d6fe4ad7bd875bf97ca2",
+    "workspace/harbor_task/environment/docker-compose.yaml": "5299e479d754704965c117ef108c6ba1157207904aa24009b5b957e40dddbd8e",
+    "workspace/harbor_task/tests/docker-compose.yaml": "921fcdb965aa7d3ba9b2de6545d6154a5506365ede8a50fcb4aac3f1e0338d3b",
+    "workspace/harbor_task/environment/arm_static_offline.py": "0cfd764649a05435a7c4c2d8728e4a00c2583ca91bcc96bea890eb496f5f8249",
+    "workspace/harbor_task/environment/dev_runtime/service.py": "f84e6108f409b9c521761b0fb48e0602f2eca85d9250d6e36b854b947376b54b",
+    "workspace/harbor_task/environment/dev_runtime/worker.py": "0c33266bc1c0991a522d0fd2bb833141db68f1d7874b303574737a72ea299c03",
+    "workspace/harbor_task/environment/dev_runtime/selector_sandbox.py": "4f89571a353484b251738a705a113a7fba007fc6611fa7fb1f2ec03cb81f9781",
+    "workspace/harbor_task/tests/private/runtime/service.py": "f84e6108f409b9c521761b0fb48e0602f2eca85d9250d6e36b854b947376b54b",
+    "workspace/harbor_task/tests/private/runtime/selector_sandbox.py": "4f89571a353484b251738a705a113a7fba007fc6611fa7fb1f2ec03cb81f9781"
+  },
+  "historical_cold_scores": {
+    "baseline": {
+      "evidence": "optimization_evidence/runtime/acceptance-v14/harbor-baseline/summary.json",
+      "elapsed_seconds": 5296.447519924492,
+      "snapshot": "v14",
+      "validates_current_fresh_training": false
+    },
+    "reference": {
+      "evidence": "optimization_evidence/runtime/acceptance-v14/harbor-reference/summary.json",
+      "elapsed_seconds": 5198.963438598439,
+      "snapshot": "v14",
+      "validates_current_fresh_training": false
+    }
+  },
+  "current_runtime": {
+    "full_harbor_trial_passed": true,
+    "hidden_calibration_passed": true,
+    "new_training_runs": 10,
+    "fresh_score_within_budget_passed": true,
+    "stability_12h_passed": false
+  },
+  "current_runtime_note": "Job 121710 validates fresh best-method Dev/Hidden training within 7200 seconds per split. Twelve-hour stability remains pending. Historical B/R cold receipts are scoped separately.",
+  "new_training_runs": 0,
+  "new_slurm_jobs": 0,
+  "new_model_api_requests": 0,
+  "formal_platform_acceptance": false
+}

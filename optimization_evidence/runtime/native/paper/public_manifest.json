@@ -1,0 +1,32 @@
+{
+  "dev_prompts": 4188,
+  "files": [
+    {
+      "bytes": 2744320128,
+      "dtype": "float32",
+      "file": "train-embeddings.npy",
+      "sha256": "2f37b546b044844360b9a3ceff8f09607e09e84b80eab64bd1f767b460fc5ce1",
+      "shape": [
+        10,
+        33500,
+        2048
+      ]
+    },
+    {
+      "bytes": 343081088,
+      "dtype": "float32",
+      "file": "dev-embeddings.npy",
+      "sha256": "0a68247d4a9f4b6a6c2e4515275f37af881e96f5f57f9864d96d279f0b8ab57c",
+      "shape": [
+        10,
+        4188,
+        2048
+      ]
+    }
+  ],
+  "hidden_included": false,
+  "official_paper_protocol": false,
+  "schema": "arm.embedding-only.public-data.v12",
+  "split_seed": 1729,
+  "train_prompts": 33500
+}

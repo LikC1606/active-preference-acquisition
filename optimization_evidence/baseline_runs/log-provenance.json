@@ -1,0 +1,16 @@
+{
+  "source": "acquisition-paper-aligned/runtime-116024/public-verifier.log",
+  "job_id": 116024,
+  "sha256": "7b6204f4ae76aea8dce581e42d9535b533fbe5ee5e2d057f6d045e7b7cbd7eba",
+  "bytes": 914,
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "role": "unaltered original Baseline evaluator stdout",
+  "training_stdout_emitted": false,
+  "worker_train_logs_preserved_empty": true
+}

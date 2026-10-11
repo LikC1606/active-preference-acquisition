@@ -1,0 +1,151 @@
+{
+  "status": "best_replay_passed",
+  "job_id": "116988",
+  "node": "nv-h100-022",
+  "image_id": "sha256:5bba2d9100a8c2a89f1afc3b698b6f5f10ca7e7c1b0eb7dd96eb9513060c083b",
+  "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+  "resources": {
+    "allocated_cpus": 8,
+    "gpus": 0,
+    "vm_memory_mib": 40960
+  },
+  "trials": {
+    "baseline": {
+      "score": 0.0,
+      "selector_sha256": "e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb",
+      "agent": "nop",
+      "result_path": "native-116988/trials/arm-acq-116988-baseline/result.json",
+      "iteration_evaluation_passed": true,
+      "separate_verifier_passed": true,
+      "new_training_runs": 0,
+      "requests": 2
+    },
+    "reference": {
+      "score": 0.2670160049935782,
+      "selector_sha256": "aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3",
+      "agent": "nop",
+      "result_path": "native-116988/trials/arm-acq-116988-reference/result.json",
+      "iteration_evaluation_passed": true,
+      "separate_verifier_passed": true,
+      "new_training_runs": 0,
+      "requests": 2
+    },
+    "gpt": {
+      "score": 0.24240974865627934,
+      "selector_sha256": "774b47f6d2751c8bb3d2a4dd9b634ce9ff7c7cde3a633e190bd302efe0d0ead4",
+      "agent": "nop",
+      "result_path": "native-116988/trials/arm-acq-116988-gpt/result.json",
+      "iteration_evaluation_passed": true,
+      "separate_verifier_passed": true,
+      "new_training_runs": 0,
+      "requests": 2
+    },
+    "seed": {
+      "score": 0.2513644502120524,
+      "selector_sha256": "f8ee1048e4f125d5b007cb66ab504cbef7ab83a4ee89ab38fcd33fcbd75d436d",
+      "agent": "nop",
+      "result_path": "native-116988/trials/arm-acq-116988-seed/result.json",
+      "iteration_evaluation_passed": true,
+      "separate_verifier_passed": true,
+      "new_training_runs": 0,
+      "requests": 2
+    }
+  },
+  "new_training_runs": 0,
+  "elapsed_seconds": 181.9993343539536,
+  "formal_platform_acceptance": false,
+  "runtime_adapter": "arm_acquisition_native:AcquisitionDocker",
+  "runtime_requirement": "Operator broker and cached dependency image must be supplied",
+  "runner_sha256": "0a50c94f24b2086d4794cebff4468e00d06a2f8d0f9efa8096da49881415bf2f",
+  "broker_sha256": "9969fb8242d1102049260f0897730d906325f05de1b8196447dc08416fa7edf9",
+  "checkpoint_reloads": {
+    "gpt": [
+      {
+        "seed": 101,
+        "matched": true,
+        "checkpoint_sha256": "ed82d8e299a6489c3a6cba530f6ee0f6da42123f68f7d2f16b60c7dcac48613e",
+        "raw_metric": 0.4926824610600503,
+        "best_of_10": 1.7719663333253617,
+        "new_training_runs": 0
+      },
+      {
+        "seed": 202,
+        "matched": true,
+        "checkpoint_sha256": "beff20384e24e1bba269164c54236fc272aa9ccca70340132b6243cf3746e02e",
+        "raw_metric": 0.5195836423443716,
+        "best_of_10": 1.7538288837808442,
+        "new_training_runs": 0
+      },
+      {
+        "seed": 303,
+        "matched": true,
+        "checkpoint_sha256": "870b4a6344876ec67c72cd9b2a7e2d93f40e1a8d6a044e9535214807c525797c",
+        "raw_metric": 0.5055554949432712,
+        "best_of_10": 1.7914467287501596,
+        "new_training_runs": 0
+      },
+      {
+        "seed": 404,
+        "matched": true,
+        "checkpoint_sha256": "eb5530a992c9d0d72669b67263deea971de38e2d7874a323fee00026b2791495",
+        "raw_metric": 0.524572882595614,
+        "best_of_10": 1.7533345496746309,
+        "new_training_runs": 0
+      },
+      {
+        "seed": 505,
+        "matched": true,
+        "checkpoint_sha256": "78e613215160582863647c4870cf14939caff4a8d983a72a0db8e58a8c036611",
+        "raw_metric": 0.5332989722475213,
+        "best_of_10": 1.7301314724409116,
+        "new_training_runs": 0
+      }
+    ],
+    "seed": [
+      {
+        "seed": 101,
+        "matched": true,
+        "checkpoint_sha256": "4af319599e9594f1f3be757892faad5f2a58c10eb8f67d50d1741c6d220fe6a6",
+        "raw_metric": 0.4828957363520684,
+        "best_of_10": 1.7851102088365451,
+        "new_training_runs": 0
+      },
+      {
+        "seed": 202,
+        "matched": true,
+        "checkpoint_sha256": "e9b62795a3d7a749abd8551254df4fcc71c28d4fa9f6c735495f44d5e31d311d",
+        "raw_metric": 0.5016136924672039,
+        "best_of_10": 1.779920339723115,
+        "new_training_runs": 0
+      },
+      {
+        "seed": 303,
+        "matched": true,
+        "checkpoint_sha256": "b59883ecd3df084d8dd93bcd04ec2f4087b3cfb0f44b1ca124dbd0b71d49cdde",
+        "raw_metric": 0.5166287522117979,
+        "best_of_10": 1.7614684929544642,
+        "new_training_runs": 0
+      },
+      {
+        "seed": 404,
+        "matched": true,
+        "checkpoint_sha256": "917278e25f82ebe9f477d8778810ded7efbbabdb10fc92937428025018b6dc23",
+        "raw_metric": 0.515292505033996,
+        "best_of_10": 1.7152335194367363,
+        "new_training_runs": 0
+      },
+      {
+        "seed": 505,
+        "matched": true,
+        "checkpoint_sha256": "5b0164af767e80cbfc2121f0673d9430e379d8a8469836a33a7c5688a0d04497",
+        "raw_metric": 0.528818122238142,
+        "best_of_10": 1.7347186979247966,
+        "new_training_runs": 0
+      }
+    ]
+  },
+  "new_model_requests": 0,
+  "clean_replay_scope": "Fresh native agent/verifier containers and fresh checkpoint metric reload; successful training reused",
+  "best_lane": "seed",
+  "independent_retraining": false
+}

@@ -1,0 +1,20 @@
+{
+  "round": 4,
+  "attempt": 7,
+  "model": "gpt-5.6-sol",
+  "method_summary": "Retain the strongest prompt-balanced whitened-leverage/Fisher design, but replace plug-in uncertainty with a Bayesian-style margin correction: predictions in high-leverage, poorly covered directions are treated as less certain before computing Fisher information. This responds to the regressions from sequential diversity and annealing by keeping the successful independent structure while making only a targeted correction for model overconfidence.",
+  "selector_sha256": "34c298e4d13ab8e93ca1713946d1fa14100de5a6245b46f5b684b1488e79c06d",
+  "score": 0.23578694418028806,
+  "mean_error": 0.5196419994123527,
+  "raw_values": [
+    0.5140101892635611,
+    0.5208790881967144,
+    0.5043338412042067,
+    0.5288143853034,
+    0.5301724930938814
+  ],
+  "new_training_runs": 5,
+  "status": "succeeded",
+  "effective_seconds": 7703.151501503795,
+  "decision": "retain"
+}

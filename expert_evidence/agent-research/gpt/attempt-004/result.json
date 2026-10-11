@@ -1,0 +1,28 @@
+{
+  "round": 3,
+  "attempt": 4,
+  "model": "gpt-5.6-sol",
+  "started_at": "2026-10-08T11:56:02.106897+00:00",
+  "iteration_limit_seconds": 7200,
+  "method_summary": "Replace diagonal whitening with a ridge-regularized full-covariance Mahalanobis leverage score, then select the highest logistic Fisher-information pair independently for every prompt. This retains the successful prompt-balanced Fisher strategy while using one small eigendecomposition and vectorized matrix operations, avoiding the timed-out projection and greedy scans.",
+  "selector_sha256": "cbc33e8244794929555e49a508b402a7de98152811c2f58a49b4c3e8ec545c62",
+  "acceptance": "agent-research/acquisition-gpt-seed-v15-two-hour-retry5/gpt/attempt-004/arm-roll-v15-gpt-004-acceptance/best/summary.json",
+  "status": "succeeded",
+  "score": 0.24927529058448603,
+  "mean_error": 0.5104703276633982,
+  "raw_values": [
+    0.5077615111086385,
+    0.48041137209162765,
+    0.514654692708829,
+    0.5168472531087651,
+    0.5326768092991307
+  ],
+  "new_training_runs": 5,
+  "author_method_seconds": 36.7483921982348,
+  "verifier_seconds": 6578.2749207653105,
+  "effective_seconds": 6615.023312963545,
+  "iteration_wall_seconds": 6658.133979041129,
+  "within_7200_seconds": true,
+  "decision": "retain",
+  "finished_at": "2026-10-08T13:47:00.281775+00:00"
+}

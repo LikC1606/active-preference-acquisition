@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "bytes": 2680128,
+      "dtype": "float64",
+      "file": "train-rewards.npy",
+      "sha256": "adfb1c731f69229782f4bac675747d8f77c357304e9a97c4d211480c6a51d5ea",
+      "shape": [
+        10,
+        33500
+      ]
+    },
+    {
+      "bytes": 335168,
+      "dtype": "float64",
+      "file": "dev-rewards.npy",
+      "sha256": "e1ce715b8feb5ce0b4aa0d7c7fef22e740cafaacf32dfd3a7657a7441904ea91",
+      "shape": [
+        10,
+        4188
+      ]
+    }
+  ],
+  "schema": "arm.trusted-oracle-data.v12"
+}

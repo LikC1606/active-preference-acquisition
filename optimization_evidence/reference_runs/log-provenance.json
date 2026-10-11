@@ -1,0 +1,59 @@
+{
+  "operation": "read_only_ext4_debugfs_dump",
+  "source_disk": "tmp/harborbuilder-kvm-test/services/job-114749/data.raw",
+  "source_log_path": "/data/docker/containers/54892a646559f7108e6120716e7b187a23b6ceb30bba62ad4d4fa2c1e7003ee7/54892a646559f7108e6120716e7b187a23b6ceb30bba62ad4d4fa2c1e7003ee7-json.log",
+  "container_id": "54892a646559f7108e6120716e7b187a23b6ceb30bba62ad4d4fa2c1e7003ee7",
+  "container_name": "/arm-native-v14-reference-evaluator-1",
+  "container_created": "2026-10-07T22:47:18.143643572Z",
+  "container_image": "arm-acquisition-v14__evaluator",
+  "source_log_sha256": "8c13a47aeb18b27c11f6ddd2bfd4c0ebba33148e6cb373460b37b4948273c84d",
+  "source_log_bytes": 5031,
+  "selector_sha256": "aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3",
+  "role": "unaltered historical evaluator stdout/stderr with Docker timestamps",
+  "worker_training_stdout_emitted": false,
+  "note": "These are real evaluator execution records, not detailed optimizer stdout. Training history/accounting and model receipts remain separate and unchanged.",
+  "seeds": {
+    "101": {
+      "source_lines": [
+        6,
+        21
+      ],
+      "times": [
+        "2026-10-08T00:25:05.102159843Z",
+        "2026-10-08T00:52:06.970149678Z"
+      ]
+    },
+    "202": {
+      "source_lines": [
+        22
+      ],
+      "times": [
+        "2026-10-08T00:54:46.578307103Z"
+      ]
+    },
+    "303": {
+      "source_lines": [
+        23
+      ],
+      "times": [
+        "2026-10-08T01:14:05.151933868Z"
+      ]
+    },
+    "404": {
+      "source_lines": [
+        24
+      ],
+      "times": [
+        "2026-10-08T01:33:49.515996483Z"
+      ]
+    },
+    "505": {
+      "source_lines": [
+        25
+      ],
+      "times": [
+        "2026-10-08T01:53:43.217074092Z"
+      ]
+    }
+  }
+}

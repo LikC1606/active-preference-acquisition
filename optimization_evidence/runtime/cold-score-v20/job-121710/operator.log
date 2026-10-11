@@ -1,0 +1,6 @@
+ERROR:harbor.utils.logger.harbor.environments.base:Container command failed (1): mkdir -p /logs/verifier && chmod 777 /logs/verifier; stdout=chmod: changing permissions of '/logs/verifier': Operation not permitted
+; stderr=
+ERROR:harbor.utils.logger.harbor.environments.base:Container command failed (1): chown -R 1892800110:1892800109 /logs/verifier; stdout=chown: changing ownership of '/logs/verifier/public-score.json': Operation not permitted
+chown: changing ownership of '/logs/verifier/reward.json': Operation not permitted
+chown: changing ownership of '/logs/verifier': Operation not permitted
+; stderr=

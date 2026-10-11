@@ -1,0 +1,5 @@
+{"seed": 101, "matched": true, "checkpoint_sha256": "ed82d8e299a6489c3a6cba530f6ee0f6da42123f68f7d2f16b60c7dcac48613e", "raw_metric": 0.4926824610600503, "best_of_10": 1.7719663333253617, "new_training_runs": 0}
+{"seed": 202, "matched": true, "checkpoint_sha256": "beff20384e24e1bba269164c54236fc272aa9ccca70340132b6243cf3746e02e", "raw_metric": 0.5195836423443716, "best_of_10": 1.7538288837808442, "new_training_runs": 0}
+{"seed": 303, "matched": true, "checkpoint_sha256": "870b4a6344876ec67c72cd9b2a7e2d93f40e1a8d6a044e9535214807c525797c", "raw_metric": 0.5055554949432712, "best_of_10": 1.7914467287501596, "new_training_runs": 0}
+{"seed": 404, "matched": true, "checkpoint_sha256": "eb5530a992c9d0d72669b67263deea971de38e2d7874a323fee00026b2791495", "raw_metric": 0.524572882595614, "best_of_10": 1.7533345496746309, "new_training_runs": 0}
+{"seed": 505, "matched": true, "checkpoint_sha256": "78e613215160582863647c4870cf14939caff4a8d983a72a0db8e58a8c036611", "raw_metric": 0.5332989722475213, "best_of_10": 1.7301314724409116, "new_training_runs": 0}

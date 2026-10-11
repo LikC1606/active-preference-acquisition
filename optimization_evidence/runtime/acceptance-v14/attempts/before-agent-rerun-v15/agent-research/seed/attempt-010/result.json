@@ -1,0 +1,20 @@
+{
+  "round": 5,
+  "attempt": 10,
+  "model": "doubao-seed-2.1-turbo",
+  "method_summary": "Adapts the BADGE k-means++ approach by making the candidate pool size grow with round index (10k to 25k) and mixing 90% greedy farthest-point selection with 10% stochastic k-means++ sampling. The dynamic pool acknowledges that early rounds benefit from focusing on high-uncertainty pairs while later rounds need broader diversity coverage, and the stochastic component adds exploration to avoid getting stuck in local optima of the greedy approach.",
+  "selector_sha256": "f8ee1048e4f125d5b007cb66ab504cbef7ab83a4ee89ab38fcd33fcbd75d436d",
+  "score": 0.2513644502120524,
+  "mean_error": 0.5090497616606416,
+  "raw_values": [
+    0.4828957363520684,
+    0.5016136924672039,
+    0.5166287522117979,
+    0.515292505033996,
+    0.528818122238142
+  ],
+  "new_training_runs": 5,
+  "status": "succeeded",
+  "effective_seconds": 7308.420867155668,
+  "decision": "retain"
+}

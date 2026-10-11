@@ -1,0 +1,196 @@
+{
+  "status": "lanes_completed_replay_pending",
+  "run_id": "acquisition-gpt-seed-v1",
+  "job_id": "116669",
+  "node": "nv-h100-022",
+  "cpus": 8,
+  "gpus": 0,
+  "policy": {
+    "schema": "arm.model-request-policy.v1",
+    "global_request_concurrency": 2,
+    "lane_request_concurrency": 1,
+    "minimum_request_interval_seconds": 30,
+    "maximum_input_bytes": 32768,
+    "maximum_output_tokens": 2048,
+    "maximum_response_bytes": 4194304,
+    "maximum_requests_per_invocation": 1,
+    "maximum_shell_calls_per_invocation": 0,
+    "model_reasoning_effort": "low",
+    "reasoning_summary": "none",
+    "automatic_transport_retries": 0,
+    "infrastructure_retry_cooldown_seconds": 300,
+    "maximum_failed_invocations_per_round": 2,
+    "context": "public task card, current selector, own three latest compact feedback rows",
+    "lane_concurrency": 2,
+    "minimum_effective_seconds_per_lane": 36000,
+    "minimum_completed_loops_per_lane": 3,
+    "training_budget": "Frozen five-seed protocol; successful computation is reused without repeating training"
+  },
+  "lanes": {
+    "seed": {
+      "model": "doubao-seed-2.1-turbo",
+      "provider": "ark",
+      "completed_loops": 5,
+      "effective_seconds": 40930.67932101268,
+      "attempts": 10,
+      "history": [
+        {
+          "round": 1,
+          "attempt": 1,
+          "status": "failed",
+          "error": "Model invocation failed; inspect retained redacted model-log.json"
+        },
+        {
+          "round": 1,
+          "attempt": 2,
+          "status": "failed",
+          "error": "Model invocation failed; inspect retained redacted model-log.json"
+        },
+        {
+          "round": 1,
+          "attempt": 3,
+          "status": "failed",
+          "error": "Expecting value: line 1 column 1 (char 0)"
+        },
+        {
+          "round": 1,
+          "attempt": 4,
+          "model": "doubao-seed-2.1-turbo",
+          "method_summary": "Replaces random selection with uncertainty sampling, choosing the k pairs whose predicted reward logits are closest to zero (most ambiguous to the current model). This is a standard active-learning heuristic that should focus labeling on the decision boundary where information gain is highest.",
+          "selector_sha256": "551248b1f4b09d56441e5340a68312a62600909733e82abfaf888b0cd383ddef",
+          "score": 0.18444361813915666,
+          "mean_error": 0.5545539240350956,
+          "raw_values": [
+            0.5204008618765305,
+            0.5807144581198223,
+            0.5331768095501954,
+            0.56760524031426,
+            0.57087225031467
+          ],
+          "new_training_runs": 3,
+          "status": "succeeded",
+          "effective_seconds": 8863.861155523002,
+          "decision": "retain"
+        },
+        {
+          "round": 2,
+          "attempt": 5,
+          "model": "doubao-seed-2.1-turbo",
+          "method_summary": "Combines uncertainty sampling (pairs near the decision boundary) with feature-space diversity using a k-means++ style greedy selection. From a pool of the top 5k most uncertain pairs, we iteratively select k pairs that maximize a weighted sum of uncertainty and minimum cosine-distance to already-selected pairs, ensuring the labeled set covers diverse regions of feature space rather than clustering in one ambiguous area.",
+          "selector_sha256": "9dbbd44c19632d56691e9e7787ff8ea705b0aafe7854d5127a523c26841cba9f",
+          "score": 0.188118045851766,
+          "mean_error": 0.5520554231933004,
+          "raw_values": [
+            0.5167655381117091,
+            0.5573097778660562,
+            0.5436287533860353,
+            0.5676080130242391,
+            0.5749650335784617
+          ],
+          "new_training_runs": 5,
+          "status": "succeeded",
+          "effective_seconds": 8762.821966634438,
+          "decision": "retain"
+        },
+        {
+          "round": 3,
+          "attempt": 6,
+          "model": "doubao-seed-2.1-turbo",
+          "method_summary": "Implements a BADGE-inspired active learning strategy that constructs gradient embeddings by weighting each pair's feature vector by sigmoid(logit)*(1-sigmoid(logit)) \u2014 the expected gradient magnitude of cross-entropy loss, which peaks at the decision boundary. From the top-10k highest-norm gradient embedding candidates, k pairs are selected via k-means++ greedy maximization of minimum cosine distance, combining uncertainty sampling with gradient-space diversity to cover the most informative ambiguous regions.",
+          "selector_sha256": "30704690546cc5b8db295efa3c534fe8abb9b3ed732f4cbd7602e2fc70029565",
+          "score": 0.22332698082510138,
+          "mean_error": 0.5281144014750849,
+          "raw_values": [
+            0.5130802339374203,
+            0.5272273434557744,
+            0.5330599942067786,
+            0.5307799543006789,
+            0.5364244814747722
+          ],
+          "new_training_runs": 5,
+          "status": "succeeded",
+          "effective_seconds": 7996.880089270773,
+          "decision": "retain"
+        },
+        {
+          "round": 4,
+          "attempt": 7,
+          "model": "doubao-seed-2.1-turbo",
+          "method_summary": "Refines the BADGE k-means++ approach by operating on unnormalized gradient embeddings with Euclidean distance instead of normalized cosine distance, so uncertainty magnitude is naturally baked into the diversity metric rather than added as a separate term. Also increases the candidate pool from 10k to 15k to give k-means++ more coverage to choose from, following the original BADGE formulation more closely.",
+          "selector_sha256": "4199d4c9594da9c3f58d1b42f1f637fc514056b3401bf7a433a526e39ed51d16",
+          "score": 0.24786952130659493,
+          "mean_error": 0.5114262086872996,
+          "raw_values": [
+            0.4985943696681755,
+            0.5234141585374418,
+            0.5034812093035896,
+            0.5105454776058553,
+            0.5210958283214356
+          ],
+          "new_training_runs": 5,
+          "status": "succeeded",
+          "effective_seconds": 7998.695242428792,
+          "decision": "retain"
+        },
+        {
+          "round": 5,
+          "attempt": 8,
+          "model": "doubao-seed-2.1-turbo",
+          "status": "failed",
+          "error": "Model invocation failed; inspect retained redacted model-log.json"
+        },
+        {
+          "round": 5,
+          "attempt": 9,
+          "model": "doubao-seed-2.1-turbo",
+          "status": "failed",
+          "error": "Model invocation failed; inspect retained redacted model-log.json"
+        },
+        {
+          "round": 5,
+          "attempt": 10,
+          "model": "doubao-seed-2.1-turbo",
+          "method_summary": "Adapts the BADGE k-means++ approach by making the candidate pool size grow with round index (10k to 25k) and mixing 90% greedy farthest-point selection with 10% stochastic k-means++ sampling. The dynamic pool acknowledges that early rounds benefit from focusing on high-uncertainty pairs while later rounds need broader diversity coverage, and the stochastic component adds exploration to avoid getting stuck in local optima of the greedy approach.",
+          "selector_sha256": "f8ee1048e4f125d5b007cb66ab504cbef7ab83a4ee89ab38fcd33fcbd75d436d",
+          "score": 0.2513644502120524,
+          "mean_error": 0.5090497616606416,
+          "raw_values": [
+            0.4828957363520684,
+            0.5016136924672039,
+            0.5166287522117979,
+            0.515292505033996,
+            0.528818122238142
+          ],
+          "new_training_runs": 5,
+          "status": "succeeded",
+          "effective_seconds": 7308.420867155668,
+          "decision": "retain"
+        }
+      ],
+      "best_score": 0.2513644502120524,
+      "best_selector": "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/agent-research/acquisition-gpt-seed-v1/seed/attempt-010/select.py",
+      "baseline": {
+        "mean_error": 0.6799700626090104,
+        "raw_values": [
+          0.6478005749308513,
+          0.735379110189218,
+          0.6399006371097182,
+          0.6857898168299283,
+          0.6909801739853358
+        ],
+        "seeds": [
+          101,
+          202,
+          303,
+          404,
+          505
+        ],
+        "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+        "selector_sha256": "e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb",
+        "score": 0.0
+      },
+      "consecutive_failures": 0,
+      "request_policy_sha256": "c304dbd14e72ab21d09ea6b24cd9eb868a641fc18d62ccbae918d3be8404c7a5"
+    }
+  }
+}

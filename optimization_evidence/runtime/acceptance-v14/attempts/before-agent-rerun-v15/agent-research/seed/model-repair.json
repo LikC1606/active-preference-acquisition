@@ -1,0 +1,13 @@
+{
+  "reason": "Attempts 8 and 9 exhausted the 2048-token budget on thinking without returning candidate code",
+  "repair": "Disable Ark thinking for Seed requests and omit OpenAI reasoning parameters",
+  "failed_attempts_preserved": [8, 9],
+  "resume_after_attempt": 9,
+  "completed_loops_preserved": 4,
+  "effective_seconds_preserved": 33622.25845385701,
+  "maximum_output_tokens": 2048,
+  "lane_request_concurrency": 1,
+  "minimum_request_interval_seconds": 30,
+  "cpus": 8,
+  "gpus": 0
+}

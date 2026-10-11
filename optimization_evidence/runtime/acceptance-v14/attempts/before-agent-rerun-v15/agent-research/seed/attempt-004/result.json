@@ -1,0 +1,20 @@
+{
+  "round": 1,
+  "attempt": 4,
+  "model": "doubao-seed-2.1-turbo",
+  "method_summary": "Replaces random selection with uncertainty sampling, choosing the k pairs whose predicted reward logits are closest to zero (most ambiguous to the current model). This is a standard active-learning heuristic that should focus labeling on the decision boundary where information gain is highest.",
+  "selector_sha256": "551248b1f4b09d56441e5340a68312a62600909733e82abfaf888b0cd383ddef",
+  "score": 0.18444361813915666,
+  "mean_error": 0.5545539240350956,
+  "raw_values": [
+    0.5204008618765305,
+    0.5807144581198223,
+    0.5331768095501954,
+    0.56760524031426,
+    0.57087225031467
+  ],
+  "new_training_runs": 3,
+  "status": "succeeded",
+  "effective_seconds": 8863.861155523002,
+  "decision": "retain"
+}

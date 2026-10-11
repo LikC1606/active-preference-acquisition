@@ -1,0 +1,36 @@
+{
+  "exit_code": 1,
+  "work_clock": {
+    "schema": "deepscientist.codex-work-clock.v1",
+    "max_progress_gap_seconds": 120.0,
+    "events": [
+      {
+        "elapsed": 0.9116137810051441,
+        "type": "thread.started",
+        "item_type": null
+      },
+      {
+        "elapsed": 0.9419689401984215,
+        "type": "turn.started",
+        "item_type": null
+      },
+      {
+        "elapsed": 1.093454658985138,
+        "type": "error",
+        "item_type": null
+      },
+      {
+        "elapsed": 1.1036070603877306,
+        "type": "turn.failed",
+        "item_type": null
+      }
+    ],
+    "intervals": [
+      {
+        "start": 0.0,
+        "end": 1.1339421179145575,
+        "kind": "blocked"
+      }
+    ]
+  }
+}

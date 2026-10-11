@@ -1,0 +1,6 @@
+{
+  "status": "passed",
+  "check": "incomplete author acceptance cannot publish the final archive",
+  "exit_code": 1,
+  "archive_created": false
+}

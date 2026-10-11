@@ -1,0 +1,13 @@
+{
+  "bootstrap_metric": {
+    "best_of_10": 1.5808342703455327,
+    "evaluated_prompts": 4188,
+    "one_minus_spearman": 0.6804095647780016
+  },
+  "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+  "raw_reward_difference_labels": true,
+  "upstream_dopt_exact_indices_and_order": true,
+  "upstream_training_defaults_executed": true,
+  "status": "passed",
+  "elapsed_seconds": 15.19326196900056
+}

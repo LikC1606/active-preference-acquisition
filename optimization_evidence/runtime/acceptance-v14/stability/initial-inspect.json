@@ -1,0 +1,512 @@
+[
+  {
+    "Id": "940fb6974def315d9e79aadf57b8750cd99fd334d495afce7b6810d5180908bc",
+    "Created": "2026-10-08T02:08:15.928616141Z",
+    "Path": "sleep",
+    "Args": [
+      "infinity"
+    ],
+    "State": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 31828,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-10-08T02:08:26.816611503Z",
+      "FinishedAt": "0001-01-01T00:00:00Z"
+    },
+    "Image": "sha256:fcb33f46650fec65388e802deaa3f29451021e92fbc54a37b10ba5258bbafe17",
+    "ResolvConfPath": "/data/docker/containers/940fb6974def315d9e79aadf57b8750cd99fd334d495afce7b6810d5180908bc/resolv.conf",
+    "HostnamePath": "/data/docker/containers/940fb6974def315d9e79aadf57b8750cd99fd334d495afce7b6810d5180908bc/hostname",
+    "HostsPath": "/data/docker/containers/940fb6974def315d9e79aadf57b8750cd99fd334d495afce7b6810d5180908bc/hosts",
+    "LogPath": "/data/docker/containers/940fb6974def315d9e79aadf57b8750cd99fd334d495afce7b6810d5180908bc/940fb6974def315d9e79aadf57b8750cd99fd334d495afce7b6810d5180908bc-json.log",
+    "Name": "/arm-native-v14-final-main-1",
+    "RestartCount": 0,
+    "Driver": "overlay2",
+    "Platform": "linux",
+    "MountLabel": "",
+    "ProcessLabel": "",
+    "AppArmorProfile": "docker-default",
+    "ExecIDs": null,
+    "HostConfig": {
+      "Binds": null,
+      "ContainerIDFile": "",
+      "LogConfig": {
+        "Type": "json-file",
+        "Config": {
+          "max-file": "2",
+          "max-size": "10m"
+        }
+      },
+      "NetworkMode": "none",
+      "PortBindings": {},
+      "RestartPolicy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "AutoRemove": false,
+      "VolumeDriver": "",
+      "VolumesFrom": null,
+      "ConsoleSize": [
+        0,
+        0
+      ],
+      "CapAdd": null,
+      "CapDrop": [
+        "ALL"
+      ],
+      "CgroupnsMode": "private",
+      "Dns": null,
+      "DnsOptions": null,
+      "DnsSearch": null,
+      "ExtraHosts": [],
+      "GroupAdd": null,
+      "IpcMode": "container:10c27a67b9928ffe256736e7f5766f80f274e97d548989248050b49aba8a5617",
+      "Cgroup": "",
+      "Links": null,
+      "OomScoreAdj": 0,
+      "PidMode": "",
+      "Privileged": false,
+      "PublishAllPorts": false,
+      "ReadonlyRootfs": false,
+      "SecurityOpt": [
+        "no-new-privileges:true"
+      ],
+      "UTSMode": "",
+      "UsernsMode": "",
+      "ShmSize": 67108864,
+      "Runtime": "runc",
+      "Isolation": "",
+      "CpuShares": 0,
+      "Memory": 4294967296,
+      "NanoCpus": 2000000000,
+      "CgroupParent": "",
+      "BlkioWeight": 0,
+      "BlkioWeightDevice": null,
+      "BlkioDeviceReadBps": null,
+      "BlkioDeviceWriteBps": null,
+      "BlkioDeviceReadIOps": null,
+      "BlkioDeviceWriteIOps": null,
+      "CpuPeriod": 0,
+      "CpuQuota": 0,
+      "CpuRealtimePeriod": 0,
+      "CpuRealtimeRuntime": 0,
+      "CpusetCpus": "",
+      "CpusetMems": "",
+      "Devices": null,
+      "DeviceCgroupRules": null,
+      "DeviceRequests": null,
+      "MemoryReservation": 0,
+      "MemorySwap": -1,
+      "MemorySwappiness": null,
+      "OomKillDisable": null,
+      "PidsLimit": 256,
+      "Ulimits": null,
+      "CpuCount": 0,
+      "CpuPercent": 0,
+      "IOMaximumIOps": 0,
+      "IOMaximumBandwidth": 0,
+      "MaskedPaths": [
+        "/proc/asound",
+        "/proc/acpi",
+        "/proc/interrupts",
+        "/proc/kcore",
+        "/proc/keys",
+        "/proc/latency_stats",
+        "/proc/timer_list",
+        "/proc/timer_stats",
+        "/proc/sched_debug",
+        "/proc/scsi",
+        "/sys/firmware",
+        "/sys/devices/virtual/powercap"
+      ],
+      "ReadonlyPaths": [
+        "/proc/bus",
+        "/proc/fs",
+        "/proc/irq",
+        "/proc/sys",
+        "/proc/sysrq-trigger"
+      ],
+      "Init": true
+    },
+    "GraphDriver": {
+      "Data": {
+        "ID": "940fb6974def315d9e79aadf57b8750cd99fd334d495afce7b6810d5180908bc",
+        "LowerDir": "/data/docker/overlay2/27714e9747892e691608f3d90296ac9570be60d71f0a738b2a8bd5b0925054b8-init/diff:/data/docker/overlay2/w7zp95mlx7y3licg3zmr72mc7/diff:/data/docker/overlay2/wdw413fh1h0czq97jhe8khbuu/diff:/data/docker/overlay2/ezv7b62o8spdn35bt7gmpi1ic/diff:/data/docker/overlay2/3dfb2d15ll7d309d8vdgcyddt/diff:/data/docker/overlay2/n5zix3f8rebtf1vkgc5hiuo9w/diff:/data/docker/overlay2/zgcsmpu1kw4cs5gmtdh15l46p/diff:/data/docker/overlay2/0sr68h8fb084863uigr6jqzcz/diff:/data/docker/overlay2/16l9j190g1rp7qx41u84ym86w/diff:/data/docker/overlay2/ju8y2cncor7fnd0pty46p3ep8/diff:/data/docker/overlay2/ta5orjevcjv392caeqiuc7oqs/diff:/data/docker/overlay2/lgqcy4mr3o221tzxydljnokv3/diff:/data/docker/overlay2/bspq3hl2f77r8lb8kfdxjssgq/diff:/data/docker/overlay2/il5txfy15aj9ppg9vruzo4y4a/diff:/data/docker/overlay2/ttcaadmr3wixgjaiqjox4zanw/diff:/data/docker/overlay2/9e55cf7e9b4d2b5affeac4a9972cf5c71287ed27bb2d230f04c693477d675694/diff:/data/docker/overlay2/07fe822c0f3cee61707b5934f4c2dfe5ae540aa1b62ce34726306f9460db3c0c/diff:/data/docker/overlay2/4d77a73e876476cf18dd9ca172eadf6014722944ef3d0961913701e5aaf24bf4/diff:/data/docker/overlay2/4b33cb6e630aebd71fd6b460ea05bf1c65fe0a7a5c5a7d604f9bb59f92697c32/diff",
+        "MergedDir": "/data/docker/overlay2/27714e9747892e691608f3d90296ac9570be60d71f0a738b2a8bd5b0925054b8/merged",
+        "UpperDir": "/data/docker/overlay2/27714e9747892e691608f3d90296ac9570be60d71f0a738b2a8bd5b0925054b8/diff",
+        "WorkDir": "/data/docker/overlay2/27714e9747892e691608f3d90296ac9570be60d71f0a738b2a8bd5b0925054b8/work"
+      },
+      "Name": "overlay2"
+    },
+    "Mounts": [],
+    "Config": {
+      "Hostname": "940fb6974def",
+      "Domainname": "",
+      "User": "65532:65532",
+      "AttachStdin": false,
+      "AttachStdout": true,
+      "AttachStderr": true,
+      "Tty": false,
+      "OpenStdin": false,
+      "StdinOnce": false,
+      "Env": [
+        "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "LANG=C.UTF-8",
+        "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+        "PYTHON_VERSION=3.11.11",
+        "PYTHON_SHA256=2a9920c7a0cd236de33644ed980a13cbbc21058bfdc528febb6081575ed73be3",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1"
+      ],
+      "Cmd": [
+        "sleep",
+        "infinity"
+      ],
+      "Image": "arm-acquisition-v14",
+      "Volumes": null,
+      "WorkingDir": "/harbor_task",
+      "Entrypoint": null,
+      "OnBuild": null,
+      "Labels": {
+        "com.docker.compose.config-hash": "b9d712b6f446654cc3a8031989224e1e216e4f0636c373bcafbf03a8b2d0824d",
+        "com.docker.compose.container-number": "1",
+        "com.docker.compose.depends_on": "evaluator:service_healthy:false",
+        "com.docker.compose.image": "sha256:fcb33f46650fec65388e802deaa3f29451021e92fbc54a37b10ba5258bbafe17",
+        "com.docker.compose.oneoff": "False",
+        "com.docker.compose.project": "arm-native-v14-final",
+        "com.docker.compose.project.config_files": "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/delivery/workspace/harbor_task/environment/docker-compose.yaml",
+        "com.docker.compose.project.working_dir": "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/delivery/workspace/harbor_task/environment",
+        "com.docker.compose.service": "main",
+        "com.docker.compose.version": "2.28.1"
+      }
+    },
+    "NetworkSettings": {
+      "Bridge": "",
+      "SandboxID": "14518663d1f2e60cf84f5fd0cc04477d957b6793be2bedaf46d53cb4691a6664",
+      "SandboxKey": "/var/run/docker/netns/14518663d1f2",
+      "Ports": {},
+      "HairpinMode": false,
+      "LinkLocalIPv6Address": "",
+      "LinkLocalIPv6PrefixLen": 0,
+      "SecondaryIPAddresses": null,
+      "SecondaryIPv6Addresses": null,
+      "EndpointID": "",
+      "Gateway": "",
+      "GlobalIPv6Address": "",
+      "GlobalIPv6PrefixLen": 0,
+      "IPAddress": "",
+      "IPPrefixLen": 0,
+      "IPv6Gateway": "",
+      "MacAddress": "",
+      "Networks": {
+        "none": {
+          "IPAMConfig": null,
+          "Links": null,
+          "Aliases": null,
+          "MacAddress": "",
+          "DriverOpts": null,
+          "GwPriority": 0,
+          "NetworkID": "780c00c8f48f40ec4c9780f922b90ba75ba9ec794623420bfb03bf67ed6abcb2",
+          "EndpointID": "5776276cfd77c89bbb43749f4c8fdaa8be4b26ef4f23e4ddc9244f311c6a9d95",
+          "Gateway": "",
+          "IPAddress": "",
+          "IPPrefixLen": 0,
+          "IPv6Gateway": "",
+          "GlobalIPv6Address": "",
+          "GlobalIPv6PrefixLen": 0,
+          "DNSNames": null
+        }
+      }
+    }
+  },
+  {
+    "Id": "10c27a67b9928ffe256736e7f5766f80f274e97d548989248050b49aba8a5617",
+    "Created": "2026-10-08T02:08:15.797988754Z",
+    "Path": "python3",
+    "Args": [
+      "-u",
+      "/opt/arm-private/service.py"
+    ],
+    "State": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 31596,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-10-08T02:08:16.135019347Z",
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "Health": {
+        "Status": "healthy",
+        "FailingStreak": 0,
+        "Log": [
+          {
+            "Start": "2026-10-08T02:09:16.757739091Z",
+            "End": "2026-10-08T02:09:16.802063327Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-08T02:09:21.803009085Z",
+            "End": "2026-10-08T02:09:21.840021981Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-08T02:09:26.840515017Z",
+            "End": "2026-10-08T02:09:26.889050292Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-08T02:09:31.890146083Z",
+            "End": "2026-10-08T02:09:31.930456891Z",
+            "ExitCode": 0,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-08T02:09:36.930858249Z",
+            "End": "2026-10-08T02:09:36.977123516Z",
+            "ExitCode": 0,
+            "Output": ""
+          }
+        ]
+      }
+    },
+    "Image": "sha256:6c66c41448b92d4c906a9de745ed43c2ec5b0b822ec474f3690ab47325d8a284",
+    "ResolvConfPath": "/data/docker/containers/10c27a67b9928ffe256736e7f5766f80f274e97d548989248050b49aba8a5617/resolv.conf",
+    "HostnamePath": "/data/docker/containers/10c27a67b9928ffe256736e7f5766f80f274e97d548989248050b49aba8a5617/hostname",
+    "HostsPath": "/data/docker/containers/10c27a67b9928ffe256736e7f5766f80f274e97d548989248050b49aba8a5617/hosts",
+    "LogPath": "/data/docker/containers/10c27a67b9928ffe256736e7f5766f80f274e97d548989248050b49aba8a5617/10c27a67b9928ffe256736e7f5766f80f274e97d548989248050b49aba8a5617-json.log",
+    "Name": "/arm-native-v14-final-evaluator-1",
+    "RestartCount": 0,
+    "Driver": "overlay2",
+    "Platform": "linux",
+    "MountLabel": "",
+    "ProcessLabel": "",
+    "AppArmorProfile": "docker-default",
+    "ExecIDs": null,
+    "HostConfig": {
+      "Binds": null,
+      "ContainerIDFile": "",
+      "LogConfig": {
+        "Type": "json-file",
+        "Config": {
+          "max-file": "2",
+          "max-size": "10m"
+        }
+      },
+      "NetworkMode": "none",
+      "PortBindings": {},
+      "RestartPolicy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "AutoRemove": false,
+      "VolumeDriver": "",
+      "VolumesFrom": null,
+      "ConsoleSize": [
+        0,
+        0
+      ],
+      "CapAdd": [
+        "SYS_CHROOT",
+        "SETUID",
+        "SETGID",
+        "CHOWN",
+        "DAC_OVERRIDE",
+        "FOWNER"
+      ],
+      "CapDrop": [
+        "ALL"
+      ],
+      "CgroupnsMode": "private",
+      "Dns": null,
+      "DnsOptions": null,
+      "DnsSearch": null,
+      "ExtraHosts": [],
+      "GroupAdd": null,
+      "IpcMode": "shareable",
+      "Cgroup": "",
+      "Links": null,
+      "OomScoreAdj": 0,
+      "PidMode": "",
+      "Privileged": false,
+      "PublishAllPorts": false,
+      "ReadonlyRootfs": false,
+      "SecurityOpt": [
+        "no-new-privileges:true"
+      ],
+      "UTSMode": "",
+      "UsernsMode": "",
+      "ShmSize": 67108864,
+      "Runtime": "runc",
+      "Isolation": "",
+      "CpuShares": 0,
+      "Memory": 34359738368,
+      "NanoCpus": 6000000000,
+      "CgroupParent": "",
+      "BlkioWeight": 0,
+      "BlkioWeightDevice": null,
+      "BlkioDeviceReadBps": null,
+      "BlkioDeviceWriteBps": null,
+      "BlkioDeviceReadIOps": null,
+      "BlkioDeviceWriteIOps": null,
+      "CpuPeriod": 0,
+      "CpuQuota": 0,
+      "CpuRealtimePeriod": 0,
+      "CpuRealtimeRuntime": 0,
+      "CpusetCpus": "",
+      "CpusetMems": "",
+      "Devices": null,
+      "DeviceCgroupRules": null,
+      "DeviceRequests": null,
+      "MemoryReservation": 0,
+      "MemorySwap": -1,
+      "MemorySwappiness": null,
+      "OomKillDisable": null,
+      "PidsLimit": 512,
+      "Ulimits": null,
+      "CpuCount": 0,
+      "CpuPercent": 0,
+      "IOMaximumIOps": 0,
+      "IOMaximumBandwidth": 0,
+      "MaskedPaths": [
+        "/proc/asound",
+        "/proc/acpi",
+        "/proc/interrupts",
+        "/proc/kcore",
+        "/proc/keys",
+        "/proc/latency_stats",
+        "/proc/timer_list",
+        "/proc/timer_stats",
+        "/proc/sched_debug",
+        "/proc/scsi",
+        "/sys/firmware",
+        "/sys/devices/virtual/powercap"
+      ],
+      "ReadonlyPaths": [
+        "/proc/bus",
+        "/proc/fs",
+        "/proc/irq",
+        "/proc/sys",
+        "/proc/sysrq-trigger"
+      ],
+      "Init": true
+    },
+    "GraphDriver": {
+      "Data": {
+        "ID": "10c27a67b9928ffe256736e7f5766f80f274e97d548989248050b49aba8a5617",
+        "LowerDir": "/data/docker/overlay2/7cdcb01b5c5d553c30d14a69794478591f09dbb3e630ffc85bc8036076837092-init/diff:/data/docker/overlay2/fpwdwjc30ilyoab00oorsckxk/diff:/data/docker/overlay2/w2jhuvv3uu9wt7ovg1pdic0mx/diff:/data/docker/overlay2/wi9ptpfcri9doqa3m5bx9m46k/diff:/data/docker/overlay2/jv92wxsbcle1qbahjv8kavf4u/diff:/data/docker/overlay2/1ckbmxpcrlh5boo8o59j0j63x/diff:/data/docker/overlay2/qp6uakuqlcx6s5ymtvcccwdlz/diff:/data/docker/overlay2/9qqf1glmrr91bquypxilj0xmn/diff:/data/docker/overlay2/ymj6l7u1i37jyu3cy0bnjeevp/diff:/data/docker/overlay2/oub5urqk67312aj911mrt1ytk/diff:/data/docker/overlay2/u2rcj2kh7bv4v9fcdc45kfsd8/diff:/data/docker/overlay2/1zfp6hcszge6l4vwe3yx1rfii/diff:/data/docker/overlay2/s6hup1ogcue2hjjrglz65zzsc/diff:/data/docker/overlay2/9e55cf7e9b4d2b5affeac4a9972cf5c71287ed27bb2d230f04c693477d675694/diff:/data/docker/overlay2/07fe822c0f3cee61707b5934f4c2dfe5ae540aa1b62ce34726306f9460db3c0c/diff:/data/docker/overlay2/4d77a73e876476cf18dd9ca172eadf6014722944ef3d0961913701e5aaf24bf4/diff:/data/docker/overlay2/4b33cb6e630aebd71fd6b460ea05bf1c65fe0a7a5c5a7d604f9bb59f92697c32/diff",
+        "MergedDir": "/data/docker/overlay2/7cdcb01b5c5d553c30d14a69794478591f09dbb3e630ffc85bc8036076837092/merged",
+        "UpperDir": "/data/docker/overlay2/7cdcb01b5c5d553c30d14a69794478591f09dbb3e630ffc85bc8036076837092/diff",
+        "WorkDir": "/data/docker/overlay2/7cdcb01b5c5d553c30d14a69794478591f09dbb3e630ffc85bc8036076837092/work"
+      },
+      "Name": "overlay2"
+    },
+    "Mounts": [],
+    "Config": {
+      "Hostname": "10c27a67b992",
+      "Domainname": "",
+      "User": "0:0",
+      "AttachStdin": false,
+      "AttachStdout": true,
+      "AttachStderr": true,
+      "Tty": false,
+      "OpenStdin": false,
+      "StdinOnce": false,
+      "Env": [
+        "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "LANG=C.UTF-8",
+        "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+        "PYTHON_VERSION=3.11.11",
+        "PYTHON_SHA256=2a9920c7a0cd236de33644ed980a13cbbc21058bfdc528febb6081575ed73be3",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1"
+      ],
+      "Cmd": null,
+      "Healthcheck": {
+        "Test": [
+          "CMD",
+          "test",
+          "-f",
+          "/var/lib/arm/ready"
+        ],
+        "Interval": 5000000000,
+        "Timeout": 2000000000,
+        "Retries": 120
+      },
+      "Image": "arm-acquisition-v14__evaluator",
+      "Volumes": null,
+      "WorkingDir": "/workspace",
+      "Entrypoint": [
+        "python3",
+        "-u",
+        "/opt/arm-private/service.py"
+      ],
+      "OnBuild": null,
+      "Labels": {
+        "com.docker.compose.config-hash": "0931d34cc0711b2bc496c412ea908450c6674551a0949300ca51d0518fe45a86",
+        "com.docker.compose.container-number": "1",
+        "com.docker.compose.depends_on": "",
+        "com.docker.compose.image": "sha256:6c66c41448b92d4c906a9de745ed43c2ec5b0b822ec474f3690ab47325d8a284",
+        "com.docker.compose.oneoff": "False",
+        "com.docker.compose.project": "arm-native-v14-final",
+        "com.docker.compose.project.config_files": "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/delivery/workspace/harbor_task/environment/docker-compose.yaml",
+        "com.docker.compose.project.working_dir": "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/delivery/workspace/harbor_task/environment",
+        "com.docker.compose.service": "evaluator",
+        "com.docker.compose.version": "2.28.1"
+      }
+    },
+    "NetworkSettings": {
+      "Bridge": "",
+      "SandboxID": "bd7047dfc28083b4066c8a8b22bb979cf311bbe006390c9d3078749ab9d33094",
+      "SandboxKey": "/var/run/docker/netns/bd7047dfc280",
+      "Ports": {},
+      "HairpinMode": false,
+      "LinkLocalIPv6Address": "",
+      "LinkLocalIPv6PrefixLen": 0,
+      "SecondaryIPAddresses": null,
+      "SecondaryIPv6Addresses": null,
+      "EndpointID": "",
+      "Gateway": "",
+      "GlobalIPv6Address": "",
+      "GlobalIPv6PrefixLen": 0,
+      "IPAddress": "",
+      "IPPrefixLen": 0,
+      "IPv6Gateway": "",
+      "MacAddress": "",
+      "Networks": {
+        "none": {
+          "IPAMConfig": null,
+          "Links": null,
+          "Aliases": null,
+          "MacAddress": "",
+          "DriverOpts": null,
+          "GwPriority": 0,
+          "NetworkID": "780c00c8f48f40ec4c9780f922b90ba75ba9ec794623420bfb03bf67ed6abcb2",
+          "EndpointID": "fb34fc1b936fe134b105596408672b059a2344d81bc9c4082bedce9feea3b5b2",
+          "Gateway": "",
+          "IPAddress": "",
+          "IPPrefixLen": 0,
+          "IPv6Gateway": "",
+          "GlobalIPv6Address": "",
+          "GlobalIPv6PrefixLen": 0,
+          "DNSNames": null
+        }
+      }
+    }
+  }
+]

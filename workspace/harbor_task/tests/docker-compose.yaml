@@ -1,0 +1,28 @@
+services:
+  main:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      network: none
+    image: ${MAIN_IMAGE_NAME:-arm-acquisition-hidden-v18}
+    user: "0:0"
+    network_mode: none
+    shm_size: 64m
+    cpus: 8
+    mem_limit: 36g
+    memswap_limit: 36g
+    pids_limit: 512
+    init: true
+    cap_drop: [ALL]
+    cap_add: [SYS_CHROOT, SETUID, SETGID, CHOWN, DAC_OVERRIDE, FOWNER]
+    security_opt: [no-new-privileges:true]
+    healthcheck:
+      test: ["CMD", "test", "-f", "/var/lib/arm/ready"]
+      interval: 5s
+      timeout: 2s
+      retries: 120
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "2"

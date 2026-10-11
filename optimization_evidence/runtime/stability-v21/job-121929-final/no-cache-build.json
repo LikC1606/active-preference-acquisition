@@ -1,0 +1,25 @@
+{
+  "job_id": "121929",
+  "task_version": "1.2.0",
+  "status": "passed",
+  "build_cache_disabled": true,
+  "contexts": {
+    "hidden": {
+      "status": "passed",
+      "elapsed_seconds": 319.1590653154999,
+      "image": "sha256:2f22bf9d68555c72dd1bd8b37661b271e01934dbd2dc92165a50743db7652a3e",
+      "new_training_runs": 0
+    },
+    "dev": {
+      "status": "passed",
+      "elapsed_seconds": 333.8579465802759,
+      "images": {
+        "0ccc60db6d114c5fb3e70787ddbd601f14902b4fee120b34e9310b892dfb805b": "sha256:4077b9b327cc28c18d97fb35c2c57adc35eb4ffef12848a54393adcd21e0bc3e",
+        "a13e9383e5ab844bd3d76cd45539294cb915cad3ca9bff920489b1dd9ed1fb9e": "sha256:36ae77361f45e00ad84b5377fe30dbf74bae774ff35d7be25601e6e4823eeb6a"
+      },
+      "new_training_runs": 0
+    }
+  },
+  "started_at": "2026-10-10T15:59:41.315721+00:00",
+  "finished_at": "2026-10-10T16:10:34.571457+00:00"
+}

@@ -1,0 +1,13 @@
+{
+  "round": 3,
+  "attempt": 3,
+  "model": "doubao-seed-2.1-turbo",
+  "started_at": "2026-10-08T23:55:36.666879+00:00",
+  "iteration_limit_seconds": 7200,
+  "cleanup_reserve_seconds": 30,
+  "status": "failed",
+  "error_type": "RuntimeError",
+  "error": "Codex model invocation failed; retained model-log.json has the error",
+  "iteration_wall_seconds": 1.928690703585744,
+  "finished_at": "2026-10-08T23:55:38.595588+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "round": 2,
+  "attempt": 5,
+  "model": "gpt-5.6-sol",
+  "method_summary": "Replace independent static leverage choices with prompt-balanced sequential D-optimal design: after whitening, each selected pair updates an inverse information matrix so later prompts cover directions not already represented. The previous selector scored positively, so this retains its Fisher uncertainty and one-pair-per-prompt structure while adding conditional diversity and mild early-round calibration/exploration.",
+  "selector_sha256": "4f15e30f357c621be72b0985954e1c1b56108d164d3edff3ef4c35fc327cba31",
+  "score": 0.21244863883753246,
+  "mean_error": 0.5355113483574544,
+  "raw_values": [
+    0.49896253037569827,
+    0.5484478323478139,
+    0.5566369753306109,
+    0.5293803805170274,
+    0.5441290232161218
+  ],
+  "new_training_runs": 5,
+  "status": "succeeded",
+  "effective_seconds": 8194.666475652724,
+  "decision": "reject"
+}

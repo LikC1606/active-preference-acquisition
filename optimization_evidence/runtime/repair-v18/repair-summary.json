@@ -1,0 +1,21 @@
+{
+  "task_version": "1.2.0",
+  "status": "implementation_repaired",
+  "validation": {
+    "full_harbor_nop_trial": "passed",
+    "contract_tests": 24,
+    "hidden_baseline_score": 0.0,
+    "hidden_reference_score": 0.2736983671874584,
+    "hidden_gain_in_baseline_std": 4.636280488223111,
+    "new_training_runs": 0,
+    "model_api_requests": 0,
+    "cpu_allocation": 8,
+    "gpu_allocation": 0
+  },
+  "preserved_successful_models": 10,
+  "current_version_12h_stability": "not_run",
+  "current_version_fresh_training_budget": "not_run",
+  "formal_platform_acceptance": false,
+  "original_execution_logs": "Recovered Baseline stdout and Reference Docker json-file records; all five seeds match formal metrics.",
+  "worker_stdout_note": "Historical train.log remains empty; genuine evaluator logs supplied as run.log with provenance. Future worker emits actual round events."
+}

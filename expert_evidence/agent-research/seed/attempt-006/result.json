@@ -1,0 +1,16 @@
+{
+  "round": 4,
+  "attempt": 6,
+  "model": "doubao-seed-2.1-turbo",
+  "started_at": "2026-10-09T06:22:42.084244+00:00",
+  "iteration_limit_seconds": 7200,
+  "cleanup_reserve_seconds": 30,
+  "method_summary": "This selector replaces the bipartite matching and cluster-pick strategies with a single efficient greedy facility-location selection across the top-k*40 quality candidates, jointly maximizing uncertainty and minimum feature-distance to already-chosen pairs. Pivot-based uncertainty-weighted sampling still seeds an approximate density/quality score, but final selection uses vectorized argmax over a cached min-distance array for speed and consistency across all rounds 1–39.",
+  "selector_sha256": "f09dafc8981af5668e1a6fd49243ce202167c9858a2f76ea0a0f7180bcf633ce",
+  "acceptance": "agent-research/acquisition-gpt-seed-v16-seed-fresh/seed/attempt-006/arm-roll-v15-seed-006-acceptance/best/summary.json",
+  "status": "failed",
+  "error_type": "AssertionError",
+  "error": "No reward file found at /storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/agent-research/acquisition-gpt-seed-v16-seed-fresh/seed/attempt-006/arm-roll-v15-seed-006-acceptance/best/trial/verifier/reward.txt or /storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/agent-research/acquisition-gpt-seed-v16-seed-fresh/seed/attempt-006/arm-roll-v15-seed-006-acceptance/best/trial/verifier/reward.json",
+  "iteration_wall_seconds": 69.55312777496874,
+  "finished_at": "2026-10-09T06:23:51.637376+00:00"
+}

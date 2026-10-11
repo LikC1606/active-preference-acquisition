@@ -1,0 +1,29 @@
+{
+  "round": 4,
+  "attempt": 7,
+  "model": "doubao-seed-2.1-turbo",
+  "started_at": "2026-10-09T06:28:51.685978+00:00",
+  "iteration_limit_seconds": 7200,
+  "cleanup_reserve_seconds": 30,
+  "method_summary": "This selector unifies all rounds with a single minimum-cost bipartite matching strategy on the top-k*15 quality candidates (quality = uncertainty × exp(-nearest_pivot_dist/sigma)), with cost = 2·distance − average_quality·sigma to balance diversity and informativeness. Removing the early/late round split simplifies the logic and applies matching-based diversity throughout training, while increasing pivots to k*4 improves quality estimate robustness.",
+  "selector_sha256": "0e7e72dac4075104d1d06cc8a713baf552a7deee8651a9a5fb7800a6b73e88e7",
+  "acceptance": "agent-research/acquisition-gpt-seed-v16-seed-fresh/seed/attempt-007/arm-roll-v15-seed-007-acceptance/best/summary.json",
+  "status": "succeeded",
+  "score": 0.14512861009585398,
+  "mean_error": 0.5812869525157739,
+  "raw_values": [
+    0.5803906787261189,
+    0.5955102113971991,
+    0.5618557672079334,
+    0.5834068269759335,
+    0.5852712782716842
+  ],
+  "new_training_runs": 5,
+  "author_method_seconds": 14.800236197188497,
+  "verifier_seconds": 6162.751369845122,
+  "effective_seconds": 6177.551606042311,
+  "iteration_wall_seconds": 6219.0297828912735,
+  "within_7200_seconds": true,
+  "decision": "retain",
+  "finished_at": "2026-10-09T08:12:30.746417+00:00"
+}

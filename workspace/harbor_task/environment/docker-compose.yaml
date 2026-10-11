@@ -1,0 +1,55 @@
+services:
+  evaluator:
+    build:
+      context: .
+      dockerfile: Dev.Dockerfile
+      network: none
+    image: ${MAIN_IMAGE_NAME:-arm-acquisition-v14}__evaluator
+    user: "0:0"
+    network_mode: none
+    ipc: shareable
+    shm_size: 64m
+    cpus: 6
+    environment:
+      OMP_WAIT_POLICY: PASSIVE
+      KMP_BLOCKTIME: "0"
+    mem_limit: 32g
+    memswap_limit: 32g
+    pids_limit: 512
+    init: true
+    cap_drop: [ALL]
+    cap_add: [SYS_CHROOT, SETUID, SETGID, CHOWN, DAC_OVERRIDE, FOWNER]
+    security_opt: [no-new-privileges:true]
+    healthcheck:
+      test: ["CMD", "test", "-f", "/var/lib/arm/ready"]
+      interval: 5s
+      timeout: 2s
+      retries: 120
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "2"
+  main:
+    build:
+      context: .
+      network: none
+    image: ${MAIN_IMAGE_NAME:-arm-acquisition-v14}
+    network_mode: none
+    ipc: service:evaluator
+    cpus: 2
+    mem_limit: 4g
+    memswap_limit: 4g
+    pids_limit: 256
+    init: true
+    cap_drop: [ALL]
+    security_opt: [no-new-privileges:true]
+    depends_on:
+      evaluator:
+        condition: service_healthy
+    command: ["sleep", "infinity"]
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "2"

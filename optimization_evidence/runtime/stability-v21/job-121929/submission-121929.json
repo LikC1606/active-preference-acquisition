@@ -1,0 +1,15 @@
+{
+  "job_id": "121929",
+  "submitted_at": "2026-10-10T15:59:22.355546+00:00",
+  "replaces_failed_job": "121852",
+  "required_seconds": 43200,
+  "host_logical_cpus": 16,
+  "vm_physical_cores": 8,
+  "gpu_count": 0,
+  "no_cache_build_contexts": [
+    "hidden",
+    "dev"
+  ],
+  "new_training_runs": 0,
+  "model_api_requests": 0
+}

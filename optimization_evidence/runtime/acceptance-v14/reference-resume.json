@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "arm": "reference",
+  "selector_sha256": "aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3",
+  "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+  "cache_absent_before_start": false,
+  "container_ids": {
+    "main": "d0107db82af82f8555b87df55b2a158947c804407922dac840b05392f485795f",
+    "evaluator": "54892a646559f7108e6120716e7b187a23b6ceb30bba62ad4d4fa2c1e7003ee7"
+  },
+  "started_unix": 1791420726.8618786,
+  "elapsed_seconds": 3696.9541521407664,
+  "reward": {
+    "request_id": "01d686ee8526443c86de576fb9ab1d49",
+    "status": "succeeded",
+    "selector_sha256": "aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3",
+    "schema": "arm.acquisition.reward.v1",
+    "score": 0.2670160049935782,
+    "baseline_mean": 0.6799700626090104,
+    "baseline_score": 0.0,
+    "mean_error": 0.4984071729759192,
+    "seeds": [
+      101,
+      202,
+      303,
+      404,
+      505
+    ],
+    "raw_values": [
+      0.49320285380626305,
+      0.5075462951026157,
+      0.47947607310542384,
+      0.4778333760326062,
+      0.5339772668326869
+    ],
+    "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+    "new_training_runs": 4,
+    "formal_harbor_acceptance": false
+  },
+  "scientific_metric_unchanged": true,
+  "within_7200_seconds": true,
+  "fresh_five_seed_budget_passed": false,
+  "resumed_completed_seeds": 1
+}

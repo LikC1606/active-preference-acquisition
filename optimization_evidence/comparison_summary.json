@@ -1,0 +1,165 @@
+{
+  "metric": {
+    "name": "one_minus_spearman",
+    "direction": "minimize",
+    "split": "dev"
+  },
+  "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "independent_runs_per_arm": 5,
+  "baseline": {
+    "schema": "arm.acquisition.reward.v1",
+    "status": "succeeded",
+    "score": 0.0,
+    "baseline_mean": 0.6799700626090104,
+    "baseline_score": 0.0,
+    "mean_error": 0.6799700626090104,
+    "seeds": [
+      101,
+      202,
+      303,
+      404,
+      505
+    ],
+    "selector_sha256": "e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb",
+    "raw_values": [
+      0.6478005749308513,
+      0.735379110189218,
+      0.6399006371097182,
+      0.6857898168299283,
+      0.6909801739853358
+    ],
+    "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+    "new_training_runs": 5,
+    "formal_harbor_acceptance": false
+  },
+  "reference": {
+    "schema": "arm.acquisition.reward.v1",
+    "status": "succeeded",
+    "score": 0.2670160049935782,
+    "baseline_mean": 0.6799700626090104,
+    "baseline_score": 0.0,
+    "mean_error": 0.4984071729759192,
+    "seeds": [
+      101,
+      202,
+      303,
+      404,
+      505
+    ],
+    "selector_sha256": "aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3",
+    "raw_values": [
+      0.49320285380626305,
+      0.5075462951026157,
+      0.47947607310542384,
+      0.4778333760326062,
+      0.5339772668326869
+    ],
+    "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+    "new_training_runs": 5,
+    "formal_harbor_acceptance": false
+  },
+  "baseline_sample_std": 0.038293894561585294,
+  "reference_sample_std": 0.02322448993636313,
+  "raw_improvement": 0.1815628896330912,
+  "improvement_in_sigma_B": 4.741301236443756,
+  "all_paired_seeds_improve": true,
+  "passes_3_sigma": true,
+  "passes_5_sigma": false,
+  "platform_statistical_review_required": true,
+  "score": {
+    "formula": "(B - mean_error) / B",
+    "baseline": 0.0,
+    "reference": 0.2670160049935782,
+    "ceiling_error_U": 0.0,
+    "ceiling_basis": "Mathematical minimum of one_minus_spearman; no reliable achievable ceiling estimated"
+  },
+  "checkpoint_reload_passed": true,
+  "new_training_runs_for_packaging": 0,
+  "schema_version": 1,
+  "status": "COMPLETE",
+  "paired_runs": [
+    {
+      "seed": 101,
+      "baseline": 0.6478005749308513,
+      "reference": 0.49320285380626305,
+      "paired_improvement": 0.15459772112458825,
+      "baseline_result": "optimization_evidence/baseline_runs/seed_101/result.json",
+      "reference_result": "optimization_evidence/reference_runs/seed_101/result.json"
+    },
+    {
+      "seed": 202,
+      "baseline": 0.735379110189218,
+      "reference": 0.5075462951026157,
+      "paired_improvement": 0.22783281508660225,
+      "baseline_result": "optimization_evidence/baseline_runs/seed_202/result.json",
+      "reference_result": "optimization_evidence/reference_runs/seed_202/result.json"
+    },
+    {
+      "seed": 303,
+      "baseline": 0.6399006371097182,
+      "reference": 0.47947607310542384,
+      "paired_improvement": 0.1604245640042944,
+      "baseline_result": "optimization_evidence/baseline_runs/seed_303/result.json",
+      "reference_result": "optimization_evidence/reference_runs/seed_303/result.json"
+    },
+    {
+      "seed": 404,
+      "baseline": 0.6857898168299283,
+      "reference": 0.4778333760326062,
+      "paired_improvement": 0.20795644079732212,
+      "baseline_result": "optimization_evidence/baseline_runs/seed_404/result.json",
+      "reference_result": "optimization_evidence/reference_runs/seed_404/result.json"
+    },
+    {
+      "seed": 505,
+      "baseline": 0.6909801739853358,
+      "reference": 0.5339772668326869,
+      "paired_improvement": 0.15700290715264897,
+      "baseline_result": "optimization_evidence/baseline_runs/seed_505/result.json",
+      "reference_result": "optimization_evidence/reference_runs/seed_505/result.json"
+    }
+  ],
+  "statistics": {
+    "paired_run_count": 5,
+    "baseline_mean": 0.6799700626090104,
+    "reference_mean": 0.49840717297591913,
+    "baseline_sample_std": 0.038293894561585294,
+    "reference_sample_std": 0.02322448993636313,
+    "mean_paired_improvement": 0.1815628896330912,
+    "relative_improvement": {
+      "formula": "(B - mean_error) / B",
+      "baseline": 0.0,
+      "reference": 0.2670160049935782,
+      "ceiling_error_U": 0.0,
+      "ceiling_basis": "Mathematical minimum of one_minus_spearman; no reliable achievable ceiling estimated"
+    },
+    "baseline_sigma_multiple": 4.741301236443756
+  },
+  "normalized_score": {
+    "baseline": 0.0,
+    "reference": {
+      "formula": "(B - mean_error) / B",
+      "baseline": 0.0,
+      "reference": 0.2670160049935782,
+      "ceiling_error_U": 0.0,
+      "ceiling_basis": "Mathematical minimum of one_minus_spearman; no reliable achievable ceiling estimated"
+    },
+    "formula": "(baseline_mean - mean_error) / baseline_mean"
+  },
+  "significance_rule": {
+    "required_baseline_sigma_multiple": 3,
+    "passed": true,
+    "passes_5_sigma": false
+  },
+  "quality_gate": {
+    "status": "PASS",
+    "checkpoint_reload_passed": true
+  }
+}

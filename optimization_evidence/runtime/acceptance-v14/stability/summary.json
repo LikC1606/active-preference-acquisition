@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "started_at": "2026-10-08T02:09:39.480077+00:00",
+  "required_seconds": 43200,
+  "container_ids": {
+    "main": "940fb6974def315d9e79aadf57b8750cd99fd334d495afce7b6810d5180908bc",
+    "evaluator": "10c27a67b9928ffe256736e7f5766f80f274e97d548989248050b49aba8a5617"
+  },
+  "images": {
+    "940fb6974def315d9e79aadf57b8750cd99fd334d495afce7b6810d5180908bc": "sha256:fcb33f46650fec65388e802deaa3f29451021e92fbc54a37b10ba5258bbafe17",
+    "10c27a67b9928ffe256736e7f5766f80f274e97d548989248050b49aba8a5617": "sha256:6c66c41448b92d4c906a9de745ed43c2ec5b0b822ec474f3690ab47325d8a284"
+  },
+  "cycles": 682,
+  "errors": [],
+  "public_baseline_checks": 682,
+  "monitor_sha256": "193cdc59d31ffed605857937b50e3eccb9e9909f253aa4adc79e5270db8b07e7",
+  "elapsed_seconds": 43203.47550513968,
+  "last_sample_at": "2026-10-08T14:09:42.947001+00:00",
+  "finished_at": "2026-10-08T14:09:42.955555+00:00"
+}

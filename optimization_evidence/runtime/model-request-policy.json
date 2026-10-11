@@ -1,0 +1,21 @@
+{
+  "schema": "arm.model-request-policy.v1",
+  "global_request_concurrency": 2,
+  "lane_request_concurrency": 1,
+  "minimum_request_interval_seconds": 30,
+  "maximum_input_bytes": 32768,
+  "maximum_output_tokens": 2048,
+  "maximum_response_bytes": 4194304,
+  "maximum_requests_per_invocation": 1,
+  "maximum_shell_calls_per_invocation": 0,
+  "model_reasoning_effort": "low",
+  "reasoning_summary": "none",
+  "automatic_transport_retries": 0,
+  "infrastructure_retry_cooldown_seconds": 300,
+  "maximum_failed_invocations_per_round": 2,
+  "context": "public task card, current selector, own three latest compact feedback rows",
+  "lane_concurrency": 2,
+  "minimum_effective_seconds_per_lane": 36000,
+  "minimum_completed_loops_per_lane": 3,
+  "training_budget": "Frozen five-seed protocol; successful computation is reused without repeating training"
+}

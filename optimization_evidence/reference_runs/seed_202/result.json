@@ -1,0 +1,427 @@
+{
+  "schema_version": 1,
+  "status": "COMPLETE",
+  "role": "reference",
+  "seed": 202,
+  "task_type": "training",
+  "method": {
+    "source": "optimization_evidence/reference_runs/select.py",
+    "sha256": "aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3"
+  },
+  "protocol": {
+    "sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+    "configuration": {
+      "schema": "arm.paper-aligned.protocol.v1",
+      "paper_revision": "local arXiv PDF 2502.04354",
+      "repository_revision": "4634e168d46cf5109cd0dfe1ebaf6b34b6b3f3ba",
+      "seeds": [
+        101,
+        202,
+        303,
+        404,
+        505
+      ],
+      "prompts_per_round": 500,
+      "candidate_pairs": 22500,
+      "annotation_batch": 500,
+      "annotation_budget": 20000,
+      "label_logit": "raw_reward_a - raw_reward_b",
+      "reward_normalization": false,
+      "annotation_quality_multiplier": 1.0,
+      "hidden_units": 64,
+      "hidden_layers": 3,
+      "activation": "GELU",
+      "output_bias": false,
+      "learning_rate": 0.001,
+      "training_iterations_per_round": 1000,
+      "training_parameter_basis": "ARM-FI train_BT signature defaults; paper experiment driver unpublished",
+      "initialization": "fresh MLP every round; import upstream module before any round seeds",
+      "primary_metric": "one_minus_spearman",
+      "aggregation": "arithmetic mean of all five final seed errors",
+      "dev_prompts": 4188,
+      "dev_partition_seed": 1729,
+      "test_responses_per_prompt": 10,
+      "prompt_split": {
+        "seed": 1729,
+        "train": 33500,
+        "dev": 4188,
+        "hidden": 4188
+      },
+      "cpu_threads": 6,
+      "maximum_cpu_cores": 8,
+      "gpu_count": 0,
+      "limits": [
+        "Uses user-selected original quickstart embeddings with a prompt-disjoint train/dev split.",
+        "The independent 500-response author test embeddings are absent; dev metrics are ten-response metrics.",
+        "Paper Eq. (1) specifies raw reward-difference Bernoulli labels; experiment-specific reward rescaling is not disclosed.",
+        "1000 Adam updates is the public train_BT default, not a verified paper experiment hyperparameter.",
+        "Fresh round initialization and executor seed numbers are fixed task choices where paper details are absent."
+      ],
+      "seed": 202,
+      "selector_sha256": "aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3"
+    },
+    "data_manifest": "optimization_evidence/data_manifest.json",
+    "evaluation_split": "dev",
+    "score_budget_seconds": 7200
+  },
+  "training": {
+    "rounds": 40,
+    "actual_updates": 40000,
+    "selected_preferences": 20000,
+    "history": [
+      {
+        "actual_updates": 1000,
+        "best_of_10": 1.4819817619808302,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 500,
+        "one_minus_spearman": 0.7843816293824525,
+        "round": 1
+      },
+      {
+        "actual_updates": 2000,
+        "best_of_10": 1.5569973429638284,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 1000,
+        "one_minus_spearman": 0.684500543500588,
+        "round": 2
+      },
+      {
+        "actual_updates": 3000,
+        "best_of_10": 1.5931496214768257,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 1500,
+        "one_minus_spearman": 0.6572912803440438,
+        "round": 3
+      },
+      {
+        "actual_updates": 4000,
+        "best_of_10": 1.6157266611665657,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 2000,
+        "one_minus_spearman": 0.64359425564921,
+        "round": 4
+      },
+      {
+        "actual_updates": 5000,
+        "best_of_10": 1.6445163214710874,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 2500,
+        "one_minus_spearman": 0.6239591378964522,
+        "round": 5
+      },
+      {
+        "actual_updates": 6000,
+        "best_of_10": 1.6691612041285822,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 3000,
+        "one_minus_spearman": 0.6000362329675758,
+        "round": 6
+      },
+      {
+        "actual_updates": 7000,
+        "best_of_10": 1.6907271846351433,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 3500,
+        "one_minus_spearman": 0.590937504103676,
+        "round": 7
+      },
+      {
+        "actual_updates": 8000,
+        "best_of_10": 1.7156598686730737,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 4000,
+        "one_minus_spearman": 0.578528274143888,
+        "round": 8
+      },
+      {
+        "actual_updates": 9000,
+        "best_of_10": 1.7076527865789475,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 4500,
+        "one_minus_spearman": 0.5732710545370385,
+        "round": 9
+      },
+      {
+        "actual_updates": 10000,
+        "best_of_10": 1.7179844659017514,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 5000,
+        "one_minus_spearman": 0.5680478266103941,
+        "round": 10
+      },
+      {
+        "actual_updates": 11000,
+        "best_of_10": 1.7261898522047323,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 5500,
+        "one_minus_spearman": 0.5599758362324166,
+        "round": 11
+      },
+      {
+        "actual_updates": 12000,
+        "best_of_10": 1.73171489430394,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 6000,
+        "one_minus_spearman": 0.5563005552451841,
+        "round": 12
+      },
+      {
+        "actual_updates": 13000,
+        "best_of_10": 1.7405429115517148,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 6500,
+        "one_minus_spearman": 0.5489199651641996,
+        "round": 13
+      },
+      {
+        "actual_updates": 14000,
+        "best_of_10": 1.7343560542027112,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 7000,
+        "one_minus_spearman": 0.5513879570312037,
+        "round": 14
+      },
+      {
+        "actual_updates": 15000,
+        "best_of_10": 1.742078180573863,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 7500,
+        "one_minus_spearman": 0.5439343714301195,
+        "round": 15
+      },
+      {
+        "actual_updates": 16000,
+        "best_of_10": 1.7483404611402797,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 8000,
+        "one_minus_spearman": 0.5425386993859838,
+        "round": 16
+      },
+      {
+        "actual_updates": 17000,
+        "best_of_10": 1.7495748981074701,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 8500,
+        "one_minus_spearman": 0.5422889937314541,
+        "round": 17
+      },
+      {
+        "actual_updates": 18000,
+        "best_of_10": 1.7617295707305565,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 9000,
+        "one_minus_spearman": 0.5364163355960314,
+        "round": 18
+      },
+      {
+        "actual_updates": 19000,
+        "best_of_10": 1.758920098406751,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 9500,
+        "one_minus_spearman": 0.533818605083272,
+        "round": 19
+      },
+      {
+        "actual_updates": 20000,
+        "best_of_10": 1.7583721579886873,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 10000,
+        "one_minus_spearman": 0.5313030726609053,
+        "round": 20
+      },
+      {
+        "actual_updates": 21000,
+        "best_of_10": 1.7695408118323894,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 10500,
+        "one_minus_spearman": 0.5261451537072648,
+        "round": 21
+      },
+      {
+        "actual_updates": 22000,
+        "best_of_10": 1.7732448301637418,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 11000,
+        "one_minus_spearman": 0.5226549698504247,
+        "round": 22
+      },
+      {
+        "actual_updates": 23000,
+        "best_of_10": 1.7674432632543589,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 11500,
+        "one_minus_spearman": 0.5204933958689062,
+        "round": 23
+      },
+      {
+        "actual_updates": 24000,
+        "best_of_10": 1.7749155371533503,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 12000,
+        "one_minus_spearman": 0.5142976471751697,
+        "round": 24
+      },
+      {
+        "actual_updates": 25000,
+        "best_of_10": 1.7765875530817012,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 12500,
+        "one_minus_spearman": 0.5154814921038223,
+        "round": 25
+      },
+      {
+        "actual_updates": 26000,
+        "best_of_10": 1.7803385120010629,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 13000,
+        "one_minus_spearman": 0.5172011819155077,
+        "round": 26
+      },
+      {
+        "actual_updates": 27000,
+        "best_of_10": 1.7830749019066898,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 13500,
+        "one_minus_spearman": 0.515141514440359,
+        "round": 27
+      },
+      {
+        "actual_updates": 28000,
+        "best_of_10": 1.7682868799353917,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 14000,
+        "one_minus_spearman": 0.5214460756299047,
+        "round": 28
+      },
+      {
+        "actual_updates": 29000,
+        "best_of_10": 1.7718977844934116,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 14500,
+        "one_minus_spearman": 0.517803136261608,
+        "round": 29
+      },
+      {
+        "actual_updates": 30000,
+        "best_of_10": 1.776289477149592,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 15000,
+        "one_minus_spearman": 0.5129969110291004,
+        "round": 30
+      },
+      {
+        "actual_updates": 31000,
+        "best_of_10": 1.7701440676166156,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 15500,
+        "one_minus_spearman": 0.5165774342452278,
+        "round": 31
+      },
+      {
+        "actual_updates": 32000,
+        "best_of_10": 1.7763233194225525,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 16000,
+        "one_minus_spearman": 0.5142102216424509,
+        "round": 32
+      },
+      {
+        "actual_updates": 33000,
+        "best_of_10": 1.779650993805304,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 16500,
+        "one_minus_spearman": 0.5085312810551383,
+        "round": 33
+      },
+      {
+        "actual_updates": 34000,
+        "best_of_10": 1.785872328157404,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 17000,
+        "one_minus_spearman": 0.5118739747958276,
+        "round": 34
+      },
+      {
+        "actual_updates": 35000,
+        "best_of_10": 1.7959678886225225,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 17500,
+        "one_minus_spearman": 0.5063632790698881,
+        "round": 35
+      },
+      {
+        "actual_updates": 36000,
+        "best_of_10": 1.7882712147702973,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 18000,
+        "one_minus_spearman": 0.5097999842210079,
+        "round": 36
+      },
+      {
+        "actual_updates": 37000,
+        "best_of_10": 1.801917785297414,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 18500,
+        "one_minus_spearman": 0.5040953952899057,
+        "round": 37
+      },
+      {
+        "actual_updates": 38000,
+        "best_of_10": 1.7990875805602715,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 19000,
+        "one_minus_spearman": 0.5038057630421122,
+        "round": 38
+      },
+      {
+        "actual_updates": 39000,
+        "best_of_10": 1.7986947619431823,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 19500,
+        "one_minus_spearman": 0.49947637562848535,
+        "round": 39
+      },
+      {
+        "actual_updates": 40000,
+        "best_of_10": 1.7851894365724998,
+        "evaluated_prompts": 4188,
+        "labelled_pairs": 20000,
+        "one_minus_spearman": 0.5075462951026157,
+        "round": 40
+      }
+    ],
+    "accounting_source": "optimization_evidence/reference_runs/seed_202/records/accounting.json",
+    "sampling_source": "optimization_evidence/reference_runs/seed_202/records/sampling.json"
+  },
+  "execution": {
+    "command": null,
+    "started_at": null,
+    "finished_at": null,
+    "exit_code": null,
+    "elapsed_seconds": 1450.3712547910009,
+    "elapsed_source": "optimization_evidence/reference_runs/seed_202/records/metrics.json",
+    "note": "Original per-seed command, timestamps and exit code were not recorded. Elapsed time is copied from the original metrics; no missing values are inferred."
+  },
+  "metrics": {
+    "primary_metric": "one_minus_spearman",
+    "direction": "minimize",
+    "split": "dev",
+    "one_minus_spearman": 0.5075462951026157,
+    "best_of_10": 1.7851894365724998
+  },
+  "quality_gate": {
+    "status": "PASS",
+    "training_budget_complete": true,
+    "checkpoint_sha256_match": true,
+    "historical_reload_match": true,
+    "evidence": "optimization_evidence/reference_runs/seed_202/records/evaluation.json"
+  },
+  "artifacts": {
+    "checkpoint": "optimization_evidence/reference_runs/seed_202/model/checkpoint",
+    "model_manifest": "optimization_evidence/reference_runs/seed_202/model/artifact.json",
+    "reload_receipt": "optimization_evidence/reference_runs/seed_202/model/reload.log",
+    "run_log": "optimization_evidence/reference_runs/seed_202/run.log",
+    "source_records": "optimization_evidence/reference_runs/seed_202/records"
+  },
+  "record_origin": "Index assembled from existing records; no new training or reload was performed."
+}

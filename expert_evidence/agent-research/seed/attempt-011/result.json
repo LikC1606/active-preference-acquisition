@@ -1,0 +1,29 @@
+{
+  "round": 7,
+  "attempt": 11,
+  "model": "doubao-seed-2.1-turbo",
+  "started_at": "2026-10-09T14:56:26.057831+00:00",
+  "iteration_limit_seconds": 7200,
+  "cleanup_reserve_seconds": 30,
+  "method_summary": "This selector uses a round-dependent diversity weight with alpha=2.5 for rounds 1-12 (exploration) and alpha=1.5 for rounds 13-39 (exploitation), while keeping the candidate pool size at k*15 (the same as the current best). The earlier round-dependent variants that failed used different pool sizes or alpha thresholds; this variant tests the round-dependent alpha idea with the proven pool size and a shifted transition point.",
+  "selector_sha256": "9050cb87f5ce9ea5554e2cb69f4c17a3c454d2cbfdd1cc044c016da7eeea4484",
+  "acceptance": "agent-research/acquisition-gpt-seed-v16-seed-fresh/seed/attempt-011/arm-roll-v15-seed-011-acceptance/best/summary.json",
+  "status": "succeeded",
+  "score": 0.14512861009585398,
+  "mean_error": 0.5812869525157739,
+  "raw_values": [
+    0.5803906787261189,
+    0.5955102113971991,
+    0.5618557672079334,
+    0.5834068269759335,
+    0.5852712782716842
+  ],
+  "new_training_runs": 5,
+  "author_method_seconds": 14.093701908364892,
+  "verifier_seconds": 6065.482907176018,
+  "effective_seconds": 6079.576609084383,
+  "iteration_wall_seconds": 6125.744864160195,
+  "within_7200_seconds": true,
+  "decision": "reject",
+  "finished_at": "2026-10-09T16:38:31.802824+00:00"
+}

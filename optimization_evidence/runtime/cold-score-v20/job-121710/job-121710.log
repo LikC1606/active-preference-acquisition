@@ -1,0 +1,4 @@
+{"event": "cold_score_started", "split": "dev", "output": "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/cold-score-v20/job-121710/dev"}
+{"event": "cold_score_finished", "split": "dev", "status": "passed", "elapsed_seconds": 5196.041502270848, "error": null}
+{"event": "cold_score_started", "split": "hidden", "output": "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/cold-score-v20/job-121710/hidden"}
+{"event": "cold_score_finished", "split": "hidden", "status": "passed", "elapsed_seconds": 4769.360568253323, "error": null}

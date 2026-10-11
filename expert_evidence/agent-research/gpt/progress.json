@@ -1,0 +1,27 @@
+{
+  "status": "completed_awaiting_best_replay",
+  "job_id": "119289",
+  "node": "nv-h100-018",
+  "requested_cpus": 8,
+  "physical_cpus": [
+    18,
+    19,
+    20,
+    21,
+    114,
+    115,
+    116,
+    117
+  ],
+  "distinct_physical_cores": 4,
+  "gpus": 0,
+  "memory_gib": 48,
+  "vm_vcpus": 8,
+  "vm_memory_mib": 40960,
+  "started_at": "2026-10-08T08:28:20.003207+00:00",
+  "model": "gpt-5.6-sol",
+  "completed_loops": 6,
+  "effective_seconds": 39006.14538747817,
+  "attempts": 7,
+  "updated_at": "2026-10-08T19:23:59.636134+00:00"
+}

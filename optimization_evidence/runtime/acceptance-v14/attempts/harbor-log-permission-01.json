@@ -1,0 +1,20 @@
+{
+  "status": "failed",
+  "arm": "best",
+  "selector_sha256": "f8ee1048e4f125d5b007cb66ab504cbef7ab83a4ee89ab38fcd33fcbd75d436d",
+  "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+  "provider": "Harbor DockerEnvironment",
+  "custom_provider": false,
+  "verifier": "Harbor Verifier",
+  "artifact_transfer": "Harbor ArtifactHandler",
+  "environment_mode": "separate",
+  "cache_absent_before_start": true,
+  "container_ids": {
+    "main": "eaa8144f5416f12041ee0f7146cc8e22568a097ce65b86518e05c4876f7a069d",
+    "evaluator": "a48ace2c3f7e0c98af64978147702ad66258709bdabde959bd53223c5e51b223"
+  },
+  "started_unix": 1791420760.988633,
+  "error": "No reward file found at /storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/compliance-v14/arm-harbor-v14-best-fresh-acceptance/best/trial/verifier/reward.txt or /storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/compliance-v14/arm-harbor-v14-best-fresh-acceptance/best/trial/verifier/reward.json",
+  "elapsed_seconds": 0.24502133391797543,
+  "export_error": "Error response from daemon: Could not find the file /var/lib/arm/runs/1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf/f8ee1048e4f125d5b007cb66ab504cbef7ab83a4ee89ab38fcd33fcbd75d436d in container a48ace2c3f7e0c98af64978147702ad66258709bdabde959bd53223c5e51b223\n"
+}

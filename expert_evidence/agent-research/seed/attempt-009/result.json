@@ -1,0 +1,29 @@
+{
+  "round": 6,
+  "attempt": 9,
+  "model": "doubao-seed-2.1-turbo",
+  "started_at": "2026-10-09T09:59:56.382523+00:00",
+  "iteration_limit_seconds": 7200,
+  "cleanup_reserve_seconds": 30,
+  "method_summary": "This selector reduces the quality candidate pool from k*15 to k*12 for faster bipartite matching and uses argpartition instead of full sort for efficiency, while adjusting the diversity weight alpha to 2.5 in early rounds (1–9) and 1.8 in later rounds to balance exploration and exploitation better than the previous fixed alpha of 2.0.",
+  "selector_sha256": "9750f69b076c3e99c7b6b85e9f05d30e005b906c83e8fdaf06e3edfef13cd415",
+  "acceptance": "agent-research/acquisition-gpt-seed-v16-seed-fresh/seed/attempt-009/arm-roll-v15-seed-009-acceptance/best/summary.json",
+  "status": "succeeded",
+  "score": 0.004215546891280597,
+  "mean_error": 0.6771036169254151,
+  "raw_values": [
+    0.6817345024997112,
+    0.6834279080736271,
+    0.6660580390699826,
+    0.6755632826455825,
+    0.6787343523381719
+  ],
+  "new_training_runs": 5,
+  "author_method_seconds": 15.40039629675448,
+  "verifier_seconds": 5805.959178995341,
+  "effective_seconds": 5821.3595752920955,
+  "iteration_wall_seconds": 5862.887430887669,
+  "within_7200_seconds": true,
+  "decision": "reject",
+  "finished_at": "2026-10-09T11:37:39.270089+00:00"
+}

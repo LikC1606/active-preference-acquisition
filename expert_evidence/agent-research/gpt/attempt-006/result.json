@@ -1,0 +1,28 @@
+{
+  "round": 5,
+  "attempt": 6,
+  "model": "gpt-5.6-sol",
+  "started_at": "2026-10-08T15:37:54.817844+00:00",
+  "iteration_limit_seconds": 7200,
+  "method_summary": "Use prompt-balanced Fisher acquisition with leverage measured in a candidate-weighted logistic Fisher geometry rather than the unweighted covariance of the current best. This is a new uncertainty-aware information-matrix criterion implemented with one 64-dimensional Cholesky solve and vectorized scoring, avoiding the projection-plus-greedy approach implicated in the timeout feedback.",
+  "selector_sha256": "752355610cfdcef5da09149fdc2afe2b233eb9c341fe5fbf68d9d95a52205fce",
+  "acceptance": "agent-research/acquisition-gpt-seed-v15-two-hour-retry5/gpt/attempt-006/arm-roll-v15-gpt-006-acceptance/best/summary.json",
+  "status": "succeeded",
+  "score": 0.24259295073792067,
+  "mean_error": 0.5150141187072419,
+  "raw_values": [
+    0.49995410232286563,
+    0.5125786799963785,
+    0.5110381813779374,
+    0.5189061211385972,
+    0.5325935087004304
+  ],
+  "new_training_runs": 5,
+  "author_method_seconds": 30.402276691049337,
+  "verifier_seconds": 6922.111815869808,
+  "effective_seconds": 6952.5140925608575,
+  "iteration_wall_seconds": 7001.31620727852,
+  "within_7200_seconds": true,
+  "decision": "reject",
+  "finished_at": "2026-10-08T17:34:36.134176+00:00"
+}

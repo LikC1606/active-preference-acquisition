@@ -1,0 +1,14 @@
+{
+  "status": "failed",
+  "arm": "reference",
+  "selector_sha256": "aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3",
+  "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+  "cache_absent_before_start": true,
+  "container_ids": {
+    "main": "d0107db82af82f8555b87df55b2a158947c804407922dac840b05392f485795f",
+    "evaluator": "54892a646559f7108e6120716e7b187a23b6ceb30bba62ad4d4fa2c1e7003ee7"
+  },
+  "started_unix": 1791413368.9664226,
+  "elapsed_seconds": 7200.604158556089,
+  "error": "Docker command failed (2): inspect the saved command log"
+}

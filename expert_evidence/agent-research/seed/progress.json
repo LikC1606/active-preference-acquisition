@@ -1,0 +1,27 @@
+{
+  "status": "completed_awaiting_best_replay",
+  "job_id": "120391",
+  "node": "nv-h100-022",
+  "requested_cpus": 8,
+  "physical_cpus": [
+    1,
+    10,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18
+  ],
+  "distinct_physical_cores": 8,
+  "gpus": 0,
+  "memory_gib": 48,
+  "vm_vcpus": 8,
+  "vm_memory_mib": 40960,
+  "started_at": "2026-10-09T14:55:53.073327+00:00",
+  "model": "doubao-seed-2.1-turbo",
+  "completed_loops": 7,
+  "effective_seconds": 40695.56611786038,
+  "attempts": 11,
+  "updated_at": "2026-10-09T16:38:31.847256+00:00"
+}

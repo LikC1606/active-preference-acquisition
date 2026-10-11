@@ -1,0 +1,23 @@
+{
+  "argv": [
+    "/bin/sh",
+    "-c",
+    "./solution/solve.sh --output solution/artifacts/stability-current && /tests/test.sh"
+  ],
+  "exit_code": 0,
+  "command_elapsed_seconds": 0.8247189190005884,
+  "log": {
+    "path": "cycles/cycle-0690.log",
+    "sha256": "455897d3ebbb79d27ba4481e5046b154132e35db782de89e1c23a2a224417080"
+  },
+  "artifacts": [
+    {
+      "path": "cycles/cycle-0690-iteration.json",
+      "sha256": "4f6e801998026806b349880de3acf5d9ebded48ada966ad101800210140a5831"
+    },
+    {
+      "path": "cycles/cycle-0690-verified.json",
+      "sha256": "23901bc12ed522d11db2e8cff72485ea17e024222b77e5c08d828c5fd392ea64"
+    }
+  ]
+}

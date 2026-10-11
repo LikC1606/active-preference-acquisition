@@ -1,0 +1,20 @@
+{
+  "round": 2,
+  "attempt": 5,
+  "model": "doubao-seed-2.1-turbo",
+  "method_summary": "Combines uncertainty sampling (pairs near the decision boundary) with feature-space diversity using a k-means++ style greedy selection. From a pool of the top 5k most uncertain pairs, we iteratively select k pairs that maximize a weighted sum of uncertainty and minimum cosine-distance to already-selected pairs, ensuring the labeled set covers diverse regions of feature space rather than clustering in one ambiguous area.",
+  "selector_sha256": "9dbbd44c19632d56691e9e7787ff8ea705b0aafe7854d5127a523c26841cba9f",
+  "score": 0.188118045851766,
+  "mean_error": 0.5520554231933004,
+  "raw_values": [
+    0.5167655381117091,
+    0.5573097778660562,
+    0.5436287533860353,
+    0.5676080130242391,
+    0.5749650335784617
+  ],
+  "new_training_runs": 5,
+  "status": "succeeded",
+  "effective_seconds": 8762.821966634438,
+  "decision": "retain"
+}

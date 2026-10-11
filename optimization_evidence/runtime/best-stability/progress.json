@@ -1,0 +1,14 @@
+{
+  "status": "cancelled_before_snapshot",
+  "job_id": "116989",
+  "node": "nv-h100-022",
+  "allocated_cpus": 8,
+  "gpus": 0,
+  "required_seconds": 43200,
+  "new_model_requests": 0,
+  "new_training_runs": 0,
+  "final_best_method_bound": true,
+  "elapsed_seconds": 2069.152193683,
+  "completed_cycles": 35,
+  "cancel_reason": "Stopped after Starter 12-hour stability and clean best-method replay passed; no final best-method stability snapshot was required"
+}

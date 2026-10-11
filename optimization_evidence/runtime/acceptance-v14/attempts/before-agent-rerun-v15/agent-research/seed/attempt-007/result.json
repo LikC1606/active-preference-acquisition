@@ -1,0 +1,20 @@
+{
+  "round": 4,
+  "attempt": 7,
+  "model": "doubao-seed-2.1-turbo",
+  "method_summary": "Refines the BADGE k-means++ approach by operating on unnormalized gradient embeddings with Euclidean distance instead of normalized cosine distance, so uncertainty magnitude is naturally baked into the diversity metric rather than added as a separate term. Also increases the candidate pool from 10k to 15k to give k-means++ more coverage to choose from, following the original BADGE formulation more closely.",
+  "selector_sha256": "4199d4c9594da9c3f58d1b42f1f637fc514056b3401bf7a433a526e39ed51d16",
+  "score": 0.24786952130659493,
+  "mean_error": 0.5114262086872996,
+  "raw_values": [
+    0.4985943696681755,
+    0.5234141585374418,
+    0.5034812093035896,
+    0.5105454776058553,
+    0.5210958283214356
+  ],
+  "new_training_runs": 5,
+  "status": "succeeded",
+  "effective_seconds": 7998.695242428792,
+  "decision": "retain"
+}

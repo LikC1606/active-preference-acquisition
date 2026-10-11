@@ -1,0 +1,39 @@
+{
+  "schema": "arm.hidden-data.v1",
+  "split": "hidden",
+  "prompt_count": 4188,
+  "split_plan_sha256": "4b80e38a86af779c622518bcd972eb55a27daead59e92668fd4bcee9fbde0baa",
+  "files": [
+    {
+      "file": "hidden-embeddings.npy",
+      "shape": [
+        10,
+        4188,
+        2048
+      ],
+      "dtype": "float32",
+      "bytes": 343081088,
+      "sha256": "9d8927f70cb9909ed83cc1c4bf6eb027a374fdcb85f41fba3a94f79031aafa22",
+      "all_finite": true
+    },
+    {
+      "file": "hidden-rewards.npy",
+      "shape": [
+        10,
+        4188
+      ],
+      "dtype": "float64",
+      "bytes": 335168,
+      "sha256": "c6f17ac345ba7500a20b993ac15e6b350694d70043265ea5ecadd756863458f0",
+      "all_finite": true
+    }
+  ],
+  "disjoint_from_train_and_dev": true,
+  "source": "held-out prompts from the original author quickstart training data",
+  "official_paper_test_split": false,
+  "receipts": {
+    "train": "c12e7d7b9c72393eed40e5fafc3857e8a77baf58b86a3d19a4484ff47ec9385d",
+    "dev": "b3ecfd103f55d2ec8dd9600a5f63503122cd4e84e6fb12d64d5281f7935230c3",
+    "hidden": "acb1bf4f1cc2abb9badbac28f525d55c267557a0cc7f3d4747a7246ab29f6fb9"
+  }
+}

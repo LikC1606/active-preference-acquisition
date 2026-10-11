@@ -1,0 +1,47 @@
+{
+  "task_id": "research/active-preference-acquisition",
+  "task_type": "S1",
+  "research_direction": "Active reward modeling and adaptive preference acquisition",
+  "optimization_surface": "solution/select.py:select_pairs",
+  "score_contract": {
+    "metric": "one_minus_spearman",
+    "direction": "minimize",
+    "split": "dev",
+    "protocol": "arm.paper-aligned.protocol.v1",
+    "baseline": {
+      "raw_value": 0.6799700626090104,
+      "normalized_score": 0.0
+    },
+    "reference": {
+      "raw_value": 0.4984071729759192,
+      "normalized_score": 0.2670160049935782
+    },
+    "upper_bound": {
+      "raw_value": 0.0,
+      "source": "metric_ceiling"
+    }
+  },
+  "isolation": {
+    "reference_visible_to_agent": false,
+    "hidden_assets_visible_to_agent": false
+  },
+  "final_hidden_score_contract": {
+    "metric": "one_minus_spearman",
+    "direction": "minimize",
+    "split": "hidden",
+    "baseline": {
+      "raw_value": 0.687686234577137,
+      "normalized_score": 0.0
+    },
+    "reference": {
+      "raw_value": 0.4994676350360831,
+      "normalized_score": 0.2736983671874584
+    },
+    "upper_bound": {
+      "raw_value": 0.0,
+      "source": "metric_ceiling"
+    },
+    "new_training_runs": 0,
+    "evidence": "optimization_evidence/runtime/repair-v18/hidden-results/comparison.json"
+  }
+}

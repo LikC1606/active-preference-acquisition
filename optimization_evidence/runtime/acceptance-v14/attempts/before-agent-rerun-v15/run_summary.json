@@ -1,0 +1,66 @@
+{
+  "task_id": "research/active-preference-acquisition",
+  "status": "pilot_required",
+  "image": "arm-acquisition-v14",
+  "agent_execution": [
+    {
+      "runtime": "Codex",
+      "model": "gpt-5.6-sol",
+      "duration_hours": 10.902582124685702,
+      "effective_rounds": 5,
+      "typical_round_minutes": 128.38585835839658
+    },
+    {
+      "runtime": "Codex",
+      "model": "doubao-seed-2.1-turbo",
+      "duration_hours": 11.369633144725745,
+      "effective_rounds": 5,
+      "typical_round_minutes": 133.3115873738132
+    }
+  ],
+  "fast_iteration_exception": {
+    "used": false,
+    "rollable_proved": false,
+    "evidence": ""
+  },
+  "validation": {
+    "baseline_passed": true,
+    "reference_passed": true,
+    "optimization_evidence_complete": false,
+    "best_method_rerun_passed": true
+  },
+  "stability": {
+    "starter_snapshot_passed": true,
+    "elapsed_seconds": 43200.657239060994,
+    "final_best_method_bound": false,
+    "best_method_snapshot_passed": false,
+    "best_method_job_id": "116989",
+    "best_method_status": "cancelled_before_snapshot",
+    "current_environment_status": "running_after_disk_recovery",
+    "current_environment_passed": false,
+    "current_environment_evidence": "optimization_evidence/runtime/acceptance-v14/stability/summary.json",
+    "failed_attempt_evidence": "optimization_evidence/runtime/acceptance-v14/attempts/stability-disk-full-01/summary.json"
+  },
+  "formal_platform_acceptance": false,
+  "validation_scope": "Fresh official Harbor Baseline, Reference and best five-seed acceptance and the current instruction offline no-cache build passed. All three cases used five new training runs and finished within 7,200 seconds. Twelve-hour monitoring is running; the scientific protocol is unchanged.",
+  "current_snapshot": {
+    "public_dockerfile_sha256": "ab5c4e7c90c748ee363b16ddf8d08f51895088e6a9e7f42f5a36ae8549850f10",
+    "public_grader_sha256": "8d17af2d807dbadd764e7649757c712f34341480f060d7a4abb09a210da111a3",
+    "cold_build_passed": true,
+    "fresh_score_within_budget_passed": true,
+    "stability_12h_passed": false,
+    "instruction_sha256": "cc70cb54dfbcea5521b4329c1c7e90b7f0d57d50faba4728ce74bd300a4268be",
+    "native_dockerfile_sha256": "9ca93920883f854db30708993a2a823b13362202568a68ea3450b8ed4d7d261d",
+    "runtime_cold_build_passed": true,
+    "final_instruction_cold_build_status": "passed",
+    "standard_harbor_smoke_passed": true,
+    "upstream_contract_passed": true,
+    "selector_isolation_passed": true
+  },
+  "historical_validation": {
+    "baseline_passed": true,
+    "reference_passed": true,
+    "optimization_evidence_complete": true,
+    "best_method_rerun_passed": true
+  }
+}

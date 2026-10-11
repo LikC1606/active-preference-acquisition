@@ -1,0 +1,20 @@
+{
+  "round": 3,
+  "attempt": 6,
+  "model": "gpt-5.6-sol",
+  "method_summary": "Use prompt-balanced Fisher acquisition with shrinkage-whitened, winsorized leverage and a round-dependent schedule that shifts from geometric coverage toward uncertainty as the model gains labels. Because sequential D-optimal selection regressed from 0.2333 to 0.2124, this restores the stronger independent per-prompt design while adding conservative annealing rather than cross-prompt updates.",
+  "selector_sha256": "edc45960363d202dc70840de731c3cfc6300660f1199bb0df571f81336b7611f",
+  "score": 0.19729674624031365,
+  "mean_error": 0.5458141817154303,
+  "raw_values": [
+    0.526223772764967,
+    0.5694845985790404,
+    0.5251571944428008,
+    0.5439807459784158,
+    0.5642245968119274
+  ],
+  "new_training_runs": 5,
+  "status": "succeeded",
+  "effective_seconds": 8605.31080931095,
+  "decision": "reject"
+}

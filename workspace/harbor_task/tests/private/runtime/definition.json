@@ -1,0 +1,18 @@
+{
+  "optimization_surface": "solution/select.py:select_pairs",
+  "baseline": "upstream random_rule",
+  "reference": "upstream dopt_rule",
+  "starter_sha256": "e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb",
+  "reference_sha256": "aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3",
+  "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+  "worker_sha256": "256d13c788d8704039578cdc988f5a3a5e5f8217c6235a3f029a9a476b3c33d3",
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "baseline_score": 0,
+  "historical_science_cache_compatible": false
+}

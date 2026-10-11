@@ -1,0 +1,13 @@
+{
+  "actual_updates": 40000,
+  "best_of_10": 1.7858098136112557,
+  "checkpoint_reload_match": true,
+  "checkpoint_sha256": "aeb4265cdd6df64fafcb835a2de8700573e9817e6d5f9fb0ed98cacb1d409d6c",
+  "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+  "raw_metric": 0.4778333760326062,
+  "seed": 404,
+  "selected_preferences": 20000,
+  "status": "succeeded",
+  "selector_sha256": "aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3",
+  "new_training_runs": 1
+}

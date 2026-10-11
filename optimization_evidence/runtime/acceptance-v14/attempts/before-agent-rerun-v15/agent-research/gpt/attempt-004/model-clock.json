@@ -1,0 +1,56 @@
+{
+  "exit_code": 0,
+  "work_clock": {
+    "schema": "deepscientist.codex-work-clock.v1",
+    "max_progress_gap_seconds": 120.0,
+    "events": [
+      {
+        "elapsed": 1.2765071913599968,
+        "type": "thread.started",
+        "item_type": null
+      },
+      {
+        "elapsed": 1.3370304442942142,
+        "type": "turn.started",
+        "item_type": null
+      },
+      {
+        "elapsed": 30.344971364364028,
+        "type": "item.completed",
+        "item_type": "agent_message"
+      },
+      {
+        "elapsed": 30.365179223939776,
+        "type": "turn.completed",
+        "item_type": null
+      }
+    ],
+    "intervals": [
+      {
+        "start": 0.0,
+        "end": 1.2765071913599968,
+        "kind": "blocked"
+      },
+      {
+        "start": 1.2765071913599968,
+        "end": 1.3370304442942142,
+        "kind": "blocked"
+      },
+      {
+        "start": 1.3370304442942142,
+        "end": 30.344971364364028,
+        "kind": "method"
+      },
+      {
+        "start": 30.344971364364028,
+        "end": 30.365179223939776,
+        "kind": "method"
+      },
+      {
+        "start": 30.365179223939776,
+        "end": 35.44880571216345,
+        "kind": "blocked"
+      }
+    ]
+  }
+}

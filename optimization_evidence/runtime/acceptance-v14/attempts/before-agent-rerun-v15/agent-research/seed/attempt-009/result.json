@@ -1,0 +1,7 @@
+{
+  "round": 5,
+  "attempt": 9,
+  "model": "doubao-seed-2.1-turbo",
+  "status": "failed",
+  "error": "Model invocation failed; inspect retained redacted model-log.json"
+}

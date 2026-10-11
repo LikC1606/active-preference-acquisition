@@ -1,0 +1,154 @@
+{
+  "model": "gpt-5.6-sol",
+  "provider": "my_codex",
+  "completed_loops": 5,
+  "effective_seconds": 39249.29564886853,
+  "attempts": 8,
+  "history": [
+    {
+      "round": 1,
+      "attempt": 1,
+      "status": "failed",
+      "error": "Model invocation failed; inspect retained redacted model-log.json",
+      "model": "gpt-6.1-sol"
+    },
+    {
+      "round": 1,
+      "attempt": 2,
+      "status": "failed",
+      "error": "Interrupted author request retained; no automatic request repeated",
+      "model": "gpt-6.1-sol"
+    },
+    {
+      "round": 1,
+      "attempt": 3,
+      "status": "failed",
+      "error": "Model invocation failed; inspect retained redacted model-log.json",
+      "model": "gpt-6.1-sol"
+    },
+    {
+      "round": 1,
+      "attempt": 4,
+      "model": "gpt-5.6-sol",
+      "method_summary": "Use prompt-balanced logistic Fisher acquisition: choose one pair per 45-pair prompt block by combining boundary uncertainty with covariance-whitened feature leverage, plus slight seeded exploration. Since the prior attempts supplied only invocation failures and no performance evidence, this proposal is deliberately stateless, vectorized, and numerically robust rather than reusing an unvalidated method.",
+      "selector_sha256": "67d38cbdcf950ff1d107d6dba0a405317a62ee1cadefa12ba6c5400f1eaa19c2",
+      "score": 0.2332890415094726,
+      "mean_error": 0.5213404984478183,
+      "raw_values": [
+        0.5119799620193712,
+        0.5300706721582764,
+        0.5017742841000395,
+        0.5417203838647241,
+        0.5211571900966798
+      ],
+      "new_training_runs": 2,
+      "status": "succeeded",
+      "effective_seconds": 7367.373151595646,
+      "decision": "retain"
+    },
+    {
+      "round": 2,
+      "attempt": 5,
+      "model": "gpt-5.6-sol",
+      "method_summary": "Replace independent static leverage choices with prompt-balanced sequential D-optimal design: after whitening, each selected pair updates an inverse information matrix so later prompts cover directions not already represented. The previous selector scored positively, so this retains its Fisher uncertainty and one-pair-per-prompt structure while adding conditional diversity and mild early-round calibration/exploration.",
+      "selector_sha256": "4f15e30f357c621be72b0985954e1c1b56108d164d3edff3ef4c35fc327cba31",
+      "score": 0.21244863883753246,
+      "mean_error": 0.5355113483574544,
+      "raw_values": [
+        0.49896253037569827,
+        0.5484478323478139,
+        0.5566369753306109,
+        0.5293803805170274,
+        0.5441290232161218
+      ],
+      "new_training_runs": 5,
+      "status": "succeeded",
+      "effective_seconds": 8194.666475652724,
+      "decision": "reject"
+    },
+    {
+      "round": 3,
+      "attempt": 6,
+      "model": "gpt-5.6-sol",
+      "method_summary": "Use prompt-balanced Fisher acquisition with shrinkage-whitened, winsorized leverage and a round-dependent schedule that shifts from geometric coverage toward uncertainty as the model gains labels. Because sequential D-optimal selection regressed from 0.2333 to 0.2124, this restores the stronger independent per-prompt design while adding conservative annealing rather than cross-prompt updates.",
+      "selector_sha256": "edc45960363d202dc70840de731c3cfc6300660f1199bb0df571f81336b7611f",
+      "score": 0.19729674624031365,
+      "mean_error": 0.5458141817154303,
+      "raw_values": [
+        0.526223772764967,
+        0.5694845985790404,
+        0.5251571944428008,
+        0.5439807459784158,
+        0.5642245968119274
+      ],
+      "new_training_runs": 5,
+      "status": "succeeded",
+      "effective_seconds": 8605.31080931095,
+      "decision": "reject"
+    },
+    {
+      "round": 4,
+      "attempt": 7,
+      "model": "gpt-5.6-sol",
+      "method_summary": "Retain the strongest prompt-balanced whitened-leverage/Fisher design, but replace plug-in uncertainty with a Bayesian-style margin correction: predictions in high-leverage, poorly covered directions are treated as less certain before computing Fisher information. This responds to the regressions from sequential diversity and annealing by keeping the successful independent structure while making only a targeted correction for model overconfidence.",
+      "selector_sha256": "34c298e4d13ab8e93ca1713946d1fa14100de5a6245b46f5b684b1488e79c06d",
+      "score": 0.23578694418028806,
+      "mean_error": 0.5196419994123527,
+      "raw_values": [
+        0.5140101892635611,
+        0.5208790881967144,
+        0.5043338412042067,
+        0.5288143853034,
+        0.5301724930938814
+      ],
+      "new_training_runs": 5,
+      "status": "succeeded",
+      "effective_seconds": 7703.151501503795,
+      "decision": "retain"
+    },
+    {
+      "round": 5,
+      "attempt": 8,
+      "model": "gpt-5.6-sol",
+      "method_summary": "Keep the successful one-pair-per-prompt and shrinkage-whitened geometry, but replace the previous heuristic margin correction with Gauss-Hermite Bayesian mutual information (BALD), plus a small expected-Fisher term. This is a targeted change after the prior Bayesian-adjusted selector became the best result, avoiding the previously regressive sequential-diversity and annealing strategies.",
+      "selector_sha256": "774b47f6d2751c8bb3d2a4dd9b634ce9ff7c7cde3a633e190bd302efe0d0ead4",
+      "score": 0.24240974865627934,
+      "mean_error": 0.5151386906381656,
+      "raw_values": [
+        0.4926824610600503,
+        0.5195836423443716,
+        0.5055554949432712,
+        0.524572882595614,
+        0.5332989722475213
+      ],
+      "new_training_runs": 5,
+      "status": "succeeded",
+      "effective_seconds": 7378.7937108054175,
+      "decision": "retain"
+    }
+  ],
+  "best_score": 0.24240974865627934,
+  "best_selector": "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/agent-research/acquisition-gpt-seed-v1/gpt/attempt-008/select.py",
+  "baseline": {
+    "mean_error": 0.6799700626090104,
+    "raw_values": [
+      0.6478005749308513,
+      0.735379110189218,
+      0.6399006371097182,
+      0.6857898168299283,
+      0.6909801739853358
+    ],
+    "seeds": [
+      101,
+      202,
+      303,
+      404,
+      505
+    ],
+    "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+    "selector_sha256": "e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb",
+    "score": 0.0
+  },
+  "consecutive_failures": 0,
+  "request_policy_sha256": "c304dbd14e72ab21d09ea6b24cd9eb868a641fc18d62ccbae918d3be8404c7a5"
+}

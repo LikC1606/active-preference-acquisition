@@ -1,0 +1,43 @@
+{
+  "status": "failed",
+  "job_id": "121852",
+  "task_version": "1.2.0",
+  "required_seconds": 43200,
+  "scope": "Public/Dev container pair; Baseline and best cached score probes",
+  "selector_sha256": "cbc33e8244794929555e49a508b402a7de98152811c2f58a49b4c3e8ec545c62",
+  "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+  "cold_score_job_id": "121710",
+  "monitor_sha256": "dc3f07d58c13171448430d79f5f77fbc53dac9891b79f1a62a5d78221ea28c24",
+  "cycles": 1,
+  "public_baseline_checks": 1,
+  "best_method_checks": 1,
+  "new_training_runs": 0,
+  "model_api_requests": 0,
+  "errors": [
+    "{'fd_count': 4, 'total_fd_count': 10, 'process_fd_counts': {'1': 3, '7': 3, '50': 4}, 'disk_free_bytes': 75085860864, 'shm_used_bytes': 8192, 'pending_requests': 0, 'pending_responses': 2}"
+  ],
+  "formal_platform_acceptance": false,
+  "setup_started_at": "2026-10-10T14:44:46.687774+00:00",
+  "started_at": "2026-10-10T14:45:15.609874+00:00",
+  "container_ids": {
+    "main": "f8a20b7052ca4a2b4440d8b3f825e68454e59094b7a2fa199b4b2986c28926e5",
+    "evaluator": "853f1e3b5f60d112192a4b4f49658f06c22e9e434730bafb739cbf76ab94d2e9"
+  },
+  "images": {
+    "f8a20b7052ca4a2b4440d8b3f825e68454e59094b7a2fa199b4b2986c28926e5": "sha256:9adbb21c564831a5551652021ca88ad0e95477c1fcb470ed319d6d8f8c615621",
+    "853f1e3b5f60d112192a4b4f49658f06c22e9e434730bafb739cbf76ab94d2e9": "sha256:afe1cb7a912f2a15633f0aa7ae35ec2683351eec8a1871d72c7ff9b4ee755f5b"
+  },
+  "copied_validated_seed_models": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "swap_accounting": false,
+  "elapsed_seconds": 64.54700385779142,
+  "last_sample_at": "2026-10-10T14:45:19.442780+00:00",
+  "error_type": "AssertionError",
+  "traceback": "Traceback (most recent call last):\n  File \"/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/stability-v21/run_stability.py\", line 167, in main\n    assert diagnostic['pending_requests'] == diagnostic['pending_responses'] == 0, diagnostic\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: {'fd_count': 4, 'total_fd_count': 10, 'process_fd_counts': {'1': 3, '7': 3, '50': 4}, 'disk_free_bytes': 75085860864, 'shm_used_bytes': 8192, 'pending_requests': 0, 'pending_responses': 2}\n",
+  "finished_at": "2026-10-10T14:46:20.156860+00:00"
+}

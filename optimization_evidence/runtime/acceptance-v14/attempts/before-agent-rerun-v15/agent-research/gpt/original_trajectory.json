@@ -1,0 +1,34 @@
+[
+  {
+    "round": 1,
+    "method_summary": " Evaluation failed: Model invocation failed; inspect retained redacted model-log.json"
+  },
+  {
+    "round": 2,
+    "method_summary": " Evaluation failed: Interrupted author request retained; no automatic request repeated"
+  },
+  {
+    "round": 3,
+    "method_summary": " Evaluation failed: Model invocation failed; inspect retained redacted model-log.json"
+  },
+  {
+    "round": 4,
+    "method_summary": "Use prompt-balanced logistic Fisher acquisition: choose one pair per 45-pair prompt block by combining boundary uncertainty with covariance-whitened feature leverage, plus slight seeded exploration. Since the prior attempts supplied only invocation failures and no performance evidence, this proposal is deliberately stateless, vectorized, and numerically robust rather than reusing an unvalidated method. Measured score 0.233289; retain."
+  },
+  {
+    "round": 5,
+    "method_summary": "Replace independent static leverage choices with prompt-balanced sequential D-optimal design: after whitening, each selected pair updates an inverse information matrix so later prompts cover directions not already represented. The previous selector scored positively, so this retains its Fisher uncertainty and one-pair-per-prompt structure while adding conditional diversity and mild early-round calibration/exploration. Measured score 0.212449; reject."
+  },
+  {
+    "round": 6,
+    "method_summary": "Use prompt-balanced Fisher acquisition with shrinkage-whitened, winsorized leverage and a round-dependent schedule that shifts from geometric coverage toward uncertainty as the model gains labels. Because sequential D-optimal selection regressed from 0.2333 to 0.2124, this restores the stronger independent per-prompt design while adding conservative annealing rather than cross-prompt updates. Measured score 0.197297; reject."
+  },
+  {
+    "round": 7,
+    "method_summary": "Retain the strongest prompt-balanced whitened-leverage/Fisher design, but replace plug-in uncertainty with a Bayesian-style margin correction: predictions in high-leverage, poorly covered directions are treated as less certain before computing Fisher information. This responds to the regressions from sequential diversity and annealing by keeping the successful independent structure while making only a targeted correction for model overconfidence. Measured score 0.235787; retain."
+  },
+  {
+    "round": 8,
+    "method_summary": "Keep the successful one-pair-per-prompt and shrinkage-whitened geometry, but replace the previous heuristic margin correction with Gauss-Hermite Bayesian mutual information (BALD), plus a small expected-Fisher term. This is a targeted change after the prior Bayesian-adjusted selector became the best result, avoiding the previously regressive sequential-diversity and annealing strategies. Measured score 0.242410; retain."
+  }
+]

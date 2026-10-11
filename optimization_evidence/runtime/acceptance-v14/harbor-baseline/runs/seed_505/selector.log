@@ -1,0 +1,2 @@
+Error in cpuinfo: failed to parse processor information from /proc/cpuinfo
+[W ThreadPool.cc:53] cpuinfo initialization failed

@@ -1,0 +1,13 @@
+{
+    "task": {
+        "path": "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/delivery/workspace/harbor_task"
+    },
+    "trial_name": "arm-v18-nop-03",
+    "trials_dir": "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/repair-v18/trials",
+    "agent": {
+        "name": "nop"
+    },
+    "environment": {
+        "import_path": "arm_native_static_network:StaticOfflineDocker"
+    }
+}

@@ -1,0 +1,24 @@
+{
+  "rounds": [
+    {
+      "round": 1,
+      "method_summary": "Replaces random selection with uncertainty sampling, choosing the k pairs whose predicted reward logits are closest to zero (most ambiguous to the current model). This is a standard active-learning heuristic that should focus labeling on the decision boundary where information gain is highest; measured dev score 0.184444, decision retain."
+    },
+    {
+      "round": 2,
+      "method_summary": "Combines uncertainty sampling (pairs near the decision boundary) with feature-space diversity using a k-means++ style greedy selection. From a pool of the top 5k most uncertain pairs, we iteratively select k pairs that maximize a weighted sum of uncertainty and minimum cosine-distance to already-selected pairs, ensuring the labeled set covers diverse regions of feature space rather than clustering in one ambiguous area; measured dev score 0.188118, decision retain."
+    },
+    {
+      "round": 3,
+      "method_summary": "Implements a BADGE-inspired active learning strategy that constructs gradient embeddings by weighting each pair's feature vector by sigmoid(logit)*(1-sigmoid(logit)) \u2014 the expected gradient magnitude of cross-entropy loss, which peaks at the decision boundary. From the top-10k highest-norm gradient embedding candidates, k pairs are selected via k-means++ greedy maximization of minimum cosine distance, combining uncertainty sampling with gradient-space diversity to cover the most informative ambiguous regions; measured dev score 0.223327, decision retain."
+    },
+    {
+      "round": 4,
+      "method_summary": "Refines the BADGE k-means++ approach by operating on unnormalized gradient embeddings with Euclidean distance instead of normalized cosine distance, so uncertainty magnitude is naturally baked into the diversity metric rather than added as a separate term. Also increases the candidate pool from 10k to 15k to give k-means++ more coverage to choose from, following the original BADGE formulation more closely; measured dev score 0.247870, decision retain."
+    },
+    {
+      "round": 5,
+      "method_summary": "Adapts the BADGE k-means++ approach by making the candidate pool size grow with round index (10k to 25k) and mixing 90% greedy farthest-point selection with 10% stochastic k-means++ sampling. The dynamic pool acknowledges that early rounds benefit from focusing on high-uncertainty pairs while later rounds need broader diversity coverage, and the stochastic component adds exploration to avoid getting stuck in local optima of the greedy approach; measured dev score 0.251364, decision retain."
+    }
+  ]
+}

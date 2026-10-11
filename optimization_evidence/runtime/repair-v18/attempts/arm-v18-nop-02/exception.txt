@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/trial/trial.py", line 409, in run
+    await self._run()
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/trial/single_step.py", line 52, in _run
+    await self._run_verifier()
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/trial/single_step.py", line 99, in _run_verifier
+    self.result.verifier_result = await self._run_separate_verifier(
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/trial/trial.py", line 740, in _run_separate_verifier
+    return await asyncio.wait_for(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/sk/kesun/H3EXP/envs/host/pythons/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/tasks.py", line 520, in wait_for
+    return await fut
+           ^^^^^^^^^
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/verifier/verifier.py", line 232, in verify
+    raise RewardFileNotFoundError(
+harbor.verifier.verifier.RewardFileNotFoundError: No reward file found at /storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/repair-v18/trials/arm-v18-nop-02/verifier/reward.txt or /storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/repair-v18/trials/arm-v18-nop-02/verifier/reward.json

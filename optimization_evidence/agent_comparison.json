@@ -1,0 +1,37 @@
+{
+  "gpt_score": 0.24927529058448603,
+  "seed_score": 0.14512861009585398,
+  "selected_lane": "gpt",
+  "selected_reward": {
+    "request_id": "6245571e5c2b447788432f6130570670",
+    "status": "succeeded",
+    "selector_sha256": "cbc33e8244794929555e49a508b402a7de98152811c2f58a49b4c3e8ec545c62",
+    "schema": "arm.acquisition.reward.v1",
+    "score": 0.24927529058448603,
+    "baseline_mean": 0.6799700626090104,
+    "baseline_score": 0.0,
+    "mean_error": 0.5104703276633982,
+    "seeds": [
+      101,
+      202,
+      303,
+      404,
+      505
+    ],
+    "raw_values": [
+      0.5077615111086385,
+      0.48041137209162765,
+      0.514654692708829,
+      0.5168472531087651,
+      0.5326768092991307
+    ],
+    "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+    "new_training_runs": 5,
+    "formal_harbor_acceptance": false
+  },
+  "reference_score": 0.2670160049935782,
+  "reference_outperformed": false,
+  "clean_replay_new_training_runs": 5,
+  "independent_retraining": true,
+  "run_id": "acquisition-gpt-seed-v16-seed-fresh"
+}

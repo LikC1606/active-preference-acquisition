@@ -1,0 +1,2 @@
+{"event": "stability_started", "job_id": "121852", "required_seconds": 43200, "scope": "Public/Dev container pair; Baseline and best cached score probes"}
+{"event": "stability_finished", "job_id": "121852", "status": "failed", "elapsed_seconds": 64.54700385779142, "errors": ["{'fd_count': 4, 'total_fd_count': 10, 'process_fd_counts': {'1': 3, '7': 3, '50': 4}, 'disk_free_bytes': 75085860864, 'shm_used_bytes': 8192, 'pending_requests': 0, 'pending_responses': 2}"]}

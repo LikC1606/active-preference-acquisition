@@ -1,0 +1,51 @@
+{
+  "dev_prompts": 4188,
+  "files": [
+    {
+      "bytes": 2744320128,
+      "dtype": "float32",
+      "file": "train-embeddings.npy",
+      "sha256": "2f37b546b044844360b9a3ceff8f09607e09e84b80eab64bd1f767b460fc5ce1",
+      "shape": [
+        10,
+        33500,
+        2048
+      ]
+    },
+    {
+      "bytes": 343081088,
+      "dtype": "float32",
+      "file": "dev-embeddings.npy",
+      "sha256": "0a68247d4a9f4b6a6c2e4515275f37af881e96f5f57f9864d96d279f0b8ab57c",
+      "shape": [
+        10,
+        4188,
+        2048
+      ]
+    }
+  ],
+  "hidden_included": false,
+  "official_paper_protocol": false,
+  "schema": "arm.embedding-only.public-data.v12",
+  "split_seed": 1729,
+  "train_prompts": 33500,
+  "dataset": "hh-rlhf-harmless-gpt4",
+  "embedding_model": "gemma2b",
+  "generation_model": "gemma7b",
+  "golden_reward_model": "rayharmless",
+  "source_folder_url": "https://drive.google.com/drive/folders/1Op0B1jc4Zr6t6DFWyLcCulpq67CJOYsU",
+  "repository_url": "https://github.com/YunyiShen/ARM-FI",
+  "repository_revision": "4634e168d46cf5109cd0dfe1ebaf6b34b6b3f3ba",
+  "license_status": "Source receipt and repository revision are retained; final platform license/compliance review remains pending.",
+  "preprocessing": "Frozen source embeddings partitioned by prompt index using split seed 1729; no reward normalization",
+  "public_contents": [
+    "train embeddings",
+    "dev embeddings"
+  ],
+  "private_contents": [
+    "reward targets",
+    "oracle",
+    "Reference",
+    "models and training evidence"
+  ]
+}

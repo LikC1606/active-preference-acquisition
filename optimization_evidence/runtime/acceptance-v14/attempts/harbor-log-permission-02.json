@@ -1,0 +1,13 @@
+{
+  "status": "failed",
+  "arm": "best",
+  "selector_sha256": "f8ee1048e4f125d5b007cb66ab504cbef7ab83a4ee89ab38fcd33fcbd75d436d",
+  "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+  "provider": "Harbor DockerEnvironment",
+  "custom_provider": false,
+  "verifier": "Harbor Verifier",
+  "artifact_transfer": "Harbor ArtifactHandler",
+  "environment_mode": "separate",
+  "error": "{'verifier_log_write_exit': 1, 'stdout': 'Traceback (most recent call last):\\n  File \"<string>\", line 1, in <module>\\n  File \"/usr/local/lib/python3.11/pathlib.py\", line 1078, in write_text\\n    with self.open(mode=\\'w\\', encoding=encoding, errors=errors, newline=newline) as f:\\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\n  File \"/usr/local/lib/python3.11/pathlib.py\", line 1044, in open\\n    return io.open(self, mode, buffering, encoding, errors, newline)\\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\\nPermissionError: [Errno 1] Operation not permitted: \\'/logs/verifier/write-probe\\'\\n', 'stderr': None}",
+  "export_error": "Error response from daemon: Could not find the file /var/lib/arm/runs/1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf/f8ee1048e4f125d5b007cb66ab504cbef7ab83a4ee89ab38fcd33fcbd75d436d in container d620162a3e14a442593a027f4ace855f526d0180fb42d1db82175f55e3d3027f\n"
+}

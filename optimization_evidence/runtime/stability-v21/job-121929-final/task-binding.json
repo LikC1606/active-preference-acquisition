@@ -1,0 +1,42 @@
+{
+  "task_version": "1.2.0",
+  "job_id": "121929",
+  "candidate": "expert_evidence/best_method/select.py",
+  "selector_sha256": "cbc33e8244794929555e49a508b402a7de98152811c2f58a49b4c3e8ec545c62",
+  "source_files": {
+    "task.toml": "ea4b62815ad7c0f8be8879b756046dc24d12d398c4e9d6fe4ad7bd875bf97ca2",
+    "environment/Dockerfile": "ab5c4e7c90c748ee363b16ddf8d08f51895088e6a9e7f42f5a36ae8549850f10",
+    "environment/Dev.Dockerfile": "13552efa399f5ffaf5270acb4f50a2e149506078984379291d7a19758377fed1",
+    "environment/docker-compose.yaml": "5299e479d754704965c117ef108c6ba1157207904aa24009b5b957e40dddbd8e",
+    "environment/arm_static_offline.py": "0cfd764649a05435a7c4c2d8728e4a00c2583ca91bcc96bea890eb496f5f8249",
+    "environment/dev_runtime/service.py": "f84e6108f409b9c521761b0fb48e0602f2eca85d9250d6e36b854b947376b54b",
+    "environment/dev_runtime/worker.py": "0c33266bc1c0991a522d0fd2bb833141db68f1d7874b303574737a72ea299c03",
+    "tests/Dockerfile": "3db8dfbdfb563d173571e3fbb43173c7121cea372904457e09f1de45bf132889",
+    "tests/docker-compose.yaml": "921fcdb965aa7d3ba9b2de6545d6154a5506365ede8a50fcb4aac3f1e0338d3b",
+    "tests/test.sh": "9b2039fd7bb30a08aee30dc2f35488280db7a5633cc1e0bfc2a865dfc00f57ca",
+    "tests/private/runtime/service.py": "f84e6108f409b9c521761b0fb48e0602f2eca85d9250d6e36b854b947376b54b",
+    "tests/private/runtime/worker.py": "0c33266bc1c0991a522d0fd2bb833141db68f1d7874b303574737a72ea299c03",
+    "tests/hidden_assets/manifest.json": "b0789730437b828e692c79a84bd11882e3245f3da9db9285c86095cc9c8f2a49",
+    "environment/baseline.json": "0bcf3e3434b7eee8ff5b9e60f080669331f8170c7237a8a474b23d74d0405f7c",
+    "environment/dev_runtime/baseline.json": "0bcf3e3434b7eee8ff5b9e60f080669331f8170c7237a8a474b23d74d0405f7c",
+    "environment/dev_runtime/definition.json": "4f5347764149625b742338d826ada523e7df76348683a5d8db48913bd6d977e1",
+    "environment/starter/select.py": "e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb"
+  },
+  "preserved_models": {
+    "optimization_evidence/baseline_runs/runs/seed_101/model/checkpoint": "8f14ff0778d6dca8dc404abd181cf1c39c9e224921619847ab4614c43e54bf53",
+    "optimization_evidence/baseline_runs/runs/seed_202/model/checkpoint": "670658961c33930c1176d2fdb8f152410045012b2becf6cb72360795cce57770",
+    "optimization_evidence/baseline_runs/runs/seed_303/model/checkpoint": "e78cc3e55a6ddd8a7a2f7a6fa7ed9617c2767717727e90dccadd6960b65bffd5",
+    "optimization_evidence/baseline_runs/runs/seed_404/model/checkpoint": "c5506e7704717e1cf59962658840c78259c3d7302e41cecc7a518fa3ed4f88f7",
+    "optimization_evidence/baseline_runs/runs/seed_505/model/checkpoint": "13437c574c825ab178147a1a874aed6d6e8df5fe82f118ddaf3ccdc175d934a0",
+    "optimization_evidence/reference_runs/runs/seed_101/model/checkpoint": "ea8683460929366622d5b4f64305d55ed56b9bc6a218dc59b485a54fee8142b5",
+    "optimization_evidence/reference_runs/runs/seed_202/model/checkpoint": "c13d9d170cb53a0c7b50f7eb4ad26e1c31d13bdb1cc5d400735ebd5e11fe513c",
+    "optimization_evidence/reference_runs/runs/seed_303/model/checkpoint": "bff28ab17da049f9f47285bda536ccd1490cb750df5541f0980e192a51b9224f",
+    "optimization_evidence/reference_runs/runs/seed_404/model/checkpoint": "aeb4265cdd6df64fafcb835a2de8700573e9817e6d5f9fb0ed98cacb1d409d6c",
+    "optimization_evidence/reference_runs/runs/seed_505/model/checkpoint": "8a5175e7e435427405295f0f8dad2d41dfb2298519ba642e5059b33b97b258ab"
+  },
+  "cold_score_job_id": "121710",
+  "monitor_sha256": "23fab43b1bf9297ce0f957e1ddf4cf7cb3330701acbe67ed71839ced440be7c9",
+  "instruction_sha256": "f4874fa6ff55630ea4dba1b0a2639cfd026400959950d8d55b50c51b01545b89",
+  "public_grader_sha256": "8d17af2d807dbadd764e7649757c712f34341480f060d7a4abb09a210da111a3",
+  "scope": "Public/Dev container pair; Baseline and best cached score probes"
+}

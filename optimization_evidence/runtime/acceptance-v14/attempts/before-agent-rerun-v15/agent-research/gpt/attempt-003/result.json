@@ -1,0 +1,6 @@
+{
+  "round": 1,
+  "attempt": 3,
+  "status": "failed",
+  "error": "Model invocation failed; inspect retained redacted model-log.json"
+}

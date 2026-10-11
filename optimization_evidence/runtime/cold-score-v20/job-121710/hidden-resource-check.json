@@ -1,0 +1,11 @@
+{
+  "cpu_cores": 8,
+  "memory_gib": 36,
+  "gpu_count": 0,
+  "network": "none",
+  "docker_swap_accounting": false,
+  "proc_swaps": "Filename\t\t\t\tType\t\tSize\t\tUsed\t\tPriority\n",
+  "active_swap_devices": 0,
+  "memory_limit_enforced": true,
+  "swap_check": "Docker limits when supported; always require no active swap devices"
+}

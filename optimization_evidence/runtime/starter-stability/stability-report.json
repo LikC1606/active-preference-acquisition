@@ -1,0 +1,67 @@
+{
+  "schema": "deepscientist.harborbuilder.stability.v1",
+  "task_files": {
+    ".dockerignore": "ce0064664ecdddd5f4fd005f6c2a27e6fec944c9f0abdc50b38e06fe95db156d",
+    "environment/Dockerfile": "1e0332682c4832e5ef498f21e9b75aeee2fd803f2937adcaa1ec9e1cac5142c0",
+    "environment/baseline.json": "0bcf3e3434b7eee8ff5b9e60f080669331f8170c7237a8a474b23d74d0405f7c",
+    "environment/public_assets/data_manifest.json": "27eb26afc92c1c262d32c4227b7fcb62cf6f0aebea627492430c7270cef77c6d",
+    "environment/public_assets/dev-embeddings.npy": "0a68247d4a9f4b6a6c2e4515275f37af881e96f5f57f9864d96d279f0b8ab57c",
+    "environment/public_assets/protocol.json": "a7deadf173d8e7475bb06d933dd1c2452d59615c78a1e4fb15e4792b4174bfd6",
+    "environment/public_assets/train-embeddings.npy": "2f37b546b044844360b9a3ceff8f09607e09e84b80eab64bd1f767b460fc5ce1",
+    "environment/requirements.txt": "176dddd1d05e9bd3f19b3dbed597c38fecefaf98a6590fb2298cacc305eff207",
+    "environment/starter/select.py": "e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb",
+    "environment/task/instruction.md": "1c42a6d1ebb4aa5cf12eec2f303f74a3a59d42bb61a98e643ec5b41f76e63b92",
+    "environment/task/solve.sh": "f0ecfdc01f0018db784434051b8e03226da1fe822741d4f39a2b8a8ae14555b7",
+    "environment/task/submission.json": "23e38ce179549c988c013a8f561cdb1a984e6d30ce6ff3e1e692412724e24ef6",
+    "environment/task/task.toml": "5ed4fe8b810db9de2a3903765c7bed2614903b61a97d183a54b06bc43a4e7f8c",
+    "environment/task/tests/grader.py": "82afebef92197393023ecf66fe3aef49008b29db99af012b41c717493769f110",
+    "environment/task/tests/test.sh": "e5b0791fb2bb3ef3ca56d23f45c9e1b0ff725bf17a17f56f5eaf54c2d52b76a5",
+    "instruction.md": "1c42a6d1ebb4aa5cf12eec2f303f74a3a59d42bb61a98e643ec5b41f76e63b92",
+    "solution/select.py": "e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb",
+    "solution/solve.sh": "f0ecfdc01f0018db784434051b8e03226da1fe822741d4f39a2b8a8ae14555b7",
+    "solution/submission.json": "23e38ce179549c988c013a8f561cdb1a984e6d30ce6ff3e1e692412724e24ef6",
+    "task.toml": "5ed4fe8b810db9de2a3903765c7bed2614903b61a97d183a54b06bc43a4e7f8c",
+    "tests/grader.py": "82afebef92197393023ecf66fe3aef49008b29db99af012b41c717493769f110",
+    "tests/test.sh": "e5b0791fb2bb3ef3ca56d23f45c9e1b0ff725bf17a17f56f5eaf54c2d52b76a5"
+  },
+  "image_id": "sha256:deb58a1318c88c15e5fd5616a5fd12a45b8bf8bbf1f7583b81a6046e23adba19",
+  "resources": {
+    "cpu_cores": 8,
+    "memory_mb": 36864,
+    "gpu_count": 0,
+    "network_access": false,
+    "max_concurrent_jobs": 1
+  },
+  "selector_sha256": "e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb",
+  "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+  "expected_score": 0.0,
+  "scope": "Current public Starter submission and verifier using completed five-seed caches",
+  "workload_sha256": "4ebe35ec93a4ab93f96987bf116f37af1beacac765fc1eaeedbee4a4387fef37",
+  "runner_sha256": "0d7fb9cda79523000c6c1bf95b7d63865d79dc260a5f72ef54e0b51bd989929e",
+  "final_best_method_bound": false,
+  "formal_platform_acceptance": false,
+  "status": "passed",
+  "elapsed_seconds": 43200.657239060994,
+  "completed_cycles": 712,
+  "interrupted": false,
+  "errors": [],
+  "new_training_runs": 0,
+  "container_id": "c41755987a07c8b7568f3293f81b386cc9f6f3a69886555285aede7ef3794a52",
+  "container_inspect": {
+    "path": "container-inspect.json",
+    "sha256": "6c602c248a21a479f5b2a54276bc77f5ba6ddcaca4d3ca55cff34badf5dff764"
+  },
+  "log": {
+    "path": "workload.log",
+    "sha256": "d895ea46a2447f7e85001fc1ec62c76179c9122c51812537cf9c7109c3cc30a9"
+  },
+  "telemetry": {
+    "path": "telemetry.jsonl",
+    "sha256": "3e47fec873a4ec688ca77f95d4fec9d61253206e03cf3cd3d3e033f940975e70"
+  },
+  "cycles": {
+    "path": "cycles.json",
+    "sha256": "410ae7b5738dc3cbbec430eb4d10e42e492308a0da2d78122e5e5a399d39e3ad"
+  },
+  "job_id": "116400"
+}

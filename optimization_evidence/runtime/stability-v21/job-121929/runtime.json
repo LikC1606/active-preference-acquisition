@@ -1,0 +1,8 @@
+{
+  "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+  "worker_sha256": "0c33266bc1c0991a522d0fd2bb833141db68f1d7874b303574737a72ea299c03",
+  "service_sha256": "f84e6108f409b9c521761b0fb48e0602f2eca85d9250d6e36b854b947376b54b",
+  "network": "none",
+  "trainer_threads": 6,
+  "selector_cpus": 2
+}

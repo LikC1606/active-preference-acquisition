@@ -1,0 +1,28 @@
+{
+  "round": 4,
+  "attempt": 5,
+  "model": "gpt-5.6-sol",
+  "started_at": "2026-10-08T13:47:00.341372+00:00",
+  "iteration_limit_seconds": 7200,
+  "method_summary": "Use a fully vectorized prompt-balanced score combining stable logistic uncertainty with a capped raw feature norm, replacing the expensive covariance eigendecomposition and projections. The score also adapts mildly by round so later acquisition values feature-space informativeness without any greedy scans or repeated distance calculations, directly addressing the timeout feedback.",
+  "selector_sha256": "5ebb01ef06241be538a34cfcdc5d764d9755744a75a14f36097ad01a124b4f8e",
+  "acceptance": "agent-research/acquisition-gpt-seed-v15-two-hour-retry5/gpt/attempt-005/arm-roll-v15-gpt-005-acceptance/best/summary.json",
+  "status": "succeeded",
+  "score": 0.2042539859200507,
+  "mean_error": 0.5410834670148136,
+  "raw_values": [
+    0.5295494799091476,
+    0.542490117812848,
+    0.5176884873754428,
+    0.560685765084628,
+    0.5550034848920017
+  ],
+  "new_training_runs": 5,
+  "author_method_seconds": 86.85426111146808,
+  "verifier_seconds": 6517.826106321067,
+  "effective_seconds": 6604.680367432535,
+  "iteration_wall_seconds": 6654.425562903285,
+  "within_7200_seconds": true,
+  "decision": "reject",
+  "finished_at": "2026-10-08T15:37:54.767052+00:00"
+}

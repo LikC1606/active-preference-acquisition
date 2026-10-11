@@ -1,0 +1,107 @@
+{
+  "task_id": "research/active-preference-acquisition",
+  "status": "current_cold_score_and_stability_passed",
+  "image": "standalone Agent Dev and Hidden verifier builds",
+  "agent_execution": [
+    {
+      "runtime": "Codex",
+      "model": "gpt-5.6-sol",
+      "duration_hours": 10.835040385410604,
+      "effective_rounds": 6,
+      "typical_round_minutes": 110.14850086265554
+    },
+    {
+      "runtime": "Codex",
+      "model": "doubao-seed-2.1-turbo",
+      "duration_hours": 11.304323921627882,
+      "effective_rounds": 7,
+      "typical_round_minutes": 99.6603924783878
+    }
+  ],
+  "fast_iteration_exception": {
+    "used": false,
+    "rollable_proved": false,
+    "evidence": ""
+  },
+  "validation": {
+    "baseline_passed": true,
+    "reference_passed": true,
+    "optimization_evidence_complete": true,
+    "best_method_rerun_passed": true
+  },
+  "stability": {
+    "starter_snapshot_passed": true,
+    "elapsed_seconds": 43206.30098362267,
+    "final_best_method_bound": true,
+    "best_method_snapshot_passed": true,
+    "best_method_job_id": "121929",
+    "best_method_status": "passed",
+    "current_environment_status": "passed",
+    "current_environment_passed": true,
+    "current_environment_evidence": "optimization_evidence/runtime/stability-v21/job-121929-final/summary.json",
+    "failed_attempt_evidence": "optimization_evidence/runtime/stability-v21/job-121852/summary.json",
+    "current_environment_elapsed_seconds": 43206.30098362267,
+    "current_environment_job_id": "121929",
+    "current_environment_started_at": "2026-10-10T16:10:35.540863+00:00",
+    "current_environment_snapshot_at": "2026-10-11T04:10:41.841831+00:00",
+    "required_seconds": 43200,
+    "failed_attempt_reason": "The monitor stopped on two completed outbox responses left by the scoring protocol; no OOM, FD, disk, or container restart was observed.",
+    "current_environment_finished_at": "2026-10-11T04:10:41.841831+00:00",
+    "current_environment_scope": "Public/Dev container pair; Baseline and best cached score probes",
+    "current_environment_cycles": 681
+  },
+  "formal_platform_acceptance": false,
+  "validation_scope": "Version 1.2.0 best-method Dev and Hidden fresh score passed in job 121710 with five new training runs per split, both within 7200 seconds. Job 121929 rebuilt both contexts with Docker build cache disabled within 1800 seconds per context, then passed 43206.30 seconds of continuous monitoring of the public Dev container pair: 681 Baseline and 681 best-method probes, no errors or OOM, zero restarts, final task and preserved-model identities unchanged. Hidden was built and cold-scored separately; it was not monitored for twelve hours. Baseline/Reference calibration used preserved models; original training, historical v14 stability and the failed job 121852 remain separately scoped. Monitoring made zero new training runs and zero model API requests. Formal platform acceptance remains pending.",
+  "current_snapshot": {
+    "task_version": "1.2.0",
+    "cold_build_passed": true,
+    "fresh_score_within_budget_passed": true,
+    "stability_12h_passed": true,
+    "validation_status": "current_no_cache_build_fresh_dev_hidden_and_dev_stability_passed",
+    "build_passed": true,
+    "full_harbor_trial_passed": true,
+    "hidden_calibration_passed": true,
+    "independent_task_contexts": true,
+    "new_training_runs": 10,
+    "trial_evidence": "optimization_evidence/runtime/repair-v18/trials/arm-v18-nop-04/result.json",
+    "binding_evidence": "optimization_evidence/runtime/repair-v18/trial-task-binding.json",
+    "public_dockerfile_sha256": "ab5c4e7c90c748ee363b16ddf8d08f51895088e6a9e7f42f5a36ae8549850f10",
+    "public_grader_sha256": "8d17af2d807dbadd764e7649757c712f34341480f060d7a4abb09a210da111a3",
+    "verifier_dockerfile_sha256": "3db8dfbdfb563d173571e3fbb43173c7121cea372904457e09f1de45bf132889",
+    "instruction_sha256": "f4874fa6ff55630ea4dba1b0a2639cfd026400959950d8d55b50c51b01545b89",
+    "fresh_score_job_id": "121710",
+    "fresh_score_evidence": "optimization_evidence/runtime/cold-score-v20/job-121710/summary.json",
+    "fresh_score_dev_score": 0.24927529058448603,
+    "fresh_score_hidden_score": 0.24433649204862387,
+    "fresh_score_dev_elapsed_seconds": 5196.041502270848,
+    "fresh_score_hidden_elapsed_seconds": 4769.360568253323,
+    "fresh_score_new_training_runs": 10,
+    "nop_trial_new_training_runs": 0,
+    "cold_build_job_id": "121929",
+    "cold_build_evidence": "optimization_evidence/runtime/stability-v21/job-121929/no-cache-build.json",
+    "cold_build_cache_disabled": true,
+    "stability_job_id": "121929",
+    "stability_evidence": "optimization_evidence/runtime/stability-v21/job-121929-final/summary.json",
+    "stability_scope": "Public/Dev container pair; Baseline and best cached score probes"
+  },
+  "historical_validation": {
+    "baseline_passed": true,
+    "reference_passed": true,
+    "optimization_evidence_complete": true,
+    "best_method_rerun_passed": true
+  },
+  "historical_snapshot_v17": {
+    "public_dockerfile_sha256": "ab5c4e7c90c748ee363b16ddf8d08f51895088e6a9e7f42f5a36ae8549850f10",
+    "public_grader_sha256": "8d17af2d807dbadd764e7649757c712f34341480f060d7a4abb09a210da111a3",
+    "cold_build_passed": true,
+    "fresh_score_within_budget_passed": true,
+    "stability_12h_passed": true,
+    "instruction_sha256": "cc70cb54dfbcea5521b4329c1c7e90b7f0d57d50faba4728ce74bd300a4268be",
+    "native_dockerfile_sha256": "9ca93920883f854db30708993a2a823b13362202568a68ea3450b8ed4d7d261d",
+    "runtime_cold_build_passed": true,
+    "final_instruction_cold_build_status": "passed",
+    "standard_harbor_smoke_passed": true,
+    "upstream_contract_passed": true,
+    "selector_isolation_passed": true
+  }
+}

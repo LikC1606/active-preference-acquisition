@@ -1,0 +1,35 @@
+version = "1.0"
+
+[task]
+name = "research/active-preference-acquisition"
+version = "1.2.0"
+description = "Optimize preference-pair selection with frozen reward-model fitting"
+metric = "score"
+metric_direction = "maximize"
+time_limit_seconds = 7200
+
+[metadata]
+cpu_cores = 8
+memory_mb = 36864
+gpu_count = 0
+network_access = false
+max_concurrent_jobs = 1
+
+[environment]
+build_timeout_sec = 1800
+cpus = 8
+memory_mb = 36864
+gpus = 0
+network_mode = "no-network"
+
+[agent]
+timeout_sec = 21600
+
+[verifier]
+timeout_sec = 7500
+environment_mode = "separate"
+network_mode = "no-network"
+
+[[artifacts]]
+source = "/harbor_task/solution"
+destination = "solution"

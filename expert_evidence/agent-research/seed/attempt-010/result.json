@@ -1,0 +1,11 @@
+{
+  "round": 7,
+  "attempt": 10,
+  "model": "doubao-seed-2.1-turbo",
+  "status": "interrupted",
+  "error": "Allocation exited before a valid scoring result was recorded",
+  "effective_seconds": 0.0,
+  "finished_at": "2026-10-09T14:55:53.149695+00:00",
+  "method_summary": "This selector expands the quality candidate pool to k*18 and introduces round-dependent diversity weighting: alpha=2.5 for rounds 1-13 (more exploration) and alpha=1.5 for rounds 14-39 (more exploitation), shifting the balance compared to the fixed alpha=2.0 baseline. The pivot-based quality scoring and bipartite matching core remain from the best selector.",
+  "selector_sha256": "ed1c1b90a950aa2e3d8d53e63154d97ef7628ddb7c1eb8373b202bd0addc141d"
+}

@@ -1,0 +1,43 @@
+Traceback (most recent call last):
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/repair-v18/run_nop_trial.py", line 49, in <module>
+    asyncio.run(main())
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/sk/kesun/H3EXP/envs/host/pythons/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/sk/kesun/H3EXP/envs/host/pythons/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/sk/kesun/H3EXP/envs/host/pythons/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/repair-v18/run_nop_trial.py", line 34, in main
+    trial=await Trial.create(config)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/trial/trial.py", line 318, in create
+    trial = SingleStepTrial(
+            ^^^^^^^^^^^^^^^^
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/trial/single_step.py", line 30, in __init__
+    super().__init__(
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/trial/trial.py", line 147, in __init__
+    self._init_agent_environment()
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/trial/trial.py", line 1102, in _init_agent_environment
+    self.agent_environment = EnvironmentFactory.create_environment_from_config(
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/environments/factory.py", line 372, in create_environment_from_config
+    return cls.create_environment(
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/environments/factory.py", line 204, in create_environment
+    return environment_class(
+           ^^^^^^^^^^^^^^^^^^
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/environments/docker/docker.py", line 196, in __init__
+    super().__init__(
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/environments/base.py", line 219, in __init__
+    self._validate_network_policy_support()
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/environments/base.py", line 834, in _validate_network_policy_support
+    self.validate_network_policy_support()
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/environments/docker/docker.py", line 577, in validate_network_policy_support
+    super().validate_network_policy_support(network_policy)
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/environments/base.py", line 777, in validate_network_policy_support
+    raise ValueError(
+ValueError: network_mode='no-network' is not supported by EnvironmentType.DOCKER environment. Environment providers must enforce the requested network policy or reject the task.
+srun: error: nv-h100-022: task 0: Exited with exit code 1

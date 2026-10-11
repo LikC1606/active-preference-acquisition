@@ -1,0 +1,1 @@
+{"argv": ["/bin/sh", "-c", "./solution/solve.sh --output solution/artifacts/stability-current && /tests/test.sh"], "exit_code": 0}

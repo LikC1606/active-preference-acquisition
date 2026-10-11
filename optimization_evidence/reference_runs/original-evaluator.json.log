@@ -1,0 +1,25 @@
+{"log":"{\"selector_sha256\": \"e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb\", \"seed\": 101, \"raw_metric\": 0.6478005749308513, \"baseline_check\": true}\n","stream":"stdout","time":"2026-10-07T22:49:28.573519388Z"}
+{"log":"{\"selector_sha256\": \"e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb\", \"seed\": 202, \"raw_metric\": 0.735379110189218, \"baseline_check\": true}\n","stream":"stdout","time":"2026-10-07T22:49:28.573604342Z"}
+{"log":"{\"selector_sha256\": \"e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb\", \"seed\": 303, \"raw_metric\": 0.6399006371097182, \"baseline_check\": true}\n","stream":"stdout","time":"2026-10-07T22:49:28.574214445Z"}
+{"log":"{\"selector_sha256\": \"e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb\", \"seed\": 404, \"raw_metric\": 0.6857898168299283, \"baseline_check\": true}\n","stream":"stdout","time":"2026-10-07T22:49:28.574469675Z"}
+{"log":"{\"selector_sha256\": \"e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb\", \"seed\": 505, \"raw_metric\": 0.6909801739853358, \"baseline_check\": true}\n","stream":"stdout","time":"2026-10-07T22:49:28.57488911Z"}
+{"log":"{\"selector_sha256\": \"aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3\", \"seed\": 101, \"raw_metric\": 0.49320285380626305, \"baseline_check\": false}\n","stream":"stdout","time":"2026-10-08T00:25:05.102159843Z"}
+{"log":"Traceback (most recent call last):\n","stream":"stderr","time":"2026-10-08T00:49:28.902257414Z"}
+{"log":"  File \"/opt/arm-private/service.py\", line 262, in main\n","stream":"stderr","time":"2026-10-08T00:49:28.902306478Z"}
+{"log":"    result = evaluate(source, identity, deadline, baseline_check)\n","stream":"stderr","time":"2026-10-08T00:49:28.902317073Z"}
+{"log":"             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n","stream":"stderr","time":"2026-10-08T00:49:28.902324808Z"}
+{"log":"  File \"/opt/arm-private/service.py\", line 200, in evaluate\n","stream":"stderr","time":"2026-10-08T00:49:28.9023323Z"}
+{"log":"    run_seed(root / \"selector.py\", destination, seed, deadline)\n","stream":"stderr","time":"2026-10-08T00:49:28.902339744Z"}
+{"log":"  File \"/opt/arm-private/service.py\", line 146, in run_seed\n","stream":"stderr","time":"2026-10-08T00:49:28.902347874Z"}
+{"log":"    raise EvaluationError(\"timeout\", \"Five-seed scoring exceeded 7,200 seconds\")\n","stream":"stderr","time":"2026-10-08T00:49:28.902354964Z"}
+{"log":"public_contract.EvaluationError: Five-seed scoring exceeded 7,200 seconds\n","stream":"stderr","time":"2026-10-08T00:49:28.902359275Z"}
+{"log":"{\"selector_sha256\": \"e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb\", \"seed\": 101, \"raw_metric\": 0.6478005749308513, \"baseline_check\": true}\n","stream":"stdout","time":"2026-10-08T00:52:06.665679475Z"}
+{"log":"{\"selector_sha256\": \"e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb\", \"seed\": 202, \"raw_metric\": 0.735379110189218, \"baseline_check\": true}\n","stream":"stdout","time":"2026-10-08T00:52:06.666243329Z"}
+{"log":"{\"selector_sha256\": \"e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb\", \"seed\": 303, \"raw_metric\": 0.6399006371097182, \"baseline_check\": true}\n","stream":"stdout","time":"2026-10-08T00:52:06.66654077Z"}
+{"log":"{\"selector_sha256\": \"e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb\", \"seed\": 404, \"raw_metric\": 0.6857898168299283, \"baseline_check\": true}\n","stream":"stdout","time":"2026-10-08T00:52:06.667270226Z"}
+{"log":"{\"selector_sha256\": \"e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb\", \"seed\": 505, \"raw_metric\": 0.6909801739853358, \"baseline_check\": true}\n","stream":"stdout","time":"2026-10-08T00:52:06.667496349Z"}
+{"log":"{\"selector_sha256\": \"aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3\", \"seed\": 101, \"raw_metric\": 0.49320285380626305, \"baseline_check\": false}\n","stream":"stdout","time":"2026-10-08T00:52:06.970149678Z"}
+{"log":"{\"selector_sha256\": \"aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3\", \"seed\": 202, \"raw_metric\": 0.5075462951026157, \"baseline_check\": false}\n","stream":"stdout","time":"2026-10-08T00:54:46.578307103Z"}
+{"log":"{\"selector_sha256\": \"aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3\", \"seed\": 303, \"raw_metric\": 0.47947607310542384, \"baseline_check\": false}\n","stream":"stdout","time":"2026-10-08T01:14:05.151933868Z"}
+{"log":"{\"selector_sha256\": \"aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3\", \"seed\": 404, \"raw_metric\": 0.4778333760326062, \"baseline_check\": false}\n","stream":"stdout","time":"2026-10-08T01:33:49.515996483Z"}
+{"log":"{\"selector_sha256\": \"aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3\", \"seed\": 505, \"raw_metric\": 0.5339772668326869, \"baseline_check\": false}\n","stream":"stdout","time":"2026-10-08T01:53:43.217074092Z"}

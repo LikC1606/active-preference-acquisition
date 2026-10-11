@@ -1,0 +1,16 @@
+**
+!workspace/
+!workspace/harbor_task/
+!workspace/harbor_task/environment/
+!workspace/harbor_task/environment/requirements.txt
+!workspace/harbor_task/environment/wheels/
+!workspace/harbor_task/environment/wheels/**
+!workspace/harbor_task/environment/public_assets/
+!workspace/harbor_task/environment/public_assets/**
+!workspace/harbor_task/environment/task/
+!workspace/harbor_task/environment/task/tests/
+!workspace/harbor_task/environment/task/tests/grader.py
+!optimization_evidence/
+!optimization_evidence/runtime/
+!optimization_evidence/runtime/native/
+!optimization_evidence/runtime/native/**

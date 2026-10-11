@@ -1,0 +1,29 @@
+{
+  "round": 5,
+  "attempt": 8,
+  "model": "doubao-seed-2.1-turbo",
+  "started_at": "2026-10-09T08:12:30.793341+00:00",
+  "iteration_limit_seconds": 7200,
+  "cleanup_reserve_seconds": 30,
+  "method_summary": "This selector increases the quality candidate pool from k*15 to k*20 and uses a round-dependent diversity weight (alpha=3.0 in early rounds 1–9, alpha=2.0 in later rounds 10–39) in the bipartite matching cost function. The higher early-round alpha prioritizes broader feature-space coverage when the model is less reliable, while the lower late-round alpha shifts focus back toward uncertain, high-information pairs as training progresses.",
+  "selector_sha256": "6ff7ad86bee87e8ef6f7bf6a49bb2013b5c92c088235e2587af78b680d6f1160",
+  "acceptance": "agent-research/acquisition-gpt-seed-v16-seed-fresh/seed/attempt-008/arm-roll-v15-seed-008-acceptance/best/summary.json",
+  "status": "succeeded",
+  "score": 0.14512861009585398,
+  "mean_error": 0.5812869525157739,
+  "raw_values": [
+    0.5803906787261189,
+    0.5955102113971991,
+    0.5618557672079334,
+    0.5834068269759335,
+    0.5852712782716842
+  ],
+  "new_training_runs": 5,
+  "author_method_seconds": 15.921409714967012,
+  "verifier_seconds": 6386.461749000475,
+  "effective_seconds": 6402.383158715442,
+  "iteration_wall_seconds": 6445.540692115203,
+  "within_7200_seconds": true,
+  "decision": "reject",
+  "finished_at": "2026-10-09T09:59:56.334167+00:00"
+}

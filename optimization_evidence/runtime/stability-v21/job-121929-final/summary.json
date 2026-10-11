@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "job_id": "121929",
+  "task_version": "1.2.0",
+  "required_seconds": 43200,
+  "scope": "Public/Dev container pair; Baseline and best cached score probes",
+  "selector_sha256": "cbc33e8244794929555e49a508b402a7de98152811c2f58a49b4c3e8ec545c62",
+  "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+  "cold_score_job_id": "121710",
+  "monitor_sha256": "23fab43b1bf9297ce0f957e1ddf4cf7cb3330701acbe67ed71839ced440be7c9",
+  "cycles": 681,
+  "public_baseline_checks": 681,
+  "best_method_checks": 681,
+  "new_training_runs": 0,
+  "model_api_requests": 0,
+  "errors": [],
+  "formal_platform_acceptance": false,
+  "setup_started_at": "2026-10-10T15:59:37.652636+00:00",
+  "started_at": "2026-10-10T16:10:35.540863+00:00",
+  "container_ids": {
+    "main": "0ccc60db6d114c5fb3e70787ddbd601f14902b4fee120b34e9310b892dfb805b",
+    "evaluator": "a13e9383e5ab844bd3d76cd45539294cb915cad3ca9bff920489b1dd9ed1fb9e"
+  },
+  "images": {
+    "0ccc60db6d114c5fb3e70787ddbd601f14902b4fee120b34e9310b892dfb805b": "sha256:4077b9b327cc28c18d97fb35c2c57adc35eb4ffef12848a54393adcd21e0bc3e",
+    "a13e9383e5ab844bd3d76cd45539294cb915cad3ca9bff920489b1dd9ed1fb9e": "sha256:36ae77361f45e00ad84b5377fe30dbf74bae774ff35d7be25601e6e4823eeb6a"
+  },
+  "copied_validated_seed_models": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "swap_accounting": false,
+  "elapsed_seconds": 43206.30098362267,
+  "last_sample_at": "2026-10-11T04:10:39.063463+00:00",
+  "old_models_unchanged": true,
+  "task_files_unchanged": true,
+  "finished_at": "2026-10-11T04:10:41.841831+00:00"
+}

@@ -1,0 +1,2 @@
+{"log":"{\"selector_sha256\": \"aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3\", \"seed\": 101, \"raw_metric\": 0.49320285380626305, \"baseline_check\": false}\n","stream":"stdout","time":"2026-10-08T00:25:05.102159843Z"}
+{"log":"{\"selector_sha256\": \"aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3\", \"seed\": 101, \"raw_metric\": 0.49320285380626305, \"baseline_check\": false}\n","stream":"stdout","time":"2026-10-08T00:52:06.970149678Z"}

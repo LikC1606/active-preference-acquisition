@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "starter",
+      "passed": true,
+      "elapsed_seconds": 1.6515292540007067
+    },
+    {
+      "name": "reference",
+      "passed": true,
+      "elapsed_seconds": 1.1222386039999037
+    },
+    {
+      "name": "best",
+      "passed": true,
+      "elapsed_seconds": 1.171866878000401
+    },
+    {
+      "name": "kernel_isolation_and_limits",
+      "passed": true
+    }
+  ],
+  "scientific_training_started": false,
+  "source_sha256": {
+    "starter": "e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb",
+    "reference": "aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3",
+    "best": "f8ee1048e4f125d5b007cb66ab504cbef7ab83a4ee89ab38fcd33fcbd75d436d"
+  }
+}

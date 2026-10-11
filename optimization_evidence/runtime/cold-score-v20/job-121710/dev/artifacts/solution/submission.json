@@ -1,0 +1,4 @@
+{
+  "schema": "arm.acquisition.submission.v1",
+  "selector_path": "solution/select.py"
+}

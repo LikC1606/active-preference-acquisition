@@ -1,0 +1,15 @@
+{
+  "job_id": "121852",
+  "submitted_at": "2026-10-10T14:44:32.093972+00:00",
+  "script": "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/stability-v21/run.sbatch",
+  "host_logical_cpus": 16,
+  "vm_physical_cores": 8,
+  "vm_vcpus": 8,
+  "memory_gib": 36,
+  "gpu_count": 0,
+  "required_seconds": 43200,
+  "scope": "Current v1.2.0 Public/Dev pair; Baseline and final best cached scoring",
+  "cold_score_job_id": "121710",
+  "new_training_runs": 0,
+  "model_api_requests": 0
+}

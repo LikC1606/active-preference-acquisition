@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "requirements_source": "Auto ReSearch 总结.zip",
+  "checks": {
+    "required_layout_and_files": true,
+    "instruction_interface_permissions_and_submission": true,
+    "five_independent_models_per_arm_fixed_protocol_reload_and_statistics": true,
+    "two_required_models_ten_effective_hours_and_final_trajectories": true,
+    "all_new_model_loops_proposal_to_score_within_7200_seconds": true,
+    "official_harbor_fresh_baseline_reference_best_within_7200_seconds": true,
+    "twelve_actual_hours_all_processes_runtime_binding_and_failure_probes": true,
+    "final_cold_snapshot_monitored_runtime_and_real_data_fingerprints": true
+  },
+  "formal_platform_acceptance": false
+}

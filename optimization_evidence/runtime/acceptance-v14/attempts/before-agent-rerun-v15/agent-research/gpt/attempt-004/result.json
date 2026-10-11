@@ -1,0 +1,20 @@
+{
+  "round": 1,
+  "attempt": 4,
+  "model": "gpt-5.6-sol",
+  "method_summary": "Use prompt-balanced logistic Fisher acquisition: choose one pair per 45-pair prompt block by combining boundary uncertainty with covariance-whitened feature leverage, plus slight seeded exploration. Since the prior attempts supplied only invocation failures and no performance evidence, this proposal is deliberately stateless, vectorized, and numerically robust rather than reusing an unvalidated method.",
+  "selector_sha256": "67d38cbdcf950ff1d107d6dba0a405317a62ee1cadefa12ba6c5400f1eaa19c2",
+  "score": 0.2332890415094726,
+  "mean_error": 0.5213404984478183,
+  "raw_values": [
+    0.5119799620193712,
+    0.5300706721582764,
+    0.5017742841000395,
+    0.5417203838647241,
+    0.5211571900966798
+  ],
+  "new_training_runs": 2,
+  "status": "succeeded",
+  "effective_seconds": 7367.373151595646,
+  "decision": "retain"
+}

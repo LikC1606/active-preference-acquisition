@@ -1,0 +1,20 @@
+{
+  "round": 3,
+  "attempt": 6,
+  "model": "doubao-seed-2.1-turbo",
+  "method_summary": "Implements a BADGE-inspired active learning strategy that constructs gradient embeddings by weighting each pair's feature vector by sigmoid(logit)*(1-sigmoid(logit)) \u2014 the expected gradient magnitude of cross-entropy loss, which peaks at the decision boundary. From the top-10k highest-norm gradient embedding candidates, k pairs are selected via k-means++ greedy maximization of minimum cosine distance, combining uncertainty sampling with gradient-space diversity to cover the most informative ambiguous regions.",
+  "selector_sha256": "30704690546cc5b8db295efa3c534fe8abb9b3ed732f4cbd7602e2fc70029565",
+  "score": 0.22332698082510138,
+  "mean_error": 0.5281144014750849,
+  "raw_values": [
+    0.5130802339374203,
+    0.5272273434557744,
+    0.5330599942067786,
+    0.5307799543006789,
+    0.5364244814747722
+  ],
+  "new_training_runs": 5,
+  "status": "succeeded",
+  "effective_seconds": 7996.880089270773,
+  "decision": "retain"
+}

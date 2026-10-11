@@ -1,0 +1,50 @@
+{
+  "schema": "arm.paper-aligned.protocol.v1",
+  "paper_revision": "local arXiv PDF 2502.04354",
+  "repository_revision": "4634e168d46cf5109cd0dfe1ebaf6b34b6b3f3ba",
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "prompts_per_round": 500,
+  "candidate_pairs": 22500,
+  "annotation_batch": 500,
+  "annotation_budget": 20000,
+  "label_logit": "raw_reward_a - raw_reward_b",
+  "reward_normalization": false,
+  "annotation_quality_multiplier": 1.0,
+  "hidden_units": 64,
+  "hidden_layers": 3,
+  "activation": "GELU",
+  "output_bias": false,
+  "learning_rate": 0.001,
+  "training_iterations_per_round": 1000,
+  "training_parameter_basis": "ARM-FI train_BT signature defaults; paper experiment driver unpublished",
+  "initialization": "fresh MLP every round; import upstream module before any round seeds",
+  "primary_metric": "one_minus_spearman",
+  "aggregation": "arithmetic mean of all five final seed errors",
+  "dev_prompts": 4188,
+  "dev_partition_seed": 1729,
+  "test_responses_per_prompt": 10,
+  "prompt_split": {
+    "seed": 1729,
+    "train": 33500,
+    "dev": 4188,
+    "hidden": 4188
+  },
+  "cpu_threads": 6,
+  "maximum_cpu_cores": 8,
+  "gpu_count": 0,
+  "limits": [
+    "Uses user-selected original quickstart embeddings with a prompt-disjoint train/dev split.",
+    "The independent 500-response author test embeddings are absent; dev metrics are ten-response metrics.",
+    "Paper Eq. (1) specifies raw reward-difference Bernoulli labels; experiment-specific reward rescaling is not disclosed.",
+    "1000 Adam updates is the public train_BT default, not a verified paper experiment hyperparameter.",
+    "Fresh round initialization and executor seed numbers are fixed task choices where paper details are absent."
+  ],
+  "seed": 303,
+  "selector_sha256": "aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3"
+}

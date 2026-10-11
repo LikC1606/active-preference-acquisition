@@ -1,0 +1,29 @@
+{
+  "round": 3,
+  "attempt": 5,
+  "model": "doubao-seed-2.1-turbo",
+  "started_at": "2026-10-09T04:43:02.404056+00:00",
+  "iteration_limit_seconds": 7200,
+  "cleanup_reserve_seconds": 30,
+  "method_summary": "This selector uses pivot-based clustering with uncertainty-weighted diversity in early rounds (1–9) for broad coverage, then switches to a minimum-cost bipartite matching on the top-5000 quality candidates in later rounds (10–39) to select k pairs that jointly maximize both uncertainty and feature-space diversity through a distance-minus-quality cost function. The round-based schedule balances exploration early with more precise diverse selection once the model has enough signal.",
+  "selector_sha256": "29454419be4c2e145b502536f88a8ec493870de80fc5306b1efd186cb12569b3",
+  "acceptance": "agent-research/acquisition-gpt-seed-v16-seed-fresh/seed/attempt-005/arm-roll-v15-seed-005-acceptance/best/summary.json",
+  "status": "succeeded",
+  "score": 0.1427927178131649,
+  "mean_error": 0.5828752893374819,
+  "raw_values": [
+    0.5575956768698498,
+    0.6173522490863887,
+    0.5355499473916403,
+    0.612611012190905,
+    0.591267561148626
+  ],
+  "new_training_runs": 5,
+  "author_method_seconds": 22.621647549793124,
+  "verifier_seconds": 5911.5206631254405,
+  "effective_seconds": 5934.142310675234,
+  "iteration_wall_seconds": 5979.623548703268,
+  "within_7200_seconds": true,
+  "decision": "retain",
+  "finished_at": "2026-10-09T06:22:42.048921+00:00"
+}

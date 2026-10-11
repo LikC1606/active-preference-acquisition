@@ -1,0 +1,30 @@
+{
+  "task_version": "1.2.0",
+  "job_id": "121456",
+  "vcpus": 8,
+  "gpu_count": 0,
+  "files": {
+    "task.toml": "ea4b62815ad7c0f8be8879b756046dc24d12d398c4e9d6fe4ad7bd875bf97ca2",
+    "environment/Dockerfile": "ab5c4e7c90c748ee363b16ddf8d08f51895088e6a9e7f42f5a36ae8549850f10",
+    "environment/Dev.Dockerfile": "13552efa399f5ffaf5270acb4f50a2e149506078984379291d7a19758377fed1",
+    "environment/docker-compose.yaml": "5299e479d754704965c117ef108c6ba1157207904aa24009b5b957e40dddbd8e",
+    "environment/arm_static_offline.py": "0cfd764649a05435a7c4c2d8728e4a00c2583ca91bcc96bea890eb496f5f8249",
+    "environment/dev_runtime/service.py": "f84e6108f409b9c521761b0fb48e0602f2eca85d9250d6e36b854b947376b54b",
+    "environment/dev_runtime/worker.py": "0c33266bc1c0991a522d0fd2bb833141db68f1d7874b303574737a72ea299c03",
+    "tests/Dockerfile": "3db8dfbdfb563d173571e3fbb43173c7121cea372904457e09f1de45bf132889",
+    "tests/docker-compose.yaml": "921fcdb965aa7d3ba9b2de6545d6154a5506365ede8a50fcb4aac3f1e0338d3b",
+    "tests/test.sh": "9b2039fd7bb30a08aee30dc2f35488280db7a5633cc1e0bfc2a865dfc00f57ca",
+    "tests/private/runtime/service.py": "f84e6108f409b9c521761b0fb48e0602f2eca85d9250d6e36b854b947376b54b",
+    "tests/private/runtime/worker.py": "0c33266bc1c0991a522d0fd2bb833141db68f1d7874b303574737a72ea299c03",
+    "tests/private/runtime/validate_calibration.py": "ad957dcfacca97ccca539bcc6d34d1a87ce315830d63502e7ad4f269a38b4917",
+    "tests/private/runtime/baseline-hidden.json": "9d1e49cb5368cb332ad2711019517a3a4185d4e15326f09fd90df659a0ded12f",
+    "tests/hidden_assets/manifest.json": "b0789730437b828e692c79a84bd11882e3245f3da9db9285c86095cc9c8f2a49"
+  },
+  "task_identity": {
+    "source_task_directory": "workspace/harbor_task",
+    "harbor_result_task_name": "research/active-preference-acquisition",
+    "config_task_path": "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/delivery/workspace/harbor_task",
+    "task_declared_name": "research/active-preference-acquisition",
+    "explanation": "Harbor Task derives task_name from task.toml [task].name. This is the same harbor_task directory and version 1.2.0, with source-file digests listed below."
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "status": "passed",
+  "phases": [
+    {
+      "status": "passed",
+      "split": "dev",
+      "task_version": "1.2.0",
+      "job_id": "121710",
+      "selector_sha256": "cbc33e8244794929555e49a508b402a7de98152811c2f58a49b4c3e8ec545c62",
+      "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+      "setup_started_at": "2026-10-10T10:45:28.192097+00:00",
+      "cold_candidate_cache": true,
+      "score_budget_seconds": 7200,
+      "model_api_requests": 0,
+      "formal_platform_acceptance": false,
+      "started_at": "2026-10-10T10:45:47.011897+00:00",
+      "cache_absent_before_start": true,
+      "container_ids": {
+        "main": "a0c6bf3b4011b0360af649ebca9d3a2de615f1a509dc40fdd2d6f807df2a4339",
+        "evaluator": "b5b0f593ea6199ecba76802930e147bdc0cecb100b4984ee4461adebaa2f6de2"
+      },
+      "elapsed_seconds": 5196.041502270848,
+      "reward": {
+        "request_id": "7bdd4575cf7640bfbf55f645a181f900",
+        "status": "succeeded",
+        "selector_sha256": "cbc33e8244794929555e49a508b402a7de98152811c2f58a49b4c3e8ec545c62",
+        "schema": "arm.acquisition.reward.v1",
+        "evaluation_split": "dev",
+        "score": 0.24927529058448603,
+        "baseline_mean": 0.6799700626090104,
+        "baseline_score": 0.0,
+        "mean_error": 0.5104703276633982,
+        "seeds": [
+          101,
+          202,
+          303,
+          404,
+          505
+        ],
+        "raw_values": [
+          0.5077615111086385,
+          0.48041137209162765,
+          0.514654692708829,
+          0.5168472531087651,
+          0.5326768092991307
+        ],
+        "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+        "new_training_runs": 5,
+        "formal_harbor_acceptance": false
+      },
+      "within_7200_seconds": true,
+      "completed_new_training_seeds": [
+        101,
+        202,
+        303,
+        404,
+        505
+      ],
+      "finished_at": "2026-10-10T12:12:26.770091+00:00"
+    },
+    {
+      "status": "passed",
+      "split": "hidden",
+      "task_version": "1.2.0",
+      "job_id": "121710",
+      "selector_sha256": "cbc33e8244794929555e49a508b402a7de98152811c2f58a49b4c3e8ec545c62",
+      "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+      "setup_started_at": "2026-10-10T12:12:29.966822+00:00",
+      "cold_candidate_cache": true,
+      "score_budget_seconds": 7200,
+      "model_api_requests": 0,
+      "formal_platform_acceptance": false,
+      "started_at": "2026-10-10T12:17:32.924891+00:00",
+      "cache_absent_before_start": true,
+      "container_ids": {
+        "main": "448401fbb4494f11019f0628b63e16998067bd5bb6be2d14a4b65e995e85424b"
+      },
+      "elapsed_seconds": 4769.360568253323,
+      "reward": {
+        "request_id": "34c90fd1289b4425b026791567ba739a",
+        "status": "succeeded",
+        "selector_sha256": "cbc33e8244794929555e49a508b402a7de98152811c2f58a49b4c3e8ec545c62",
+        "schema": "arm.acquisition.reward.v1",
+        "evaluation_split": "hidden",
+        "score": 0.24433649204862387,
+        "baseline_mean": 0.687686234577137,
+        "baseline_score": 0.0,
+        "mean_error": 0.5196593923904322,
+        "seeds": [
+          101,
+          202,
+          303,
+          404,
+          505
+        ],
+        "raw_values": [
+          0.512469231474616,
+          0.4907678273830922,
+          0.5187846064686157,
+          0.5291873902110233,
+          0.5470879064148141
+        ],
+        "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+        "new_training_runs": 5,
+        "formal_harbor_acceptance": false,
+        "hidden_manifest_sha256": "b0789730437b828e692c79a84bd11882e3245f3da9db9285c86095cc9c8f2a49"
+      },
+      "within_7200_seconds": true,
+      "completed_new_training_seeds": [
+        101,
+        202,
+        303,
+        404,
+        505
+      ],
+      "finished_at": "2026-10-10T13:37:05.993801+00:00"
+    }
+  ],
+  "task_version": "1.2.0",
+  "job_id": "121710",
+  "old_models_unchanged": true,
+  "new_training_runs": 10,
+  "completed_new_training_seeds": 10,
+  "model_api_requests": 0,
+  "stability_12h_run": false,
+  "formal_platform_acceptance": false
+}

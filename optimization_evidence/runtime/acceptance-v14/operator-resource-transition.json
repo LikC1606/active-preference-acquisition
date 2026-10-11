@@ -1,0 +1,64 @@
+{
+  "schema": "arm.operator.resource-transition.v1",
+  "recorded_at": "2026-10-08T04:34:45.589748+00:00",
+  "reason": "All fresh scoring cases passed and their results were copied before releasing the training VM.",
+  "retired_allocation": {
+    "job_id": 117932,
+    "state_when_verified": "CANCELLED by 1892800110",
+    "allocated_logical_cpus": 32,
+    "requested_memory_gib": 80,
+    "accounting_elapsed": "03:31:53",
+    "exit_code": "0:0"
+  },
+  "finalizer_launch": {
+    "pid": 3232463,
+    "job_id": 118521,
+    "hostname": "nv-h100-022",
+    "command": [
+      "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/bin/python",
+      "-B",
+      "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/compliance-v14/finalize_delivery.py"
+    ],
+    "started_at": "2026-10-08T04:29:41.889105+00:00",
+    "requested_cpus": 1,
+    "requested_memory_mb": 2048,
+    "gpu_count": 0,
+    "replaces": "finalize-delivery-zip-style.json"
+  },
+  "finalizer_allocated_logical_cpus": 2,
+  "scoring_acceptance": {
+    "baseline": {
+      "receipt": "optimization_evidence/runtime/acceptance-v14/harbor-baseline/summary.json",
+      "elapsed_seconds": 5296.447519924492,
+      "new_training_runs": 5,
+      "score": 0.0
+    },
+    "reference": {
+      "receipt": "optimization_evidence/runtime/acceptance-v14/harbor-reference/summary.json",
+      "elapsed_seconds": 5198.963438598439,
+      "new_training_runs": 5,
+      "score": 0.2670160049935782
+    },
+    "best": {
+      "receipt": "optimization_evidence/runtime/acceptance-v14/harbor-best/summary.json",
+      "elapsed_seconds": 5873.072731304914,
+      "new_training_runs": 5,
+      "score": 0.2513644502120524
+    }
+  },
+  "uninterrupted_stability": {
+    "job_id": 117558,
+    "container_ids": {
+      "main": "940fb6974def315d9e79aadf57b8750cd99fd334d495afce7b6810d5180908bc",
+      "evaluator": "10c27a67b9928ffe256736e7f5766f80f274e97d548989248050b49aba8a5617"
+    },
+    "images": {
+      "940fb6974def315d9e79aadf57b8750cd99fd334d495afce7b6810d5180908bc": "sha256:fcb33f46650fec65388e802deaa3f29451021e92fbc54a37b10ba5258bbafe17",
+      "10c27a67b9928ffe256736e7f5766f80f274e97d548989248050b49aba8a5617": "sha256:6c66c41448b92d4c906a9de745ed43c2ec5b0b822ec474f3690ab47325d8a284"
+    },
+    "elapsed_seconds_when_verified": 8704.367440102622,
+    "sample_time_when_verified": "2026-10-08T04:34:43.848819+00:00"
+  },
+  "scientific_protocol_changed": false,
+  "formal_platform_acceptance": false
+}

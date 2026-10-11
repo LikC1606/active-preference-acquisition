@@ -1,0 +1,126 @@
+{
+  "schema": "arm.requirements.budget.v1",
+  "source": "Auto ReSearch 总结.md lines 634, 689 and 922",
+  "scoring_timeout_seconds": 7200,
+  "build_timeout_seconds": 1800,
+  "verifier_timeout_seconds": 7500,
+  "agent_phase_timeout_seconds": 21600,
+  "setup_timeout_seconds": null,
+  "setup_timeout_note": "Configured by the platform trial runner; TaskConfig has no setup-timeout field. It must be recorded for cold-deployment acceptance.",
+  "resources": {
+    "cpu_cores": 8,
+    "gpu_count": 0,
+    "memory_mb": 36864,
+    "max_concurrent_evaluations": 1
+  },
+  "scientific_protocol_changed": false,
+  "new_training_runs": 15,
+  "fresh_time_to_one_score_measured": true,
+  "two_hour_acceptance": "passed_local_author_acceptance",
+  "historical_worker_timings": {
+    "baseline": {
+      "seeds": [
+        101,
+        202,
+        303,
+        404,
+        505
+      ],
+      "worker_seconds": [
+        1288.5380665349999,
+        1291.9660218300003,
+        1308.2831106170001,
+        1266.266808384,
+        1244.3688604959998
+      ],
+      "total_worker_seconds": 6399.422867862,
+      "total_worker_minutes": 106.6570477977,
+      "below_scoring_timeout_by_worker_time_only": true
+    },
+    "reference": {
+      "seeds": [
+        101,
+        202,
+        303,
+        404,
+        505
+      ],
+      "worker_seconds": [
+        1301.2218293269998,
+        1450.3712547910009,
+        1487.0321811120011,
+        1343.4225160620006,
+        1360.9183112160001
+      ],
+      "total_worker_seconds": 6942.9660925080025,
+      "total_worker_minutes": 115.71610154180004,
+      "below_scoring_timeout_by_worker_time_only": true
+    },
+    "best_method": {
+      "seeds": [
+        101,
+        202,
+        303,
+        404,
+        505
+      ],
+      "worker_seconds": [
+        1576.376766134,
+        1434.718858967,
+        1419.3019496709999,
+        1411.2015930489997,
+        1450.0055328220005
+      ],
+      "total_worker_seconds": 7291.604700643,
+      "total_worker_minutes": 121.52674501071667,
+      "below_scoring_timeout_by_worker_time_only": false
+    }
+  },
+  "limitations": [
+    "Historical worker sums exclude part of orchestration/publication and are not complete budget measurements.",
+    "Fresh acceptance requires all five seeds with new_training_runs=5, matching scientific metrics, and full verifier wall-clock <=7200 seconds.",
+    "Each scoring deployment remains 8 CPUs, 36 GiB and 0 GPUs. The new VM uses independent physical cores so simultaneous trials do not share SMT siblings.",
+    "The data, seed set, 40 rounds, 20,000 labels and 40,000 Adam updates are unchanged. Original timeouts and failed preparation are retained.",
+    "Verifier allowance is 7,500 seconds, but final budget acceptance still requires the complete measured scoring path to finish within 7,200 seconds."
+  ],
+  "remaining_acceptance": {
+    "formal_hidden_license_and_security_review": "platform_responsibility"
+  },
+  "current_acceptance": {
+    "baseline": {
+      "status": "passed",
+      "elapsed_seconds": 5296.447519924492,
+      "new_training_runs": 5,
+      "evidence": "acceptance-v14/harbor-baseline/summary.json"
+    },
+    "reference": {
+      "status": "passed",
+      "elapsed_seconds": 5198.963438598439,
+      "new_training_runs": 5,
+      "evidence": "acceptance-v14/harbor-reference/summary.json"
+    },
+    "best": {
+      "status": "passed",
+      "elapsed_seconds": 5293.3216208759695,
+      "new_training_runs": 5,
+      "evidence": "acceptance-v14/harbor-best/summary.json"
+    }
+  },
+  "new_training_runs_scope": "Completed fresh acceptance runs recorded here; current running attempts are not counted as completed.",
+  "operator_allocation_wall_limit_seconds": 61200,
+  "setup_measurements": {
+    "baseline": {
+      "seconds": 33.357765674591064,
+      "basis": "Launch receipt to verifier launch; includes Slurm scheduling and provides a setup upper bound."
+    },
+    "reference": {
+      "seconds": 50.008015871047974,
+      "basis": "Measured operator setup before verifier launch; includes environment build/start and artifact upload."
+    },
+    "best": {
+      "seconds": 39.98102927207947,
+      "basis": "Measured operator setup before verifier launch; includes environment build/start and artifact upload."
+    }
+  },
+  "setup_budget": "Platform runner owns the setup timeout; local measured setup is recorded separately from build, allocation and scoring. No unsupported task.toml field was added."
+}

@@ -1,0 +1,14 @@
+{
+  "status": "partial_pass",
+  "passed_checks": {
+    "required_layout_and_files": true,
+    "instruction_interface_permissions_and_submission": true,
+    "five_independent_models_per_arm_fixed_protocol_reload_and_statistics": true,
+    "two_required_models_ten_effective_hours_and_final_trajectories": true
+  },
+  "pending": [
+    "fresh five-seed Harbor acceptance",
+    "final instruction build",
+    "twelve actual hours"
+  ]
+}

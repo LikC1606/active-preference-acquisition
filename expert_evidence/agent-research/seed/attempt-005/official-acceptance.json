@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "arm": "best",
+  "selector_sha256": "29454419be4c2e145b502536f88a8ec493870de80fc5306b1efd186cb12569b3",
+  "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+  "provider": "Harbor DockerEnvironment",
+  "custom_provider": false,
+  "verifier": "Harbor Verifier",
+  "artifact_transfer": "Harbor ArtifactHandler",
+  "environment_mode": "separate",
+  "setup_started_unix": 1791521012.5612562,
+  "validation_verifier_uid": 1892800110,
+  "cache_absent_before_start": true,
+  "container_ids": {
+    "main": "ddcb22c83419e16761290361fd05a2e88bbe9a2b1daf8b7cbf863516a5813b48",
+    "evaluator": "7adb270473a7aed9d99bc8ef007da1784093f666e84ce3098f7b0795fc807d29"
+  },
+  "started_unix": 1791521047.420428,
+  "operator_setup_elapsed_seconds": 34.859171867370605,
+  "verifier_timeout_seconds": 7104.980120213702,
+  "elapsed_seconds": 5911.5206631254405,
+  "reward": {
+    "request_id": "6e16cc415abc4f7fabc1f4a3a5ba38cf",
+    "status": "succeeded",
+    "selector_sha256": "29454419be4c2e145b502536f88a8ec493870de80fc5306b1efd186cb12569b3",
+    "schema": "arm.acquisition.reward.v1",
+    "score": 0.1427927178131649,
+    "baseline_mean": 0.6799700626090104,
+    "baseline_score": 0.0,
+    "mean_error": 0.5828752893374819,
+    "seeds": [
+      101,
+      202,
+      303,
+      404,
+      505
+    ],
+    "raw_values": [
+      0.5575956768698498,
+      0.6173522490863887,
+      0.5355499473916403,
+      0.612611012190905,
+      0.591267561148626
+    ],
+    "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+    "new_training_runs": 5,
+    "formal_harbor_acceptance": false
+  },
+  "scientific_metric_unchanged": true,
+  "within_7200_seconds": true,
+  "formal_platform_acceptance": false
+}

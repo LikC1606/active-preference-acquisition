@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "started_unix": 1791425185.021742,
+  "protected_running_containers": {
+    "d0107db82af82f8555b87df55b2a158947c804407922dac840b05392f485795f": "sha256:862609eacbb579fdddd59fb968eddd81afd7ec79152710609e0e3e02f20b9f85",
+    "51cc4e25231336281d2dd5b15e786f2e308afe7ce2a971f6d7bd29dda5d47fd4": "sha256:862609eacbb579fdddd59fb968eddd81afd7ec79152710609e0e3e02f20b9f85",
+    "59a20ca87f0bc835076f0e11800547b4045a2563a3cd70d935fe66cc42c627ec": "sha256:b6ac0b9e3e7b8702ef9a21b62c24c9d2fc5c399660b5b1e4ca06fcd9b0df48a3",
+    "54892a646559f7108e6120716e7b187a23b6ceb30bba62ad4d4fa2c1e7003ee7": "sha256:b6ac0b9e3e7b8702ef9a21b62c24c9d2fc5c399660b5b1e4ca06fcd9b0df48a3",
+    "c0b42f26156ba775fbe9cdef02763f09112abbcbb71f588de649a685e3afc6fd": "sha256:862609eacbb579fdddd59fb968eddd81afd7ec79152710609e0e3e02f20b9f85",
+    "c8ab70d029104da5b7eac585e04ec363672dcd76a2533853a91ad4bf518e65cc": "sha256:b6ac0b9e3e7b8702ef9a21b62c24c9d2fc5c399660b5b1e4ca06fcd9b0df48a3"
+  },
+  "before": "{\"Active\":\"9\",\"Reclaimable\":\"50.33GB (55%)\",\"Size\":\"91.34GB\",\"TotalCount\":\"26\",\"Type\":\"Images\"}\n{\"Active\":\"6\",\"Reclaimable\":\"18.45MB (20%)\",\"Size\":\"89.39MB\",\"TotalCount\":\"37\",\"Type\":\"Containers\"}\n{\"Active\":\"5\",\"Reclaimable\":\"0B (0%)\",\"Size\":\"8.642MB\",\"TotalCount\":\"5\",\"Type\":\"Local Volumes\"}\n{\"Active\":\"0\",\"Reclaimable\":\"3.354GB\",\"Size\":\"3.354GB\",\"TotalCount\":\"173\",\"Type\":\"Build Cache\"}\n",
+  "build-cache": "Total:\t3.354GB",
+  "dangling-images": "Total reclaimed space: 3.235GB",
+  "after": "{\"Active\":\"9\",\"Reclaimable\":\"17.76GB (30%)\",\"Size\":\"58.76GB\",\"TotalCount\":\"13\",\"Type\":\"Images\"}\n{\"Active\":\"6\",\"Reclaimable\":\"18.45MB (20%)\",\"Size\":\"89.39MB\",\"TotalCount\":\"37\",\"Type\":\"Containers\"}\n{\"Active\":\"5\",\"Reclaimable\":\"0B (0%)\",\"Size\":\"8.642MB\",\"TotalCount\":\"5\",\"Type\":\"Local Volumes\"}\n{\"Active\":\"0\",\"Reclaimable\":\"29.34GB\",\"Size\":\"29.34GB\",\"TotalCount\":\"167\",\"Type\":\"Build Cache\"}\n",
+  "filesystem": "Filesystem      Size  Used Avail Use% Mounted on\noverlay          94G   84G  6.1G  94% /\n",
+  "finished_unix": 1791425187.7581224
+}

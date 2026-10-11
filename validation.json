@@ -1,0 +1,16 @@
+{
+  "status": "offline_distribution_roundtrip_passed",
+  "main_bytes": 61569692,
+  "asset_parts": 42,
+  "maximum_part_bytes": 217540527,
+  "total_bytes": 3394301192,
+  "original_tar_gz_bytes": 3691439871,
+  "restored_files": 4008,
+  "all_file_hashes_passed": true,
+  "all_file_modes_passed": true,
+  "manifest_unchanged": true,
+  "qa_decision": "PASS",
+  "formal_platform_acceptance": false,
+  "training_runs": 0,
+  "model_api_requests": 0
+}

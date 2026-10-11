@@ -1,0 +1,510 @@
+[
+  {
+    "Id": "49fbf266d3ff3dd31f81353cf01b40276db0aed8dd5050f9625cc6e1eec6e7ac",
+    "Created": "2026-10-08T01:09:14.638495078Z",
+    "Path": "sleep",
+    "Args": [
+      "infinity"
+    ],
+    "State": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 3687,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-10-08T01:09:25.446774409Z",
+      "FinishedAt": "0001-01-01T00:00:00Z"
+    },
+    "Image": "sha256:ed84891a93651cbab12e9ac9326826861357f9f7be5590aa44e25845f99c180e",
+    "ResolvConfPath": "/data/docker/containers/49fbf266d3ff3dd31f81353cf01b40276db0aed8dd5050f9625cc6e1eec6e7ac/resolv.conf",
+    "HostnamePath": "/data/docker/containers/49fbf266d3ff3dd31f81353cf01b40276db0aed8dd5050f9625cc6e1eec6e7ac/hostname",
+    "HostsPath": "/data/docker/containers/49fbf266d3ff3dd31f81353cf01b40276db0aed8dd5050f9625cc6e1eec6e7ac/hosts",
+    "LogPath": "/data/docker/containers/49fbf266d3ff3dd31f81353cf01b40276db0aed8dd5050f9625cc6e1eec6e7ac/49fbf266d3ff3dd31f81353cf01b40276db0aed8dd5050f9625cc6e1eec6e7ac-json.log",
+    "Name": "/arm-harbor-v14-best-physical-main-1",
+    "RestartCount": 0,
+    "Driver": "overlay2",
+    "Platform": "linux",
+    "MountLabel": "",
+    "ProcessLabel": "",
+    "AppArmorProfile": "docker-default",
+    "ExecIDs": null,
+    "HostConfig": {
+      "Binds": null,
+      "ContainerIDFile": "",
+      "LogConfig": {
+        "Type": "json-file",
+        "Config": {
+          "max-file": "2",
+          "max-size": "10m"
+        }
+      },
+      "NetworkMode": "none",
+      "PortBindings": {},
+      "RestartPolicy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "AutoRemove": false,
+      "VolumeDriver": "",
+      "VolumesFrom": null,
+      "ConsoleSize": [
+        0,
+        0
+      ],
+      "CapAdd": null,
+      "CapDrop": [
+        "ALL"
+      ],
+      "CgroupnsMode": "private",
+      "Dns": null,
+      "DnsOptions": null,
+      "DnsSearch": null,
+      "ExtraHosts": [],
+      "GroupAdd": null,
+      "IpcMode": "container:861ef99f3dd8f92a16f60815504d83034937c038d9e814aebb7d4b0dd7caa7bf",
+      "Cgroup": "",
+      "Links": null,
+      "OomScoreAdj": 0,
+      "PidMode": "",
+      "Privileged": false,
+      "PublishAllPorts": false,
+      "ReadonlyRootfs": false,
+      "SecurityOpt": [
+        "no-new-privileges:true"
+      ],
+      "UTSMode": "",
+      "UsernsMode": "",
+      "ShmSize": 67108864,
+      "Runtime": "runc",
+      "Isolation": "",
+      "CpuShares": 0,
+      "Memory": 4294967296,
+      "NanoCpus": 2000000000,
+      "CgroupParent": "",
+      "BlkioWeight": 0,
+      "BlkioWeightDevice": null,
+      "BlkioDeviceReadBps": null,
+      "BlkioDeviceWriteBps": null,
+      "BlkioDeviceReadIOps": null,
+      "BlkioDeviceWriteIOps": null,
+      "CpuPeriod": 0,
+      "CpuQuota": 0,
+      "CpuRealtimePeriod": 0,
+      "CpuRealtimeRuntime": 0,
+      "CpusetCpus": "6-7",
+      "CpusetMems": "",
+      "Devices": null,
+      "DeviceCgroupRules": null,
+      "DeviceRequests": null,
+      "MemoryReservation": 0,
+      "MemorySwap": -1,
+      "MemorySwappiness": null,
+      "OomKillDisable": null,
+      "PidsLimit": 256,
+      "Ulimits": null,
+      "CpuCount": 0,
+      "CpuPercent": 0,
+      "IOMaximumIOps": 0,
+      "IOMaximumBandwidth": 0,
+      "Mounts": [
+        {
+          "Type": "bind",
+          "Source": "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/compliance-v14/arm-harbor-v14-best-physical-acceptance/best/trial/verifier",
+          "Target": "/logs/verifier"
+        }
+      ],
+      "MaskedPaths": [
+        "/proc/asound",
+        "/proc/acpi",
+        "/proc/interrupts",
+        "/proc/kcore",
+        "/proc/keys",
+        "/proc/latency_stats",
+        "/proc/timer_list",
+        "/proc/timer_stats",
+        "/proc/sched_debug",
+        "/proc/scsi",
+        "/sys/firmware",
+        "/sys/devices/virtual/powercap"
+      ],
+      "ReadonlyPaths": [
+        "/proc/bus",
+        "/proc/fs",
+        "/proc/irq",
+        "/proc/sys",
+        "/proc/sysrq-trigger"
+      ],
+      "Init": true
+    },
+    "GraphDriver": {
+      "Data": {
+        "ID": "49fbf266d3ff3dd31f81353cf01b40276db0aed8dd5050f9625cc6e1eec6e7ac",
+        "LowerDir": "/data/docker/overlay2/54b63b13d50745a8d428b75ba0f8d7d84b111f74162e6b6fb197604891b0fb8b-init/diff:/data/docker/overlay2/8bmjf4cnbvjo325ua7r5zfp87/diff:/data/docker/overlay2/fvfimago70tje2lyfi0l99ku3/diff:/data/docker/overlay2/d00zig4w4crixlytb6di3nli8/diff:/data/docker/overlay2/6iw9yxt15dwu6w5t5tlwntnhy/diff:/data/docker/overlay2/0yvzkhpg7hcsugoqthv8noa11/diff:/data/docker/overlay2/3aqvuhnx5i72vm1ges0k4bgt2/diff:/data/docker/overlay2/db29bfbb6q51xdi180tr1v454/diff:/data/docker/overlay2/p7owki5y5c96blne7p3taxpwo/diff:/data/docker/overlay2/vt4p8oflz8bu8gursx9uqmmuk/diff:/data/docker/overlay2/rew9bq42t1cannzt3kici4qni/diff:/data/docker/overlay2/npci8v5jsnx6d478izq1haxeq/diff:/data/docker/overlay2/rrmw1murklpsarb5thdhc0ml2/diff:/data/docker/overlay2/r2rml8ykopyhuup0umbfcb4ho/diff:/data/docker/overlay2/bhqr4hm2s5qj8rbfe68rq7s9k/diff:/data/docker/overlay2/964d3e6ff110db11149d78be7b9111309fc61c27ec46ea0bdad3a915d34b62c6/diff:/data/docker/overlay2/1f44eb61feef97a2076259a37067695f9acc4904dead5bf7ea610a8acf4eb00d/diff:/data/docker/overlay2/4cf54c696286ba23768f9d3ac5a7ffce6ed8c82035e7ea4cce0f25539a739e83/diff:/data/docker/overlay2/d32685be7e4ae216087549ebb93b45807eee5274ab283f69f8bdab804d710674/diff",
+        "MergedDir": "/data/docker/overlay2/54b63b13d50745a8d428b75ba0f8d7d84b111f74162e6b6fb197604891b0fb8b/merged",
+        "UpperDir": "/data/docker/overlay2/54b63b13d50745a8d428b75ba0f8d7d84b111f74162e6b6fb197604891b0fb8b/diff",
+        "WorkDir": "/data/docker/overlay2/54b63b13d50745a8d428b75ba0f8d7d84b111f74162e6b6fb197604891b0fb8b/work"
+      },
+      "Name": "overlay2"
+    },
+    "Mounts": [
+      {
+        "Type": "bind",
+        "Source": "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/compliance-v14/arm-harbor-v14-best-physical-acceptance/best/trial/verifier",
+        "Destination": "/logs/verifier",
+        "Mode": "",
+        "RW": true,
+        "Propagation": "rprivate"
+      }
+    ],
+    "Config": {
+      "Hostname": "49fbf266d3ff",
+      "Domainname": "",
+      "User": "65532:65532",
+      "AttachStdin": false,
+      "AttachStdout": true,
+      "AttachStderr": true,
+      "Tty": false,
+      "OpenStdin": false,
+      "StdinOnce": false,
+      "Env": [
+        "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "LANG=C.UTF-8",
+        "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+        "PYTHON_VERSION=3.11.11",
+        "PYTHON_SHA256=2a9920c7a0cd236de33644ed980a13cbbc21058bfdc528febb6081575ed73be3",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1"
+      ],
+      "Cmd": [
+        "sleep",
+        "infinity"
+      ],
+      "Image": "hb__1ece31aee21158fdce19f38aec14dfa1",
+      "Volumes": null,
+      "WorkingDir": "/harbor_task",
+      "Entrypoint": null,
+      "OnBuild": null,
+      "Labels": {
+        "com.docker.compose.config-hash": "41711abd2042c003a29694d06d0a965079c51bcc8507574df406dca4204a6a9c",
+        "com.docker.compose.container-number": "1",
+        "com.docker.compose.depends_on": "evaluator:service_healthy:false",
+        "com.docker.compose.image": "sha256:ed84891a93651cbab12e9ac9326826861357f9f7be5590aa44e25845f99c180e",
+        "com.docker.compose.oneoff": "False",
+        "com.docker.compose.project": "arm-harbor-v14-best-physical",
+        "com.docker.compose.project.config_files": "/tmp/tmprzv9tj3c/arm-harbor-v14-best-physical-docker-compose-resources.json,/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml,/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/delivery/workspace/harbor_task/tests/docker-compose.yaml,/tmp/tmpb9uncqym/docker-compose-environment.json,/tmp/tmpzdqtz7sh/docker-compose-mounts.json,/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-egress-control.yaml",
+        "com.docker.compose.project.working_dir": "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/delivery/workspace/harbor_task/tests",
+        "com.docker.compose.service": "main",
+        "com.docker.compose.version": "2.28.1"
+      }
+    },
+    "NetworkSettings": {
+      "Bridge": "",
+      "SandboxID": "3f04499c41000701c9ffd54a619ad4999f12f42c555b175c4b1855ad8a6d7bb8",
+      "SandboxKey": "/var/run/docker/netns/3f04499c4100",
+      "Ports": {},
+      "HairpinMode": false,
+      "LinkLocalIPv6Address": "",
+      "LinkLocalIPv6PrefixLen": 0,
+      "SecondaryIPAddresses": null,
+      "SecondaryIPv6Addresses": null,
+      "EndpointID": "",
+      "Gateway": "",
+      "GlobalIPv6Address": "",
+      "GlobalIPv6PrefixLen": 0,
+      "IPAddress": "",
+      "IPPrefixLen": 0,
+      "IPv6Gateway": "",
+      "MacAddress": "",
+      "Networks": {
+        "none": {
+          "IPAMConfig": null,
+          "Links": null,
+          "Aliases": null,
+          "MacAddress": "",
+          "DriverOpts": null,
+          "GwPriority": 0,
+          "NetworkID": "cfe8e3c827f37d0b4972d0470f9691b406ec639d72416f7ae5aa6b8802d4f732",
+          "EndpointID": "38bc97b0fb5f412a5dd8efa76cf47b769dddabe1d38296d290e944f1a67b7080",
+          "Gateway": "",
+          "IPAddress": "",
+          "IPPrefixLen": 0,
+          "IPv6Gateway": "",
+          "GlobalIPv6Address": "",
+          "GlobalIPv6PrefixLen": 0,
+          "DNSNames": null
+        }
+      }
+    }
+  },
+  {
+    "Id": "861ef99f3dd8f92a16f60815504d83034937c038d9e814aebb7d4b0dd7caa7bf",
+    "Created": "2026-10-08T01:09:12.994261893Z",
+    "Path": "python3",
+    "Args": [
+      "-u",
+      "/opt/arm-private/service.py"
+    ],
+    "State": {
+      "Status": "running",
+      "Running": true,
+      "Paused": false,
+      "Restarting": false,
+      "OOMKilled": false,
+      "Dead": false,
+      "Pid": 3174,
+      "ExitCode": 0,
+      "Error": "",
+      "StartedAt": "2026-10-08T01:09:14.774734159Z",
+      "FinishedAt": "0001-01-01T00:00:00Z",
+      "Health": {
+        "Status": "healthy",
+        "FailingStreak": 0,
+        "Log": [
+          {
+            "Start": "2026-10-08T01:09:19.883852331Z",
+            "End": "2026-10-08T01:09:19.922223195Z",
+            "ExitCode": 1,
+            "Output": ""
+          },
+          {
+            "Start": "2026-10-08T01:09:24.923056908Z",
+            "End": "2026-10-08T01:09:24.956807373Z",
+            "ExitCode": 0,
+            "Output": ""
+          }
+        ]
+      }
+    },
+    "Image": "sha256:5ea32ca863ab35eb9780243f328a1e933449c3ce9ba39c2948d15b42859921fb",
+    "ResolvConfPath": "/data/docker/containers/861ef99f3dd8f92a16f60815504d83034937c038d9e814aebb7d4b0dd7caa7bf/resolv.conf",
+    "HostnamePath": "/data/docker/containers/861ef99f3dd8f92a16f60815504d83034937c038d9e814aebb7d4b0dd7caa7bf/hostname",
+    "HostsPath": "/data/docker/containers/861ef99f3dd8f92a16f60815504d83034937c038d9e814aebb7d4b0dd7caa7bf/hosts",
+    "LogPath": "/data/docker/containers/861ef99f3dd8f92a16f60815504d83034937c038d9e814aebb7d4b0dd7caa7bf/861ef99f3dd8f92a16f60815504d83034937c038d9e814aebb7d4b0dd7caa7bf-json.log",
+    "Name": "/arm-harbor-v14-best-physical-evaluator-1",
+    "RestartCount": 0,
+    "Driver": "overlay2",
+    "Platform": "linux",
+    "MountLabel": "",
+    "ProcessLabel": "",
+    "AppArmorProfile": "docker-default",
+    "ExecIDs": null,
+    "HostConfig": {
+      "Binds": null,
+      "ContainerIDFile": "",
+      "LogConfig": {
+        "Type": "json-file",
+        "Config": {
+          "max-file": "2",
+          "max-size": "10m"
+        }
+      },
+      "NetworkMode": "none",
+      "PortBindings": {},
+      "RestartPolicy": {
+        "Name": "no",
+        "MaximumRetryCount": 0
+      },
+      "AutoRemove": false,
+      "VolumeDriver": "",
+      "VolumesFrom": null,
+      "ConsoleSize": [
+        0,
+        0
+      ],
+      "CapAdd": [
+        "SYS_CHROOT",
+        "SETUID",
+        "SETGID",
+        "CHOWN",
+        "DAC_OVERRIDE",
+        "FOWNER"
+      ],
+      "CapDrop": [
+        "ALL"
+      ],
+      "CgroupnsMode": "private",
+      "Dns": null,
+      "DnsOptions": null,
+      "DnsSearch": null,
+      "ExtraHosts": [],
+      "GroupAdd": null,
+      "IpcMode": "shareable",
+      "Cgroup": "",
+      "Links": null,
+      "OomScoreAdj": 0,
+      "PidMode": "",
+      "Privileged": false,
+      "PublishAllPorts": false,
+      "ReadonlyRootfs": false,
+      "SecurityOpt": [
+        "no-new-privileges:true"
+      ],
+      "UTSMode": "",
+      "UsernsMode": "",
+      "ShmSize": 67108864,
+      "Runtime": "runc",
+      "Isolation": "",
+      "CpuShares": 0,
+      "Memory": 34359738368,
+      "NanoCpus": 6000000000,
+      "CgroupParent": "",
+      "BlkioWeight": 0,
+      "BlkioWeightDevice": null,
+      "BlkioDeviceReadBps": null,
+      "BlkioDeviceWriteBps": null,
+      "BlkioDeviceReadIOps": null,
+      "BlkioDeviceWriteIOps": null,
+      "CpuPeriod": 0,
+      "CpuQuota": 0,
+      "CpuRealtimePeriod": 0,
+      "CpuRealtimeRuntime": 0,
+      "CpusetCpus": "0-5",
+      "CpusetMems": "",
+      "Devices": null,
+      "DeviceCgroupRules": null,
+      "DeviceRequests": null,
+      "MemoryReservation": 0,
+      "MemorySwap": -1,
+      "MemorySwappiness": null,
+      "OomKillDisable": null,
+      "PidsLimit": 512,
+      "Ulimits": null,
+      "CpuCount": 0,
+      "CpuPercent": 0,
+      "IOMaximumIOps": 0,
+      "IOMaximumBandwidth": 0,
+      "MaskedPaths": [
+        "/proc/asound",
+        "/proc/acpi",
+        "/proc/interrupts",
+        "/proc/kcore",
+        "/proc/keys",
+        "/proc/latency_stats",
+        "/proc/timer_list",
+        "/proc/timer_stats",
+        "/proc/sched_debug",
+        "/proc/scsi",
+        "/sys/firmware",
+        "/sys/devices/virtual/powercap"
+      ],
+      "ReadonlyPaths": [
+        "/proc/bus",
+        "/proc/fs",
+        "/proc/irq",
+        "/proc/sys",
+        "/proc/sysrq-trigger"
+      ],
+      "Init": true
+    },
+    "GraphDriver": {
+      "Data": {
+        "ID": "861ef99f3dd8f92a16f60815504d83034937c038d9e814aebb7d4b0dd7caa7bf",
+        "LowerDir": "/data/docker/overlay2/0db8c41bb4e0f69bf0c54af1cc74cea8430923f0026f3e6435431112c14700ce-init/diff:/data/docker/overlay2/jte1m1u1gwvz5o5mojb2x05z5/diff:/data/docker/overlay2/twz7xy0ccg53ihqkejtiycmko/diff:/data/docker/overlay2/rtorbej7j87yhbw82mhbox9ti/diff:/data/docker/overlay2/wsgyhffzrhwmf31pyn441047o/diff:/data/docker/overlay2/gy169bgr16pkzhrqynp5oi5at/diff:/data/docker/overlay2/k6x84pvndh19uyv5m6z87k1ob/diff:/data/docker/overlay2/svgyrv7jl76vlta28mwhrioro/diff:/data/docker/overlay2/cbzwcwepict5yj0rpsicgyuqj/diff:/data/docker/overlay2/hjf5oougfk78ie8mjrz6aikge/diff:/data/docker/overlay2/ix6cs9wmvzgnm521xsx51tlge/diff:/data/docker/overlay2/omnoydk7xn4v9u9b5nwdwke15/diff:/data/docker/overlay2/mkxelnohrvcdbmdo8t0cuf1wr/diff:/data/docker/overlay2/964d3e6ff110db11149d78be7b9111309fc61c27ec46ea0bdad3a915d34b62c6/diff:/data/docker/overlay2/1f44eb61feef97a2076259a37067695f9acc4904dead5bf7ea610a8acf4eb00d/diff:/data/docker/overlay2/4cf54c696286ba23768f9d3ac5a7ffce6ed8c82035e7ea4cce0f25539a739e83/diff:/data/docker/overlay2/d32685be7e4ae216087549ebb93b45807eee5274ab283f69f8bdab804d710674/diff",
+        "MergedDir": "/data/docker/overlay2/0db8c41bb4e0f69bf0c54af1cc74cea8430923f0026f3e6435431112c14700ce/merged",
+        "UpperDir": "/data/docker/overlay2/0db8c41bb4e0f69bf0c54af1cc74cea8430923f0026f3e6435431112c14700ce/diff",
+        "WorkDir": "/data/docker/overlay2/0db8c41bb4e0f69bf0c54af1cc74cea8430923f0026f3e6435431112c14700ce/work"
+      },
+      "Name": "overlay2"
+    },
+    "Mounts": [],
+    "Config": {
+      "Hostname": "861ef99f3dd8",
+      "Domainname": "",
+      "User": "0:0",
+      "AttachStdin": false,
+      "AttachStdout": true,
+      "AttachStderr": true,
+      "Tty": false,
+      "OpenStdin": false,
+      "StdinOnce": false,
+      "Env": [
+        "PATH=/usr/local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+        "LANG=C.UTF-8",
+        "GPG_KEY=A035C8C19219BA821ECEA86B64E628F8D684696D",
+        "PYTHON_VERSION=3.11.11",
+        "PYTHON_SHA256=2a9920c7a0cd236de33644ed980a13cbbc21058bfdc528febb6081575ed73be3",
+        "PYTHONDONTWRITEBYTECODE=1",
+        "OMP_NUM_THREADS=1",
+        "OPENBLAS_NUM_THREADS=1",
+        "MKL_NUM_THREADS=1"
+      ],
+      "Cmd": null,
+      "Healthcheck": {
+        "Test": [
+          "CMD",
+          "test",
+          "-f",
+          "/var/lib/arm/ready"
+        ],
+        "Interval": 5000000000,
+        "Timeout": 2000000000,
+        "Retries": 120
+      },
+      "Image": "hb__1ece31aee21158fdce19f38aec14dfa1__evaluator",
+      "Volumes": null,
+      "WorkingDir": "/workspace",
+      "Entrypoint": [
+        "python3",
+        "-u",
+        "/opt/arm-private/service.py"
+      ],
+      "OnBuild": null,
+      "Labels": {
+        "com.docker.compose.config-hash": "193ac1f961c545ac1b2116e4cd415b756e0a7aaaffcb612091192de96ab7f962",
+        "com.docker.compose.container-number": "1",
+        "com.docker.compose.depends_on": "",
+        "com.docker.compose.image": "sha256:5ea32ca863ab35eb9780243f328a1e933449c3ce9ba39c2948d15b42859921fb",
+        "com.docker.compose.oneoff": "False",
+        "com.docker.compose.project": "arm-harbor-v14-best-physical",
+        "com.docker.compose.project.config_files": "/tmp/tmprzv9tj3c/arm-harbor-v14-best-physical-docker-compose-resources.json,/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-build.yaml,/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/delivery/workspace/harbor_task/tests/docker-compose.yaml,/tmp/tmpb9uncqym/docker-compose-environment.json,/tmp/tmpzdqtz7sh/docker-compose-mounts.json,/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/harborbuilder/.venv-harborbuilder/lib/python3.12/site-packages/harbor/environments/docker/docker-compose-egress-control.yaml",
+        "com.docker.compose.project.working_dir": "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/delivery/workspace/harbor_task/tests",
+        "com.docker.compose.service": "evaluator",
+        "com.docker.compose.version": "2.28.1"
+      }
+    },
+    "NetworkSettings": {
+      "Bridge": "",
+      "SandboxID": "8e4feda7efe8b0c6d8f5c0d2b3c7525da83b45420f4ff88aa82a39898627a70b",
+      "SandboxKey": "/var/run/docker/netns/8e4feda7efe8",
+      "Ports": {},
+      "HairpinMode": false,
+      "LinkLocalIPv6Address": "",
+      "LinkLocalIPv6PrefixLen": 0,
+      "SecondaryIPAddresses": null,
+      "SecondaryIPv6Addresses": null,
+      "EndpointID": "",
+      "Gateway": "",
+      "GlobalIPv6Address": "",
+      "GlobalIPv6PrefixLen": 0,
+      "IPAddress": "",
+      "IPPrefixLen": 0,
+      "IPv6Gateway": "",
+      "MacAddress": "",
+      "Networks": {
+        "none": {
+          "IPAMConfig": null,
+          "Links": null,
+          "Aliases": null,
+          "MacAddress": "",
+          "DriverOpts": null,
+          "GwPriority": 0,
+          "NetworkID": "cfe8e3c827f37d0b4972d0470f9691b406ec639d72416f7ae5aa6b8802d4f732",
+          "EndpointID": "1058e018d6c1aa7e470cb09bf56de954ca13c89deacf4e71bd4742b0d5ecd0f5",
+          "Gateway": "",
+          "IPAddress": "",
+          "IPPrefixLen": 0,
+          "IPv6Gateway": "",
+          "GlobalIPv6Address": "",
+          "GlobalIPv6PrefixLen": 0,
+          "DNSNames": null
+        }
+      }
+    }
+  }
+]

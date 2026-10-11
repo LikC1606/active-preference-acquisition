@@ -1,0 +1,20 @@
+..........E.............
+======================================================================
+ERROR: test_machine_budget_matches_score_deadline_and_resources (__main__.AcquisitionContract.test_machine_budget_matches_score_deadline_and_resources)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/harbor_task/tests/acquisition_test_contract.py", line 289, in test_machine_budget_matches_score_deadline_and_resources
+    config = tomllib.loads((task / "task.toml").read_text())
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/pathlib.py", line 1058, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/pathlib.py", line 1044, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/harbor_task/task.toml'
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.211s
+
+FAILED (errors=1)

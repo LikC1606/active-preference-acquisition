@@ -1,0 +1,6 @@
+{
+  "round": 1,
+  "attempt": 2,
+  "status": "failed",
+  "error": "Interrupted author request retained; no automatic request repeated"
+}

@@ -1,0 +1,305 @@
+{
+  "status": "passed",
+  "container_ids": {
+    "main": "c0b42f26156ba775fbe9cdef02763f09112abbcbb71f588de649a685e3afc6fd",
+    "evaluator": "c8ab70d029104da5b7eac585e04ec363672dcd76a2533853a91ad4bf518e65cc"
+  },
+  "images": {
+    "c0b42f26156ba775fbe9cdef02763f09112abbcbb71f588de649a685e3afc6fd": "sha256:862609eacbb579fdddd59fb968eddd81afd7ec79152710609e0e3e02f20b9f85",
+    "c8ab70d029104da5b7eac585e04ec363672dcd76a2533853a91ad4bf518e65cc": "sha256:b6ac0b9e3e7b8702ef9a21b62c24c9d2fc5c399660b5b1e4ca06fcd9b0df48a3"
+  },
+  "runtime_and_data_match": true,
+  "document_only_changes": [
+    {
+      "path": "workspace/harbor_task/environment/task/instruction.md",
+      "image_sha256": "0164c729d1f311110f696d066d2ef614d6314935248347a5b740529a8b4a182e",
+      "package_sha256": "0c870eacaae3b83d4ee6a72b5d6ac02516db816476b42b3654fb9433caa97c84",
+      "contract_unchanged": true
+    }
+  ],
+  "bindings": {
+    "main": {
+      "files": {
+        "workspace/harbor_task/environment/public_assets/dev-embeddings.npy": {
+          "image_path": "/harbor_task/environment/public_assets/dev-embeddings.npy",
+          "bytes": 343081088,
+          "sha256": "0a68247d4a9f4b6a6c2e4515275f37af881e96f5f57f9864d96d279f0b8ab57c"
+        },
+        "workspace/harbor_task/environment/public_assets/protocol.json": {
+          "image_path": "/harbor_task/environment/public_assets/protocol.json",
+          "bytes": 1140,
+          "sha256": "a7deadf173d8e7475bb06d933dd1c2452d59615c78a1e4fb15e4792b4174bfd6"
+        },
+        "workspace/harbor_task/environment/public_assets/train-embeddings.npy": {
+          "image_path": "/harbor_task/environment/public_assets/train-embeddings.npy",
+          "bytes": 2744320128,
+          "sha256": "2f37b546b044844360b9a3ceff8f09607e09e84b80eab64bd1f767b460fc5ce1"
+        },
+        "workspace/harbor_task/environment/public_assets/data_manifest.json": {
+          "image_path": "/harbor_task/environment/public_assets/data_manifest.json",
+          "bytes": 707,
+          "sha256": "27eb26afc92c1c262d32c4227b7fcb62cf6f0aebea627492430c7270cef77c6d"
+        },
+        "workspace/harbor_task/environment/starter/select.py": {
+          "image_path": "/harbor_task/environment/starter/select.py",
+          "bytes": 247,
+          "sha256": "e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb"
+        },
+        "workspace/harbor_task/environment/task/tests/grader.py": {
+          "image_path": "/harbor_task/tests/grader.py",
+          "bytes": 11163,
+          "sha256": "8d17af2d807dbadd764e7649757c712f34341480f060d7a4abb09a210da111a3"
+        },
+        "workspace/harbor_task/environment/task/tests/test.sh": {
+          "image_path": "/harbor_task/tests/test.sh",
+          "bytes": 428,
+          "sha256": "ce8ecb17a974d35024086d357d405e772c0f089d0ca5f3efdaeb429f2e77a18f"
+        },
+        "workspace/harbor_task/environment/task/tests/acquisition_test_contract.py": {
+          "image_path": "/harbor_task/tests/acquisition_test_contract.py",
+          "bytes": 16707,
+          "sha256": "ff15aa7a3e30446232e5a89d3170264647c7198caa78e62f3e3875a48609b69b"
+        },
+        "workspace/harbor_task/environment/task/instruction.md": {
+          "image_path": "/harbor_task/instruction.md",
+          "bytes": 7893,
+          "sha256": "0164c729d1f311110f696d066d2ef614d6314935248347a5b740529a8b4a182e"
+        },
+        "workspace/harbor_task/environment/task/task.toml": {
+          "image_path": "/harbor_task/task.toml",
+          "bytes": 647,
+          "sha256": "e74807451563b2a552c01f80c34e1c461ce015f52905e7440c8f6cb013811009"
+        },
+        "workspace/harbor_task/environment/baseline.json": {
+          "image_path": "/harbor_task/environment/baseline.json",
+          "bytes": 436,
+          "sha256": "0bcf3e3434b7eee8ff5b9e60f080669331f8170c7237a8a474b23d74d0405f7c"
+        },
+        "workspace/harbor_task/environment/requirements.txt": {
+          "image_path": "/harbor_task/environment/requirements.txt",
+          "bytes": 1440,
+          "sha256": "3641811ec5fbe6471564e1f4ed6b4ca79fb96aaa332971ad10201616eee0cf78"
+        }
+      },
+      "dependencies": {
+        "numpy": "1.23.5",
+        "scipy": "1.15.1",
+        "torch": "2.2.1+cpu"
+      }
+    },
+    "evaluator": {
+      "files": {
+        "workspace/harbor_task/environment/public_assets/dev-embeddings.npy": {
+          "image_path": "/workspace/environment/public_assets/dev-embeddings.npy",
+          "bytes": 343081088,
+          "sha256": "0a68247d4a9f4b6a6c2e4515275f37af881e96f5f57f9864d96d279f0b8ab57c"
+        },
+        "workspace/harbor_task/environment/public_assets/protocol.json": {
+          "image_path": "/workspace/environment/public_assets/protocol.json",
+          "bytes": 1140,
+          "sha256": "a7deadf173d8e7475bb06d933dd1c2452d59615c78a1e4fb15e4792b4174bfd6"
+        },
+        "workspace/harbor_task/environment/public_assets/train-embeddings.npy": {
+          "image_path": "/workspace/environment/public_assets/train-embeddings.npy",
+          "bytes": 2744320128,
+          "sha256": "2f37b546b044844360b9a3ceff8f09607e09e84b80eab64bd1f767b460fc5ce1"
+        },
+        "workspace/harbor_task/environment/public_assets/data_manifest.json": {
+          "image_path": "/workspace/environment/public_assets/data_manifest.json",
+          "bytes": 707,
+          "sha256": "27eb26afc92c1c262d32c4227b7fcb62cf6f0aebea627492430c7270cef77c6d"
+        },
+        "optimization_evidence/runtime/native/service.py": {
+          "image_path": "/opt/arm-private/service.py",
+          "bytes": 12740,
+          "sha256": "1d0de9840b47b94c94d871822ab8f343dc48aca06dd6fbc4d9aebf08b1fa1b18"
+        },
+        "optimization_evidence/runtime/native/worker.py": {
+          "image_path": "/opt/arm-private/worker.py",
+          "bytes": 9879,
+          "sha256": "9a42a254250c351fb5d6d175486b30b50c41abe3ca0ef07318a59f8ff5dc0d29"
+        },
+        "optimization_evidence/runtime/native/selector_entry.py": {
+          "image_path": "/opt/arm-private/selector_entry.py",
+          "bytes": 847,
+          "sha256": "c8032c7b9752e6c677ad573de14595ade5b9282091bf9d53d800f585df50d08b"
+        },
+        "optimization_evidence/runtime/native/selector_sandbox.py": {
+          "image_path": "/opt/arm-private/selector_sandbox.py",
+          "bytes": 3213,
+          "sha256": "4f89571a353484b251738a705a113a7fba007fc6611fa7fb1f2ec03cb81f9781"
+        },
+        "optimization_evidence/runtime/native/validate_calibration.py": {
+          "image_path": "/opt/arm-private/validate_calibration.py",
+          "bytes": 1479,
+          "sha256": "ef512abd73df8e1ba6d0f952ece67d00756355d827995f86d7fe6c9b2ad10b72"
+        },
+        "optimization_evidence/runtime/native/baseline.json": {
+          "image_path": "/opt/arm-private/baseline.json",
+          "bytes": 436,
+          "sha256": "0bcf3e3434b7eee8ff5b9e60f080669331f8170c7237a8a474b23d74d0405f7c"
+        },
+        "optimization_evidence/runtime/native/definition.json": {
+          "image_path": "/opt/arm-private/definition.json",
+          "bytes": 626,
+          "sha256": "4f5347764149625b742338d826ada523e7df76348683a5d8db48913bd6d977e1"
+        },
+        "optimization_evidence/runtime/native/protocol.json": {
+          "image_path": "/protocol.json",
+          "bytes": 1704,
+          "sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf"
+        },
+        "optimization_evidence/runtime/native/paper/oracle_data.py": {
+          "image_path": "/opt/paper/oracle_data.py",
+          "bytes": 3659,
+          "sha256": "9fbd5b1c503431a1555e3089d4abeccc5655965215a433873bd8f4c1770dce3e"
+        },
+        "optimization_evidence/runtime/native/paper/bradleyterry.py": {
+          "image_path": "/opt/paper/bradleyterry.py",
+          "bytes": 4800,
+          "sha256": "f99399156d41279568abb4b8812635db58fe00743e962ab1abfd96f3c5ceec8c"
+        },
+        "optimization_evidence/runtime/native/paper/hook.py": {
+          "image_path": "/opt/paper/hook.py",
+          "bytes": 17624,
+          "sha256": "176118c057767d04ede76151c329dc6537210bf678776b7cfa88d78bfc4860b0"
+        },
+        "optimization_evidence/runtime/native/paper/rules_pre_paired.py": {
+          "image_path": "/opt/paper/rules_pre_paired.py",
+          "bytes": 12849,
+          "sha256": "07776af38d88cf3972977b805887484dea0dcaedaf9f2e9ce59f3ec482fc6852"
+        },
+        "optimization_evidence/runtime/native/paper/public_manifest.json": {
+          "image_path": "/opt/paper/public_manifest.json",
+          "bytes": 707,
+          "sha256": "27eb26afc92c1c262d32c4227b7fcb62cf6f0aebea627492430c7270cef77c6d"
+        },
+        "optimization_evidence/runtime/native/paper/oracle/dev-rewards.npy": {
+          "image_path": "/opt/paper/oracle/dev-rewards.npy",
+          "bytes": 335168,
+          "sha256": "e1ce715b8feb5ce0b4aa0d7c7fef22e740cafaacf32dfd3a7657a7441904ea91"
+        },
+        "optimization_evidence/runtime/native/paper/oracle/manifest.json": {
+          "image_path": "/opt/paper/oracle/manifest.json",
+          "bytes": 525,
+          "sha256": "5771aee58601a3c1806bdf2210d3e3f279b8aea5ca87fbb594ae8dcd0eba5e23"
+        },
+        "optimization_evidence/runtime/native/paper/oracle/train-rewards.npy": {
+          "image_path": "/opt/paper/oracle/train-rewards.npy",
+          "bytes": 2680128,
+          "sha256": "adfb1c731f69229782f4bac675747d8f77c357304e9a97c4d211480c6a51d5ea"
+        },
+        "optimization_evidence/runtime/native/paper/coresets/evaluation.py": {
+          "image_path": "/opt/paper/coresets/evaluation.py",
+          "bytes": 7926,
+          "sha256": "a2a541206fac85ba14db37ad691df9d855aa2545581a5b0ce2178950ad79fb4d"
+        },
+        "optimization_evidence/runtime/native/paper/coresets/data.py": {
+          "image_path": "/opt/paper/coresets/data.py",
+          "bytes": 11458,
+          "sha256": "883ad7c382d77a4c30c206096fd42f7ef0c791c25cbff252292192dc2883ba35"
+        },
+        "optimization_evidence/runtime/native/paper/coresets/utils.py": {
+          "image_path": "/opt/paper/coresets/utils.py",
+          "bytes": 2073,
+          "sha256": "75cfe7bb9427db322030e519f6d26b050a1b1516f44e63fcb8d1231ca06b6de2"
+        },
+        "optimization_evidence/runtime/native/paper/coresets/algorithms.py": {
+          "image_path": "/opt/paper/coresets/algorithms.py",
+          "bytes": 20206,
+          "sha256": "2dd89f2e71be1623a0520bd558d78f8619759c63b8fa1a4a6a638ec6476cbe70"
+        },
+        "optimization_evidence/runtime/native/paper/coresets/pipeline.py": {
+          "image_path": "/opt/paper/coresets/pipeline.py",
+          "bytes": 31803,
+          "sha256": "0e85f13e024c05aff49adc638cd17fa3960aa9d5cf2d9fc379ac0dac308e449f"
+        },
+        "optimization_evidence/runtime/native/paper/coresets/distributions.py": {
+          "image_path": "/opt/paper/coresets/distributions.py",
+          "bytes": 2791,
+          "sha256": "a04c27127e323c3afd09ceba3bbef11588fa31502960b2e4ce638234cdd44b94"
+        },
+        "optimization_evidence/runtime/native/paper/coresets/__init__.py": {
+          "image_path": "/opt/paper/coresets/__init__.py",
+          "bytes": 0,
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        "optimization_evidence/runtime/native/paper/coresets/kernels.py": {
+          "image_path": "/opt/paper/coresets/kernels.py",
+          "bytes": 4104,
+          "sha256": "e1b07b59c63841459347e42d912b1c8c3a296bf5204054f0b2f7b708c4af9ec3"
+        },
+        "optimization_evidence/runtime/native/paper/coresets/inference.py": {
+          "image_path": "/opt/paper/coresets/inference.py",
+          "bytes": 5912,
+          "sha256": "41b3f8ff9a4c7244b6f230199ce271afb8fd132988ea1bad1b20601c488d4ea8"
+        },
+        "optimization_evidence/runtime/native/paper/coresets/_algorithms.cpython-311-x86_64-linux-gnu.so": {
+          "image_path": "/opt/paper/coresets/_algorithms.cpython-311-x86_64-linux-gnu.so",
+          "bytes": 654144,
+          "sha256": "1aecc97cc83dc2ebd841c291aea8c908c9ca2b1f87ea250de6bfa807282ddde4"
+        },
+        "optimization_evidence/runtime/native/paper/coresets/LICENSE": {
+          "image_path": "/opt/paper/coresets/LICENSE",
+          "bytes": 1063,
+          "sha256": "48c250c8dc8fc73aa2d982b611aa98c175e3d3814bab5149ee130040a4148053"
+        },
+        "optimization_evidence/runtime/native/calibration/seed_202/checkpoint": {
+          "image_path": "/opt/arm-private/calibration/seed_202/checkpoint",
+          "bytes": 561189,
+          "sha256": "670658961c33930c1176d2fdb8f152410045012b2becf6cb72360795cce57770"
+        },
+        "optimization_evidence/runtime/native/calibration/seed_202/evaluation.json": {
+          "image_path": "/opt/arm-private/calibration/seed_202/evaluation.json",
+          "bytes": 504,
+          "sha256": "7ff4fdc36389bfceb3c8422f6e297e904a0016dad654c929915c8e3d5d9370a8"
+        },
+        "optimization_evidence/runtime/native/calibration/seed_303/evaluation.json": {
+          "image_path": "/opt/arm-private/calibration/seed_303/evaluation.json",
+          "bytes": 505,
+          "sha256": "ed940ad6d2eff079f72dcc49c36be2563e49e52b39513efc8d77a0353aa99c3a"
+        },
+        "optimization_evidence/runtime/native/calibration/seed_303/checkpoint": {
+          "image_path": "/opt/arm-private/calibration/seed_303/checkpoint",
+          "bytes": 561189,
+          "sha256": "e78cc3e55a6ddd8a7a2f7a6fa7ed9617c2767717727e90dccadd6960b65bffd5"
+        },
+        "optimization_evidence/runtime/native/calibration/seed_505/checkpoint": {
+          "image_path": "/opt/arm-private/calibration/seed_505/checkpoint",
+          "bytes": 561189,
+          "sha256": "13437c574c825ab178147a1a874aed6d6e8df5fe82f118ddaf3ccdc175d934a0"
+        },
+        "optimization_evidence/runtime/native/calibration/seed_505/evaluation.json": {
+          "image_path": "/opt/arm-private/calibration/seed_505/evaluation.json",
+          "bytes": 505,
+          "sha256": "d98e3a259b489323896aad8c67e88992d0569ff2e05a2efed8f09b9ca9d5c85f"
+        },
+        "optimization_evidence/runtime/native/calibration/seed_101/checkpoint": {
+          "image_path": "/opt/arm-private/calibration/seed_101/checkpoint",
+          "bytes": 561189,
+          "sha256": "8f14ff0778d6dca8dc404abd181cf1c39c9e224921619847ab4614c43e54bf53"
+        },
+        "optimization_evidence/runtime/native/calibration/seed_101/evaluation.json": {
+          "image_path": "/opt/arm-private/calibration/seed_101/evaluation.json",
+          "bytes": 505,
+          "sha256": "76ba6f7d7db356dc75409ead68bc9735f1fb4b159dd19cca22d75e32d13533fb"
+        },
+        "optimization_evidence/runtime/native/calibration/seed_404/evaluation.json": {
+          "image_path": "/opt/arm-private/calibration/seed_404/evaluation.json",
+          "bytes": 505,
+          "sha256": "7ef9c263ec347aab59c41cabbaf6f0b8db69b1d45d43d9ae2c19db9d4d93feec"
+        },
+        "optimization_evidence/runtime/native/calibration/seed_404/checkpoint": {
+          "image_path": "/opt/arm-private/calibration/seed_404/checkpoint",
+          "bytes": 561189,
+          "sha256": "c5506e7704717e1cf59962658840c78259c3d7302e41cecc7a518fa3ed4f88f7"
+        }
+      },
+      "dependencies": {
+        "numpy": "1.23.5",
+        "scipy": "1.15.1",
+        "torch": "2.2.1+cpu"
+      }
+    }
+  }
+}

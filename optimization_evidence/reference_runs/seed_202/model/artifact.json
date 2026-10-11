@@ -1,0 +1,18 @@
+{
+  "schema_version": 1,
+  "role": "reference",
+  "seed": 202,
+  "format": "PyTorch checkpoint",
+  "path": "optimization_evidence/reference_runs/seed_202/model/checkpoint",
+  "bytes": 561189,
+  "sha256": "c13d9d170cb53a0c7b50f7eb4ad26e1c31d13bdb1cc5d400735ebd5e11fe513c",
+  "method_sha256": "aadfffb374fe6c97f98ca14b23197cf23dc2d2ac311d64299b0b4760afc673e3",
+  "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+  "source_result": "optimization_evidence/reference_runs/seed_202/result.json",
+  "source_evaluation": "optimization_evidence/reference_runs/seed_202/records/evaluation.json",
+  "reload": {
+    "historical_match": true,
+    "metric_difference": null,
+    "note": "The original receipt records a successful reload, without a numerical reload delta. reload.log is an unchanged copy of that structured receipt, not a new console log."
+  }
+}

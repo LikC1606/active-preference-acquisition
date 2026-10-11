@@ -1,0 +1,28 @@
+{
+  "round": 6,
+  "attempt": 7,
+  "model": "gpt-5.6-sol",
+  "started_at": "2026-10-08T17:34:36.185594+00:00",
+  "iteration_limit_seconds": 7200,
+  "method_summary": "Approximate the retained full-covariance Fisher-leverage strategy with an eight-dimensional randomized covariance range, while modeling omitted directions using their residual energy and average variance. This preserves prompt-balanced uncertainty and anisotropy scoring but replaces the expensive 64-dimensional covariance projection with substantially smaller vectorized matrix products in response to the timeout feedback.",
+  "selector_sha256": "36ca0ee666464b0566ed939b4acad286a3165a6ae6004854022ef54b8a4c2997",
+  "acceptance": "agent-research/acquisition-gpt-seed-v15-two-hour-retry5/gpt/attempt-007/arm-roll-v15-gpt-007-acceptance/best/summary.json",
+  "status": "succeeded",
+  "score": 0.23652465556416435,
+  "mean_error": 0.5191403777564709,
+  "raw_values": [
+    0.5166128868290147,
+    0.5248540042177117,
+    0.5092697547323495,
+    0.5220764303371407,
+    0.5228888126661382
+  ],
+  "new_training_runs": 5,
+  "author_method_seconds": 29.36369277536869,
+  "verifier_seconds": 6484.846858676523,
+  "effective_seconds": 6514.210551451892,
+  "iteration_wall_seconds": 6563.39454061538,
+  "within_7200_seconds": true,
+  "decision": "reject",
+  "finished_at": "2026-10-08T19:23:59.580248+00:00"
+}

@@ -1,0 +1,20 @@
+{
+  "round": 5,
+  "attempt": 8,
+  "model": "gpt-5.6-sol",
+  "method_summary": "Keep the successful one-pair-per-prompt and shrinkage-whitened geometry, but replace the previous heuristic margin correction with Gauss-Hermite Bayesian mutual information (BALD), plus a small expected-Fisher term. This is a targeted change after the prior Bayesian-adjusted selector became the best result, avoiding the previously regressive sequential-diversity and annealing strategies.",
+  "selector_sha256": "774b47f6d2751c8bb3d2a4dd9b634ce9ff7c7cde3a633e190bd302efe0d0ead4",
+  "score": 0.24240974865627934,
+  "mean_error": 0.5151386906381656,
+  "raw_values": [
+    0.4926824610600503,
+    0.5195836423443716,
+    0.5055554949432712,
+    0.524572882595614,
+    0.5332989722475213
+  ],
+  "new_training_runs": 5,
+  "status": "succeeded",
+  "effective_seconds": 7378.7937108054175,
+  "decision": "retain"
+}

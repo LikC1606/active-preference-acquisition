@@ -1,0 +1,29 @@
+{
+  "request_id": "d22cda14177a47c882cf39f1fadc7335",
+  "status": "succeeded",
+  "selector_sha256": "e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb",
+  "schema": "arm.acquisition.reward.v1",
+  "evaluation_split": "hidden",
+  "score": 0.0,
+  "baseline_mean": 0.687686234577137,
+  "baseline_score": 0.0,
+  "mean_error": 0.687686234577137,
+  "seeds": [
+    101,
+    202,
+    303,
+    404,
+    505
+  ],
+  "raw_values": [
+    0.6607014826061666,
+    0.7509618826590574,
+    0.6453233273477621,
+    0.6858541294510461,
+    0.6955903508216528
+  ],
+  "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+  "new_training_runs": 0,
+  "formal_harbor_acceptance": false,
+  "hidden_manifest_sha256": "b0789730437b828e692c79a84bd11882e3245f3da9db9285c86095cc9c8f2a49"
+}

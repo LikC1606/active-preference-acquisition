@@ -1,0 +1,345 @@
+{
+  "elapsed_seconds": 1266.266808384,
+  "history": [
+    {
+      "actual_updates": 1000,
+      "best_of_10": 1.5546872131246272,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 500,
+      "one_minus_spearman": 0.6880975004054461,
+      "round": 1
+    },
+    {
+      "actual_updates": 2000,
+      "best_of_10": 1.5858705783398055,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 1000,
+      "one_minus_spearman": 0.7108619239758771,
+      "round": 2
+    },
+    {
+      "actual_updates": 3000,
+      "best_of_10": 1.5628586196008831,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 1500,
+      "one_minus_spearman": 0.6930277381080636,
+      "round": 3
+    },
+    {
+      "actual_updates": 4000,
+      "best_of_10": 1.5651677841171194,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 2000,
+      "one_minus_spearman": 0.7137575004443437,
+      "round": 4
+    },
+    {
+      "actual_updates": 5000,
+      "best_of_10": 1.567706661956223,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 2500,
+      "one_minus_spearman": 0.7127807285363748,
+      "round": 5
+    },
+    {
+      "actual_updates": 6000,
+      "best_of_10": 1.5507916531324522,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 3000,
+      "one_minus_spearman": 0.7115256483836387,
+      "round": 6
+    },
+    {
+      "actual_updates": 7000,
+      "best_of_10": 1.5681877334627974,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 3500,
+      "one_minus_spearman": 0.7271550421175874,
+      "round": 7
+    },
+    {
+      "actual_updates": 8000,
+      "best_of_10": 1.5824350817155701,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 4000,
+      "one_minus_spearman": 0.7227910841183581,
+      "round": 8
+    },
+    {
+      "actual_updates": 9000,
+      "best_of_10": 1.564687590482587,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 4500,
+      "one_minus_spearman": 0.7100642048283241,
+      "round": 9
+    },
+    {
+      "actual_updates": 10000,
+      "best_of_10": 1.5904382151758802,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 5000,
+      "one_minus_spearman": 0.698640193698594,
+      "round": 10
+    },
+    {
+      "actual_updates": 11000,
+      "best_of_10": 1.5995392290387862,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 5500,
+      "one_minus_spearman": 0.6875781252857047,
+      "round": 11
+    },
+    {
+      "actual_updates": 12000,
+      "best_of_10": 1.5883059534302058,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 6000,
+      "one_minus_spearman": 0.69923130098297,
+      "round": 12
+    },
+    {
+      "actual_updates": 13000,
+      "best_of_10": 1.524353087138751,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 6500,
+      "one_minus_spearman": 0.717520093501273,
+      "round": 13
+    },
+    {
+      "actual_updates": 14000,
+      "best_of_10": 1.5981203681107081,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 7000,
+      "one_minus_spearman": 0.6857096017274227,
+      "round": 14
+    },
+    {
+      "actual_updates": 15000,
+      "best_of_10": 1.6204300060981232,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 7500,
+      "one_minus_spearman": 0.6852208286448723,
+      "round": 15
+    },
+    {
+      "actual_updates": 16000,
+      "best_of_10": 1.5927459442367156,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 8000,
+      "one_minus_spearman": 0.691861471563634,
+      "round": 16
+    },
+    {
+      "actual_updates": 17000,
+      "best_of_10": 1.563510801142336,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 8500,
+      "one_minus_spearman": 0.7071595967698494,
+      "round": 17
+    },
+    {
+      "actual_updates": 18000,
+      "best_of_10": 1.5811606603687933,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 9000,
+      "one_minus_spearman": 0.695264477109746,
+      "round": 18
+    },
+    {
+      "actual_updates": 19000,
+      "best_of_10": 1.572404379870586,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 9500,
+      "one_minus_spearman": 0.7023126343481462,
+      "round": 19
+    },
+    {
+      "actual_updates": 20000,
+      "best_of_10": 1.580046596844372,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 10000,
+      "one_minus_spearman": 0.6875833193851333,
+      "round": 20
+    },
+    {
+      "actual_updates": 21000,
+      "best_of_10": 1.594544434566371,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 10500,
+      "one_minus_spearman": 0.6966959804128037,
+      "round": 21
+    },
+    {
+      "actual_updates": 22000,
+      "best_of_10": 1.6062529631716902,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 11000,
+      "one_minus_spearman": 0.6943009533408333,
+      "round": 22
+    },
+    {
+      "actual_updates": 23000,
+      "best_of_10": 1.5749896973586768,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 11500,
+      "one_minus_spearman": 0.6940251383962088,
+      "round": 23
+    },
+    {
+      "actual_updates": 24000,
+      "best_of_10": 1.6288423708479036,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 12000,
+      "one_minus_spearman": 0.6668792880696649,
+      "round": 24
+    },
+    {
+      "actual_updates": 25000,
+      "best_of_10": 1.6039317171209435,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 12500,
+      "one_minus_spearman": 0.6906212409830588,
+      "round": 25
+    },
+    {
+      "actual_updates": 26000,
+      "best_of_10": 1.5971975874595181,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 13000,
+      "one_minus_spearman": 0.6798752995456117,
+      "round": 26
+    },
+    {
+      "actual_updates": 27000,
+      "best_of_10": 1.5937996750569403,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 13500,
+      "one_minus_spearman": 0.6941009482132627,
+      "round": 27
+    },
+    {
+      "actual_updates": 28000,
+      "best_of_10": 1.5803771255299477,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 14000,
+      "one_minus_spearman": 0.6646202343576895,
+      "round": 28
+    },
+    {
+      "actual_updates": 29000,
+      "best_of_10": 1.5474663456055089,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 14500,
+      "one_minus_spearman": 0.691010994702404,
+      "round": 29
+    },
+    {
+      "actual_updates": 30000,
+      "best_of_10": 1.5527550559161798,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 15000,
+      "one_minus_spearman": 0.7037027501235806,
+      "round": 30
+    },
+    {
+      "actual_updates": 31000,
+      "best_of_10": 1.5914532826175343,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 15500,
+      "one_minus_spearman": 0.6788186124808017,
+      "round": 31
+    },
+    {
+      "actual_updates": 32000,
+      "best_of_10": 1.5846525429603007,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 16000,
+      "one_minus_spearman": 0.6839440600076171,
+      "round": 32
+    },
+    {
+      "actual_updates": 33000,
+      "best_of_10": 1.568162605256721,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 16500,
+      "one_minus_spearman": 0.6807865800132996,
+      "round": 33
+    },
+    {
+      "actual_updates": 34000,
+      "best_of_10": 1.58142696923168,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 17000,
+      "one_minus_spearman": 0.6921437621573391,
+      "round": 34
+    },
+    {
+      "actual_updates": 35000,
+      "best_of_10": 1.5598007861134322,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 17500,
+      "one_minus_spearman": 0.7019974220447706,
+      "round": 35
+    },
+    {
+      "actual_updates": 36000,
+      "best_of_10": 1.5290717868545336,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 18000,
+      "one_minus_spearman": 0.6947789747192404,
+      "round": 36
+    },
+    {
+      "actual_updates": 37000,
+      "best_of_10": 1.569886006213415,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 18500,
+      "one_minus_spearman": 0.6881055125742312,
+      "round": 37
+    },
+    {
+      "actual_updates": 38000,
+      "best_of_10": 1.5951608462746627,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 19000,
+      "one_minus_spearman": 0.6855233269678744,
+      "round": 38
+    },
+    {
+      "actual_updates": 39000,
+      "best_of_10": 1.5801567030326065,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 19500,
+      "one_minus_spearman": 0.6763188841756413,
+      "round": 39
+    },
+    {
+      "actual_updates": 40000,
+      "best_of_10": 1.5903985843790913,
+      "evaluated_prompts": 4188,
+      "labelled_pairs": 20000,
+      "one_minus_spearman": 0.6857898168299283,
+      "round": 40
+    }
+  ],
+  "seed": 404,
+  "evaluation": {
+    "actual_updates": 40000,
+    "best_of_10": 1.5903985843790913,
+    "checkpoint_reload_match": true,
+    "checkpoint_sha256": "c5506e7704717e1cf59962658840c78259c3d7302e41cecc7a518fa3ed4f88f7",
+    "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+    "raw_metric": 0.6857898168299283,
+    "seed": 404,
+    "selected_preferences": 20000,
+    "status": "succeeded",
+    "selector_sha256": "e0fcb33bd049403444ce5ad4345aab4589ee165516ad48ea29b74cc13eb141eb",
+    "new_training_runs": 1
+  },
+  "model": {
+    "path": "model/checkpoint",
+    "bytes": 561189,
+    "sha256": "c5506e7704717e1cf59962658840c78259c3d7302e41cecc7a518fa3ed4f88f7",
+    "reload_match": true
+  }
+}

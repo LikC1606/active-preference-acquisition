@@ -1,0 +1,19 @@
+{
+  "status": "superseded",
+  "started_at": "2026-10-08T00:10:02.577933+00:00",
+  "required_seconds": 43200,
+  "container_ids": {
+    "main": "c0b42f26156ba775fbe9cdef02763f09112abbcbb71f588de649a685e3afc6fd",
+    "evaluator": "c8ab70d029104da5b7eac585e04ec363672dcd76a2533853a91ad4bf518e65cc"
+  },
+  "images": {
+    "c0b42f26156ba775fbe9cdef02763f09112abbcbb71f588de649a685e3afc6fd": "sha256:862609eacbb579fdddd59fb968eddd81afd7ec79152710609e0e3e02f20b9f85",
+    "c8ab70d029104da5b7eac585e04ec363672dcd76a2533853a91ad4bf518e65cc": "sha256:b6ac0b9e3e7b8702ef9a21b62c24c9d2fc5c399660b5b1e4ca06fcd9b0df48a3"
+  },
+  "cycles": 53,
+  "errors": [],
+  "public_baseline_checks": 53,
+  "elapsed_seconds": 3321.3851108718663,
+  "last_sample_at": "2026-10-08T01:05:23.964166+00:00",
+  "reason": "FD checks covered PID 1 only; replaced with all-process monitoring. Not a completed twelve-hour pass."
+}

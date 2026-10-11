@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/repair-v18/run_nop_trial.py", line 50, in <module>
+    asyncio.run(main())
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/sk/kesun/H3EXP/envs/host/pythons/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/sk/kesun/H3EXP/envs/host/pythons/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/sk/kesun/H3EXP/envs/host/pythons/cpython-3.12.13-linux-x86_64-gnu/lib/python3.12/asyncio/base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/repair-v18/run_nop_trial.py", line 35, in main
+    trial=Trial(config,_task_download_result=TaskDownloadResult(path=TASK,download_time_sec=0,cached=False))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: Can't instantiate abstract class Trial without an implementation for abstract methods '_recover_outputs', '_run'
+srun: error: nv-h100-022: task 0: Exited with exit code 1

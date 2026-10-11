@@ -1,0 +1,24 @@
+{
+  "status": "failed",
+  "arm": "best",
+  "selector_sha256": "f09dafc8981af5668e1a6fd49243ce202167c9858a2f76ea0a0f7180bcf633ce",
+  "protocol_sha256": "1d2828746ca304e36f93c7a32935f8b46afbe1715fe09a71117b79b0bd2a9fcf",
+  "provider": "Harbor DockerEnvironment",
+  "custom_provider": false,
+  "verifier": "Harbor Verifier",
+  "artifact_transfer": "Harbor ArtifactHandler",
+  "environment_mode": "separate",
+  "setup_started_unix": 1791526987.7941172,
+  "validation_verifier_uid": 1892800110,
+  "cache_absent_before_start": true,
+  "container_ids": {
+    "main": "d126d228509e8adeefd2364f71f3365b2381404c33473c3084d50addbdff810b",
+    "evaluator": "f2db6451613974bd2a3e0c6c093de2ea70f55de25600db273a115c2ac27d3261"
+  },
+  "started_unix": 1791527018.1690068,
+  "operator_setup_elapsed_seconds": 30.374889612197876,
+  "verifier_timeout_seconds": 7113.91119963862,
+  "error_type": "RewardFileNotFoundError",
+  "error": "No reward file found at /storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/agent-research/acquisition-gpt-seed-v16-seed-fresh/seed/attempt-006/arm-roll-v15-seed-006-acceptance/best/trial/verifier/reward.txt or /storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/agent-research/acquisition-gpt-seed-v16-seed-fresh/seed/attempt-006/arm-roll-v15-seed-006-acceptance/best/trial/verifier/reward.json",
+  "elapsed_seconds": 12.110063983127475
+}

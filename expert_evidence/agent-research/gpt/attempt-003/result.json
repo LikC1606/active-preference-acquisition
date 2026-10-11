@@ -1,0 +1,28 @@
+{
+  "round": 2,
+  "attempt": 3,
+  "model": "gpt-5.6-sol",
+  "started_at": "2026-10-08T10:12:40.247155+00:00",
+  "iteration_limit_seconds": 7200,
+  "method_summary": "Use prompt-balanced logistic Fisher acquisition with a diagonal-whitened feature norm, so hidden dimensions contribute by standardized leverage rather than raw activation scale. Based on the retained Fisher result and timeout feedback, this removes randomized exploration and uses only inexpensive vectorized reductions while introducing a new covariance-aware information criterion.",
+  "selector_sha256": "81bf464cd6d251d4f5003b141bdf581fcd7be22be13848ca7c366ac36b78d7fe",
+  "acceptance": "agent-research/acquisition-gpt-seed-v15-two-hour-retry5/gpt/attempt-003/arm-roll-v15-gpt-003-acceptance/best/summary.json",
+  "status": "succeeded",
+  "score": 0.15520476305579572,
+  "mean_error": 0.5744354701567443,
+  "raw_values": [
+    0.5507103945978988,
+    0.5702566119377516,
+    0.5430719421321952,
+    0.6399022710975197,
+    0.5682361310183566
+  ],
+  "new_training_runs": 5,
+  "author_method_seconds": 21.010724384337664,
+  "verifier_seconds": 6129.668486773968,
+  "effective_seconds": 6150.679211158305,
+  "iteration_wall_seconds": 6201.776775859296,
+  "within_7200_seconds": true,
+  "decision": "retain",
+  "finished_at": "2026-10-08T11:56:02.059653+00:00"
+}

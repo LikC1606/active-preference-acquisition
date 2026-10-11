@@ -1,0 +1,29 @@
+{
+  "round": 2,
+  "attempt": 2,
+  "model": "doubao-seed-2.1-turbo",
+  "started_at": "2026-10-08T22:20:27.938609+00:00",
+  "iteration_limit_seconds": 7200,
+  "cleanup_reserve_seconds": 30,
+  "method_summary": "This selector uses pivot-based clustering to improve diversity: it samples pivots weighted by uncertainty, assigns each point to its nearest pivot, then selects the highest-quality candidate from each of the top-k pivots, ensuring coverage of distinct feature regions while prioritizing uncertain pairs near the decision boundary. This replaces the sequential greedy farthest-first traversal with a single nearest-pivot assignment, making it more efficient and less prone to myopic local optima.",
+  "selector_sha256": "4b7f5d26567ffe32193649f600a36680f8c5cc818d3144b1c0f7fbb169916f9f",
+  "acceptance": "agent-research/acquisition-gpt-seed-v16-seed-fresh/seed/attempt-002/arm-roll-v15-seed-002-acceptance/best/summary.json",
+  "status": "succeeded",
+  "score": 0.1274824057943374,
+  "mean_error": 0.5932858431594875,
+  "raw_values": [
+    0.5757055689840488,
+    0.5981087503063464,
+    0.5716637234590382,
+    0.603578623267447,
+    0.6173725497805571
+  ],
+  "new_training_runs": 5,
+  "author_method_seconds": 24.851867960765958,
+  "verifier_seconds": 5644.48647191748,
+  "effective_seconds": 5669.338339878246,
+  "iteration_wall_seconds": 5708.666655063629,
+  "within_7200_seconds": true,
+  "decision": "retain",
+  "finished_at": "2026-10-08T23:55:36.632462+00:00"
+}

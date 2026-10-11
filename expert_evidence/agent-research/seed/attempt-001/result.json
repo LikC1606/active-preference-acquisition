@@ -1,0 +1,29 @@
+{
+  "round": 1,
+  "attempt": 1,
+  "model": "doubao-seed-2.1-turbo",
+  "started_at": "2026-10-08T21:02:51.232659+00:00",
+  "iteration_limit_seconds": 7200,
+  "cleanup_reserve_seconds": 30,
+  "method_summary": "This selector uses farthest-first traversal in the 64-dimensional feature space, weighted by pair uncertainty (highest when logits are near the decision boundary of 0). By combining uncertainty sampling with diversity-promoting selection, we choose informative pairs that are both hard for the current model and represent distinct regions of feature space, improving the reward model's ranking accuracy more than random selection.",
+  "selector_sha256": "6e6adcc753e453f1b23287d5126ef7919a0517b78d945e18933ca598181a3c58",
+  "acceptance": "agent-research/acquisition-gpt-seed-v16-seed-fresh/seed/attempt-001/arm-roll-v15-seed-001-acceptance/best/summary.json",
+  "status": "succeeded",
+  "score": -0.00972081350949469,
+  "mean_error": 0.686579924779672,
+  "raw_values": [
+    0.6565786641928999,
+    0.6568212707052288,
+    0.7965882171624146,
+    0.6554181718074665,
+    0.6674933000303501
+  ],
+  "new_training_runs": 5,
+  "author_method_seconds": 16.7388211004436,
+  "verifier_seconds": 4594.475697072223,
+  "effective_seconds": 4611.214518172666,
+  "iteration_wall_seconds": 4656.642097912729,
+  "within_7200_seconds": true,
+  "decision": "retain",
+  "finished_at": "2026-10-08T22:20:27.896381+00:00"
+}

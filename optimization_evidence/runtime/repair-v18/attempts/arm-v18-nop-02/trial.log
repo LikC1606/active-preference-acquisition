@@ -1,0 +1,19 @@
+Container command failed (1): mkdir -p /logs/verifier /logs/agent /logs/artifacts && chmod 777 /logs/verifier /logs/agent /logs/artifacts; stdout=chmod: changing permissions of '/logs/verifier': Operation not permitted
+chmod: changing permissions of '/logs/agent': Operation not permitted
+chmod: changing permissions of '/logs/artifacts': Operation not permitted
+; stderr=
+Container command failed (1): chown -R 1892800110:1892800109 /logs/verifier; stdout=chown: changing ownership of '/logs/verifier': Operation not permitted
+; stderr=
+Container command failed (1): chown -R 1892800110:1892800109 /logs/agent; stdout=chown: changing ownership of '/logs/agent': Operation not permitted
+; stderr=
+Container command failed (1): chown -R 1892800110:1892800109 /logs/artifacts; stdout=chown: changing ownership of '/logs/artifacts': Operation not permitted
+; stderr=
+Collecting main service artifacts
+Container command failed (1): chown -R 1892800110:1892800109 /logs/verifier; stdout=chown: changing ownership of '/logs/verifier': Operation not permitted
+; stderr=
+Container command failed (1): chown -R 1892800110:1892800109 /logs/agent; stdout=chown: changing ownership of '/logs/agent': Operation not permitted
+; stderr=
+Container command failed (1): chown -R 1892800110:1892800109 /logs/artifacts; stdout=chown: changing ownership of '/logs/artifacts': Operation not permitted
+; stderr=
+Container command failed (1): (/tests/test.sh) > /logs/verifier/test-stdout.txt 2>&1; stdout=; stderr=
+Trial arm-v18-nop-02 failed: No reward file found at /storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/repair-v18/trials/arm-v18-nop-02/verifier/reward.txt or /storage/zhangyueLab/wengyixuan/ssh_gpu/workspaces/lzh/papers/active-reward-modeling/acquisition-paper-aligned/repair-v18/trials/arm-v18-nop-02/verifier/reward.json

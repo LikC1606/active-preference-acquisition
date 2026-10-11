@@ -1,0 +1,169 @@
+#0 building with "default" instance using docker driver
+
+#1 [evaluator internal] load build definition from Dockerfile
+#1 transferring dockerfile: 2.11kB done
+#1 DONE 0.0s
+
+#2 [evaluator internal] load metadata for docker.io/library/python:3.11.11-slim-bookworm
+#2 DONE 0.0s
+
+#3 [evaluator internal] load .dockerignore
+#3 transferring context: 2B done
+#3 DONE 0.0s
+
+#4 [evaluator  1/13] FROM docker.io/library/python:3.11.11-slim-bookworm
+#4 CACHED
+
+#5 [evaluator internal] load build context
+#5 transferring context: 2.03GB 5.1s
+#5 transferring context: 3.36GB 8.3s done
+#5 DONE 8.4s
+
+#6 [evaluator  2/13] COPY workspace/harbor_task/environment/requirements.txt /tmp/requirements.txt
+#6 DONE 1.3s
+
+#7 [evaluator  3/13] COPY workspace/harbor_task/environment/wheels/ /tmp/wheels/
+#7 DONE 0.5s
+
+#8 [evaluator  4/13] RUN python3 -m pip install --no-cache-dir --no-index --find-links /tmp/wheels --require-hashes -r /tmp/requirements.txt     && rm -rf /tmp/wheels /tmp/requirements.txt
+#8 1.920 Looking in links: /tmp/wheels
+#8 1.928 Processing /tmp/wheels/cloudpickle-3.1.2-py3-none-any.whl (from -r /tmp/requirements.txt (line 1))
+#8 1.934 Processing /tmp/wheels/filelock-3.32.3-py3-none-any.whl (from -r /tmp/requirements.txt (line 2))
+#8 1.937 Processing /tmp/wheels/fsspec-2026.7.0-py3-none-any.whl (from -r /tmp/requirements.txt (line 3))
+#8 1.941 Processing /tmp/wheels/jinja2-3.1.6-py3-none-any.whl (from -r /tmp/requirements.txt (line 4))
+#8 1.945 Processing /tmp/wheels/joblib-1.6.0-py3-none-any.whl (from -r /tmp/requirements.txt (line 5))
+#8 1.949 Processing /tmp/wheels/markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (from -r /tmp/requirements.txt (line 6))
+#8 1.953 Processing /tmp/wheels/mpmath-1.3.0-py3-none-any.whl (from -r /tmp/requirements.txt (line 7))
+#8 1.957 Processing /tmp/wheels/networkx-3.6.1-py3-none-any.whl (from -r /tmp/requirements.txt (line 8))
+#8 1.966 Processing /tmp/wheels/numpy-1.23.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r /tmp/requirements.txt (line 9))
+#8 1.997 Processing /tmp/wheels/scikit_learn-1.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r /tmp/requirements.txt (line 10))
+#8 2.018 Processing /tmp/wheels/scipy-1.15.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r /tmp/requirements.txt (line 11))
+#8 2.084 Processing /tmp/wheels/sympy-1.14.0-py3-none-any.whl (from -r /tmp/requirements.txt (line 12))
+#8 2.101 Processing /tmp/wheels/threadpoolctl-3.7.0-py3-none-any.whl (from -r /tmp/requirements.txt (line 13))
+#8 2.105 Processing /tmp/wheels/torch-2.2.1+cpu-cp311-cp311-linux_x86_64.whl (from -r /tmp/requirements.txt (line 14))
+#8 2.412 Processing /tmp/wheels/typing_extensions-4.16.0-py3-none-any.whl (from -r /tmp/requirements.txt (line 15))
+#8 2.697 Installing collected packages: mpmath, typing_extensions, threadpoolctl, sympy, numpy, networkx, MarkupSafe, fsspec, filelock, cloudpickle, scipy, joblib, Jinja2, torch, scikit-learn
+#8 18.09 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#8 18.09 Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.3 cloudpickle-3.1.2 filelock-3.32.3 fsspec-2026.7.0 joblib-1.6.0 mpmath-1.3.0 networkx-3.6.1 numpy-1.23.5 scikit-learn-1.3.2 scipy-1.15.1 sympy-1.14.0 threadpoolctl-3.7.0 torch-2.2.1+cpu typing_extensions-4.16.0
+#8 DONE 19.5s
+
+#9 [evaluator  5/13] COPY optimization_evidence/runtime/native/paper/ /opt/paper/
+#9 DONE 0.1s
+
+#10 [evaluator  6/13] COPY optimization_evidence/runtime/native/protocol.json /protocol.json
+#10 DONE 0.1s
+
+#11 [evaluator  7/13] COPY optimization_evidence/runtime/native/baseline.json optimization_evidence/runtime/native/definition.json /opt/arm-private/
+#11 DONE 0.1s
+
+#12 [evaluator  8/13] COPY optimization_evidence/runtime/native/calibration/ /opt/arm-private/calibration/
+#12 DONE 0.1s
+
+#13 [evaluator  9/13] COPY optimization_evidence/runtime/native/service.py optimization_evidence/runtime/native/worker.py optimization_evidence/runtime/native/selector_entry.py optimization_evidence/runtime/native/selector_sandbox.py optimization_evidence/runtime/native/validate_calibration.py /opt/arm-private/
+#13 DONE 0.2s
+
+#14 [evaluator 10/13] COPY workspace/harbor_task/environment/task/tests/grader.py /harbor_task/tests/grader.py
+#14 DONE 0.1s
+
+#15 [evaluator 11/13] COPY workspace/harbor_task/environment/public_assets/ /workspace/environment/public_assets/
+#15 DONE 3.9s
+
+#16 [evaluator 12/13] RUN mkdir -p /opt/selector-root/usr /opt/selector-root/tmp /opt/selector-root/output /opt/selector-root/dev     && mknod -m 0444 /opt/selector-root/dev/urandom c 1 9     && mknod -m 0666 /opt/selector-root/dev/null c 1 3     && cp -al /usr/local /opt/selector-root/usr/local     && cp -al /usr/lib /opt/selector-root/usr/lib     && ln -s usr/lib /opt/selector-root/lib     && ln -s usr/lib64 /opt/selector-root/lib64     && if [ -d /usr/lib64 ]; then cp -al /usr/lib64 /opt/selector-root/usr/lib64; fi     && cp /opt/arm-private/selector_entry.py /opt/selector-root/entry.py     && chmod -R a-w /opt/selector-root /opt/paper /opt/arm-private     && mkdir -p /var/lib/arm /opt/arm-evaluator     && chmod 0700 /var/lib/arm
+#16 DONE 273.5s
+
+#17 [evaluator 13/13] WORKDIR /workspace
+#17 DONE 0.1s
+
+#18 [evaluator] exporting to image
+#18 exporting layers
+#18 exporting layers 4.2s done
+#18 writing image sha256:238ed137b05344281acdefc2900a52486a6054d30ffeab1c1a1118c5614424dc done
+#18 naming to docker.io/library/arm-acquisition-v14__evaluator 0.0s done
+#18 DONE 4.2s
+
+#19 [main internal] load build definition from Dockerfile
+#19 transferring dockerfile: 1.05kB done
+#19 DONE 0.0s
+
+#2 [main internal] load metadata for docker.io/library/python:3.11.11-slim-bookworm
+#2 DONE 0.0s
+
+#20 [main internal] load .dockerignore
+#20 transferring context: 2B done
+#20 DONE 0.0s
+
+#4 [main  1/15] FROM docker.io/library/python:3.11.11-slim-bookworm
+#4 CACHED
+
+#21 [main internal] load build context
+#21 transferring context: 2.47GB 5.1s
+#21 transferring context: 3.35GB 6.9s done
+#21 DONE 6.9s
+
+#22 [main  2/15] COPY requirements.txt /tmp/requirements.txt
+#22 DONE 1.4s
+
+#23 [main  3/15] COPY wheels/ /tmp/wheels/
+#23 DONE 0.5s
+
+#24 [main  4/15] RUN python3 -m pip install --no-cache-dir --no-index --find-links /tmp/wheels --require-hashes -r /tmp/requirements.txt     && rm -rf /tmp/wheels /tmp/requirements.txt
+#24 1.115 Looking in links: /tmp/wheels
+#24 1.122 Processing /tmp/wheels/cloudpickle-3.1.2-py3-none-any.whl (from -r /tmp/requirements.txt (line 1))
+#24 1.127 Processing /tmp/wheels/filelock-3.32.3-py3-none-any.whl (from -r /tmp/requirements.txt (line 2))
+#24 1.130 Processing /tmp/wheels/fsspec-2026.7.0-py3-none-any.whl (from -r /tmp/requirements.txt (line 3))
+#24 1.134 Processing /tmp/wheels/jinja2-3.1.6-py3-none-any.whl (from -r /tmp/requirements.txt (line 4))
+#24 1.138 Processing /tmp/wheels/joblib-1.6.0-py3-none-any.whl (from -r /tmp/requirements.txt (line 5))
+#24 1.142 Processing /tmp/wheels/markupsafe-3.0.3-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (from -r /tmp/requirements.txt (line 6))
+#24 1.145 Processing /tmp/wheels/mpmath-1.3.0-py3-none-any.whl (from -r /tmp/requirements.txt (line 7))
+#24 1.150 Processing /tmp/wheels/networkx-3.6.1-py3-none-any.whl (from -r /tmp/requirements.txt (line 8))
+#24 1.159 Processing /tmp/wheels/numpy-1.23.5-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r /tmp/requirements.txt (line 9))
+#24 1.189 Processing /tmp/wheels/scikit_learn-1.3.2-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r /tmp/requirements.txt (line 10))
+#24 1.210 Processing /tmp/wheels/scipy-1.15.1-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (from -r /tmp/requirements.txt (line 11))
+#24 1.274 Processing /tmp/wheels/sympy-1.14.0-py3-none-any.whl (from -r /tmp/requirements.txt (line 12))
+#24 1.291 Processing /tmp/wheels/threadpoolctl-3.7.0-py3-none-any.whl (from -r /tmp/requirements.txt (line 13))
+#24 1.294 Processing /tmp/wheels/torch-2.2.1+cpu-cp311-cp311-linux_x86_64.whl (from -r /tmp/requirements.txt (line 14))
+#24 1.595 Processing /tmp/wheels/typing_extensions-4.16.0-py3-none-any.whl (from -r /tmp/requirements.txt (line 15))
+#24 1.877 Installing collected packages: mpmath, typing_extensions, threadpoolctl, sympy, numpy, networkx, MarkupSafe, fsspec, filelock, cloudpickle, scipy, joblib, Jinja2, torch, scikit-learn
+#24 17.31 Successfully installed Jinja2-3.1.6 MarkupSafe-3.0.3 cloudpickle-3.1.2 filelock-3.32.3 fsspec-2026.7.0 joblib-1.6.0 mpmath-1.3.0 networkx-3.6.1 numpy-1.23.5 scikit-learn-1.3.2 scipy-1.15.1 sympy-1.14.0 threadpoolctl-3.7.0 torch-2.2.1+cpu typing_extensions-4.16.0
+#24 17.31 WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
+#24 DONE 18.7s
+
+#25 [main  5/15] WORKDIR /harbor_task
+#25 DONE 0.1s
+
+#26 [main  6/15] COPY task/instruction.md task/task.toml ./
+#26 DONE 0.2s
+
+#27 [main  7/15] COPY public_assets/ environment/public_assets/
+#27 DONE 3.9s
+
+#28 [main  8/15] COPY starter/ environment/starter/
+#28 DONE 0.1s
+
+#29 [main  9/15] COPY baseline.json requirements.txt environment/
+#29 DONE 0.1s
+
+#30 [main 10/15] COPY starter/select.py solution/select.py
+#30 DONE 0.1s
+
+#31 [main 11/15] COPY task/solve.sh solution/solve.sh
+#31 DONE 0.1s
+
+#32 [main 12/15] COPY task/submission.json solution/submission.json
+#32 DONE 0.1s
+
+#33 [main 13/15] COPY task/tests/ tests/
+#33 DONE 0.1s
+
+#34 [main 14/15] COPY task/tests/ /tests/
+#34 DONE 0.1s
+
+#35 [main 15/15] RUN chmod -R a+rX /harbor_task /tests && chmod -R a-w /harbor_task /tests && chmod -R a+rwX /harbor_task/solution && chmod +x solution/solve.sh tests/test.sh /tests/test.sh     && ln -s /dev/shm/arm-evaluator /opt/arm-evaluator
+#35 DONE 3.8s
+
+#36 [main] exporting to image
+#36 exporting layers
+#36 exporting layers 4.4s done
+#36 writing image sha256:bf0954df03f67ee9befd2a04ade76ed7a6584f64de0f893cdcac70fe133e934f done
+#36 naming to docker.io/library/arm-acquisition-v14 0.0s done
+#36 DONE 4.5s
