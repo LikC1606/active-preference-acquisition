@@ -12,23 +12,24 @@ Reference implements the paper ARM-FI D-optimal rule.
 - `optimization_evidence/`: five paired Baseline/Reference training runs, models,
   statistics, cold-scoring and twelve-hour stability evidence.
 
-The large arrays, offline wheels and historical pool archives are stored as
-lossless Release assets, rather than Git blobs. Repository files alone do not
-include those assets. Download **all assets from the submission release** into
-one directory; put the 42 `.gz` volumes in `assets/`, alongside
-`task-and-evidence.zip`, `distribution.json`, `restore.py` and `validation.json`.
-Then restore a complete independent delivery:
+The complete task is available in [the submission release](https://github.com/LikC1606/active-preference-acquisition/releases/tag/complete-submission).
+It has **two attachments**, each below GitHub's per-asset size limit. Download both
+into one directory and combine them:
 
 ```sh
-python3 -B restore.py --output ../delivery-restored
+cat active-preference-acquisition.tar.gz.001 active-preference-acquisition.tar.gz.002 > active-preference-acquisition.tar.gz
+mkdir delivery-restored
+tar -xzf active-preference-acquisition.tar.gz -C delivery-restored
 ```
 
-Restoration requires only Python's standard library. It verifies every volume
-and all 4,008 restored files against the original SHA-256 identities and file
-permissions. It performs no training and makes no network requests. See
-[DISTRIBUTION.md](DISTRIBUTION.md) for the distribution details and
-[the local package guide](optimization_evidence/runtime/LOCAL_PACKAGE.md)
-for Docker commands.
+The resulting archive contains all three directories, including complete data,
+offline dependencies, models and evidence. SHA-256 identities and file permissions
+were verified against the original delivery. Only large identical data and wheel
+files use tar hard links; code and evidence remain independent files. Repository
+files alone omit the large assets; use the release for a complete submission.
+
+See [the download guide](DISTRIBUTION.md) for hashes and
+[the local package guide](optimization_evidence/runtime/LOCAL_PACKAGE.md) for Docker commands.
 
 ## Validation
 

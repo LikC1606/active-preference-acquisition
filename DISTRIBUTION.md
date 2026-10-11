@@ -1,19 +1,19 @@
-# 离线分卷包
+# Complete offline submission
 
-`task-and-evidence.zip` 是代码和证据主包，包含正式模型、日志和质检报告。
-大体积原始数据、离线依赖和历史运行中间产物按哈希去重后放在 `assets/`。
-每个分卷小于 256 MiB。数据只做可逆的字节重排和 gzip 压缩，不量化、采样或删减。
+Download the two attachments from the complete-submission release. Both are required.
 
-保留本目录全部文件，在本目录运行：
+| Attachment | Bytes | SHA-256 |
+| --- | ---: | --- |
+| active-preference-acquisition.tar.gz.001 | 1900000000 | b7e1a14a5d08df41916169f7f79ad020c7bfae595eff4e1d1fdc65d8d7a6cba5 |
+| active-preference-acquisition.tar.gz.002 | 1791439871 | 4c76086853280ea84643bcf433860b56eb18f00fffcad7ad0fc2f290577f59f9 |
 
 ```sh
-python3 -B restore.py --output ../delivery-restored
+cat active-preference-acquisition.tar.gz.001 active-preference-acquisition.tar.gz.002 > active-preference-acquisition.tar.gz
+sha256sum active-preference-acquisition.tar.gz
+mkdir delivery-restored
+tar -xzf active-preference-acquisition.tar.gz -C delivery-restored
 ```
 
-还原仅需 Python 标准库，不联网、不训练。目标目录必须尚不存在。
-程序检查分卷和全部还原文件的 SHA-256、大小与权限，生成完整的
-`workspace/`、`expert_evidence/`、`optimization_evidence/` 三目录。
-重复资产还原为独立文件，保留各 Docker 构建上下文。
+Combined SHA-256: `db2f9d65ab8722eb29f11a9f29a549e947157399e893b6a00914aa43c41c7531`.
 
-主包单独不是完整 HarborTask。上传或构建时使用还原后的完整目录；
-平台是否接受分卷传输须按其入口规则办理。本方案不改变完整任务所需的数据量。
+The archive is 3,691,439,871 bytes and restores 4,008 files in workspace/, expert_evidence/ and optimization_evidence/. All original hashes and modes passed. Splitting only addresses GitHub's attachment limit; it does not reduce the total data size. No training or model API requests were made. Formal platform acceptance remains pending.
