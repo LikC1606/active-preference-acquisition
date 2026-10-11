@@ -1,5 +1,7 @@
 # Active Preference Acquisition
 
+**优化面：只修改 `solution/select.py` 中的 `select_pairs`，在数据、标注预算和训练流程固定的条件下，从每轮 22,500 个候选偏好对中选择 500 个，以提高最终奖励模型的响应排序得分。**
+
 A CPU-only Harbor research task for improving how a reward model chooses preference pairs to label. Implement one selection function; the evaluator keeps the data, labeling budget, model and training procedure fixed.
 
 The task uses the original Active Reward Modeling quickstart data. The random Starter is the **Baseline**, with score **0**. The paper's **ARM-FI D-optimal method** is the **Reference**. Reference demonstrates an improvement under the task protocol; its score is not a ceiling or a passing threshold.
