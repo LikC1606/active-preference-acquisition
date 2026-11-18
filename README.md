@@ -1,8 +1,15 @@
+<!-- README_SYNC: source=984ce2dbea6d8ce12f83532881a4ab4c90dd595e; updated=2026-11-18 -->
+
+English · [简体中文](README_CN.md)
+
 # Active Preference Acquisition
 
-**优化面：只修改 `solution/select.py` 中的 `select_pairs`，在数据、标注预算和训练流程固定的条件下，从每轮 22,500 个候选偏好对中选择 500 个，以提高最终奖励模型的响应排序得分。**
+A CPU-only Harbor task: in each selection round, choose 500 of 22,500 candidate preference pairs to label and test whether those choices improve the reward model's ranking. You implement one selection function; the data, labeling budget, model, and training procedure stay fixed.
 
-A CPU-only Harbor research task for improving how a reward model chooses preference pairs to label. Implement one selection function; the evaluator keeps the data, labeling budget, model and training procedure fixed.
+[![GitHub Stars](https://img.shields.io/github/stars/LikC1606/active-preference-acquisition)](https://github.com/LikC1606/active-preference-acquisition/stargazers)
+[![Complete release](https://img.shields.io/badge/offline_package-complete_submission-2563eb)](https://github.com/LikC1606/active-preference-acquisition/releases/tag/complete-submission)
+
+Star this task to return to the selector interface and recorded comparisons.
 
 The task uses the original Active Reward Modeling quickstart data. The random Starter is the **Baseline**, with score **0**. The paper's **ARM-FI D-optimal method** is the **Reference**. Reference demonstrates an improvement under the task protocol; its score is not a ceiling or a passing threshold.
 
@@ -82,9 +89,13 @@ docker compose -p arm-acquisition \
   -f workspace/harbor_task/environment/docker-compose.yaml up -d --no-build
 ```
 
-Edit `workspace/harbor_task/solution/select.py`, then evaluate it:
+Edit `workspace/harbor_task/solution/select.py` in the extracted package. The container starts with the Starter embedded in its image; copy your edited file into the running `main` service before scoring:
 
 ```sh
+docker compose -p arm-acquisition \
+  -f workspace/harbor_task/environment/docker-compose.yaml \
+  cp workspace/harbor_task/solution/select.py main:/harbor_task/solution/select.py
+
 docker compose -p arm-acquisition \
   -f workspace/harbor_task/environment/docker-compose.yaml \
   exec -T main sh -c 'cd /harbor_task && ./solution/solve.sh --output solution/artifacts/current'
@@ -117,3 +128,5 @@ The task uses precomputed embeddings from the roughly 10 GB original quickstart 
 **Formal platform acceptance remains pending.** Local checks and local Hidden runs are recorded evidence, not platform approval.
 
 [QA report](optimization_evidence/runtime/qa-review/report.txt) · [Expert notes](expert_evidence/专家作业说明文档.md) · [Evidence index](optimization_evidence/README.md)
+
+The repository root does not include a project-wide license. Check the provenance and terms of the original data and bundled dependencies before reuse.
